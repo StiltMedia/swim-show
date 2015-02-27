@@ -8,7 +8,8 @@ class PagesController < ApplicationController
   def about
   end
 
-  def dates
+  def showdates
+    @clubs = Club.all
   end
 
   def events

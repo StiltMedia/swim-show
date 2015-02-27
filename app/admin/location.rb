@@ -14,5 +14,11 @@ ActiveAdmin.register Location do
   #   permitted
   # end
 
+  index do
+    selectable_column
+    id_column
+    column :name
+  end
+
 
 end
