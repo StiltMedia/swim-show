@@ -45,8 +45,12 @@ gem 'mini_magick', '~> 4.0.4'
 gem 'devise', '~> 3.4.1'
 gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
+gem 'better_errors', '~> 2.1.1'
+gem 'binding_of_caller', '~> 0.7.2'
+gem 'awesome_print', '~> 1.6.1'
+gem "figaro"
+gem 'ckeditor', github: 'galetahub/ckeditor'
 # My Stuff ends
-
 
 
 group :development, :test do
