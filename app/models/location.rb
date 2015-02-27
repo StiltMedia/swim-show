@@ -1,3 +1,3 @@
 class Location < ActiveRecord::Base
-  belongs_to :clubs
+  has_many :clubs
 end
