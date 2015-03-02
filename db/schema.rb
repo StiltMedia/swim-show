@@ -46,8 +46,15 @@ ActiveRecord::Schema.define(version: 20150302211351) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
-# Could not dump table "clubs" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "clubs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "short_description"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.integer  "location_id"
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string   "name"

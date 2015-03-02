@@ -26,6 +26,8 @@ Table of contents for my custom stuff:
 7. Retailers Page
 8. Media Page
 9. Travel Page
+10. Nightlife Page
+11. Restaurant Page
 
 ************************************************************************************/
 
@@ -472,4 +474,41 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
     border: #f7f7f7 solid 15px;
   }
+}
+
+// 10. Nightlife Page
+.nightlife-head {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/nightlife.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 50%;
+    h1 {
+      color: #ffffff;
+    }
+  }
+}
+
+
+// 11. Restaurant Page
+.restaurant-head {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/restaurant-main.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 60%;
+  }
+}
+.restaurant-content {
+  @extend .swim-sect-3;
 }

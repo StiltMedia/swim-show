@@ -59,7 +59,7 @@
         <h2>Restaurants</h2>
         <p>Take a look at the different restaurants in Miami.</p>
         <br>
-        <a href="" class="btn btn-member">View Restaurants</a>
+        <%= link_to "View Restaurants", restaurants_path, class: 'btn btn-member' %>
       </div>
       </div>
     </div>
@@ -69,7 +69,7 @@
         <h2>Miami Nightlife</h2>
         <p>Get to know some of the places around Miami to have the night of your life.</p>
         <br>
-        <a href="" class="btn btn-member">View places</a>
+        <%= link_to 'View Places', nightlife_path, class: 'btn btn-member' %>
       </div>
       <div class="col-sm-12 col-md-6">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/night-life.jpg', class: 'img-responsive' %>

@@ -11,9 +11,8 @@ Rails.application.routes.draw do
   get '/retailers' => 'pages#retailers'
   get '/media' => 'pages#media'
   get '/travel' => 'pages#travel'
-  get 'pages/about'
-  get 'pages/dates'
-  get 'pages/events'
+  get '/nightlife' => 'pages#nightlife'
+  get '/restaurants' => 'pages#restaurant'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
