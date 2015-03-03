@@ -16,17 +16,17 @@
         <div class="delimiter100"></div>
       </div>
         <div class="row">
-        <% @restaurant_dmw.each do |r| %>
-          <div class="col-sm-4">
-            <div class="box">
-              <h3><%= r.name %></h3>
-              <p><%= r.address %></p>
-              <p><%= r.phone %></p>
-              <p class="hover"><%= r.description %></p>
+          <% @restaurant_dmw.each do |r| %>
+            <div class="col-sm-4">
+              <div class="box">
+                <h3><%= r.name %></h3>
+                <p><%= r.address %></p>
+                <p><%= r.phone %></p>
+                <p class="hover"><%= r.description %></p>
+              </div>
             </div>
-          </div>
+          <% end %>
         </div>
-      <% end %>
     </div>
   </div>
 </section>
