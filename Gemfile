@@ -50,6 +50,7 @@ gem 'binding_of_caller', '~> 0.7.2'
 gem 'awesome_print', '~> 1.6.1'
 gem "figaro"
 gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'will_paginate', '~> 3.0.6'
 # My Stuff ends
 
 
