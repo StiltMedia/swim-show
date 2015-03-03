@@ -544,6 +544,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
 }
+.club-content {
+  @extend .swim-sect-3;
+  p {
+    margin: 0;
+  }
+  .col-sm-4 {
+    margin-bottom: 30px;
+  }
+}
 
 
 // 11. Restaurant Page
@@ -567,5 +576,37 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   .col-sm-4 {
     margin-bottom: 30px;
+  }
+}
+
+// 12. Current Lines
+
+.lines-head {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/current-lines.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 70vh;
+  }
+}
+
+.lines-content {
+  @extend .swim-sect-3;
+  p {
+    text-align: left;
+  }
+  .letter {
+    color: #c1c1c1;
+    position: absolute;
+    z-index: 0;
+    font-size: 250px;
+    left: 50px;
+    padding-top: 50px;
+    font-family: $playfair;
   }
 }

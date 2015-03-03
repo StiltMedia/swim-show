@@ -20,6 +20,7 @@ class PagesController < ApplicationController
   end
 
   def nightlife
-    @clubs = Club.all
+    @clubs_dmw = Club.order(:name).where(location_id: 1).paginate(:page => params[:page], :per_page => 9)
+    @clubs_mb = Club.order(:name).where(location_id: 2).paginate(:page => params[:page], :per_page => 9)
   end
 end

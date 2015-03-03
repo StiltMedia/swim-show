@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/travel' => 'pages#travel'
   get '/nightlife' => 'pages#nightlife'
   get '/restaurants' => 'pages#restaurant'
+  get '/current-lines' => 'pages#currentlines'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

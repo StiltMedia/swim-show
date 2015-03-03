@@ -7,3 +7,51 @@
     </div> <!-- end col-sm-10 -->
   </div>	<!-- end container -->
 </section>
+
+<section class="club-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Design District | Midtown | Wynwood</h1>
+      </div>
+    </div>
+    <div class="delimiter100"></div>
+    <div class="row">
+      <% @clubs_dmw.each do |c| %>
+        <div class="col-sm-4">
+          <div class="box">
+            <h3><%= c.name %></h3>
+            <p><%= c.address %></p>
+            <p><%= c.phone %></p>
+            <p class="hover"><%= c.short_description %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= will_paginate @clubs_dmw %>
+  </div>
+</section>
+
+<section class="club-content" style="background:#f7f7f7;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Miami Beach</h1>
+      </div>
+    </div>
+    <div class="delimiter100"></div>
+    <div class="row">
+      <% @clubs_mb.each do |c| %>
+        <div class="col-sm-4">
+          <div class="box">
+            <h3><%= c.name %></h3>
+            <p><%= c.address %></p>
+            <p><%= c.phone %></p>
+            <p class="hover"><%= c.short_description %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= will_paginate @clubs_mb %>
+  </div>
+</section>
