@@ -168,6 +168,26 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
+// Pagination
+.pagination {
+  font-family: $playfair;
+  font-size: 20px;
+
+  .previous_page {
+    display: none;
+  }
+  .next_page {
+    display: none;
+  }
+  em {
+    font-style: normal;
+  }
+  a {
+    padding: 14px;
+    color: #ec816f;
+  }
+}
+
 // Custom code for interior pages
 // Lets start with the home page
 // 2. El Home

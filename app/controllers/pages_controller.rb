@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def restaurant
-    @restaurant_dmw = Restaurant.order(:name).where(location_id: 1).paginate(:page => params[:page], :per_page => 9)
+    @restaurant_dmw = Restaurant.order(:name).where(location_id: 1).paginate(:page => params[:page], :per_page => 1)
   end
 
   def nightlife
