@@ -13,20 +13,21 @@
     <div class="row">
       <div class="col-xs-12">
         <h1>Design District | Midtown | Wynwood</h1>
-        <div class="delimiter100"></div>
       </div>
-        <div class="row">
-          <% @restaurant_dmw.each do |r| %>
-            <div class="col-sm-4">
-              <div class="box">
-                <h3><%= r.name %></h3>
-                <p><%= r.address %></p>
-                <p><%= r.phone %></p>
-                <p class="hover"><%= r.description %></p>
-              </div>
-            </div>
-          <% end %>
+    </div>
+    <div class="delimiter100"></div>
+    <div class="row">
+      <% @restaurant_dmw.each do |r| %>
+        <div class="col-sm-4">
+          <div class="box">
+            <h3><%= r.name %></h3>
+            <p><%= r.address %></p>
+            <p><%= r.phone %></p>
+            <p class="hover"><%= r.description %></p>
+          </div>
         </div>
+        <div class="delimiter"></div>
+      <% end %>
     </div>
   </div>
 </section>
