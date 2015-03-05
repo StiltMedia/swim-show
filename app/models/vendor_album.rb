@@ -1,4 +1,7 @@
 class VendorAlbum < ActiveRecord::Base
+  has_many :pictures, :dependent => :destroy
+  accepts_nested_attributes_for :pictures
+
   has_attached_file :logo,
   :storage => :s3,
   :s3_credentials => Proc.new{|a| a.instance.s3_credentials },
