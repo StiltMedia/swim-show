@@ -28,6 +28,8 @@ Table of contents for my custom stuff:
 9. Travel Page
 10. Nightlife Page
 11. Restaurant Page
+12. Media Registrion Page
+13. Thanks Page
 
 ************************************************************************************/
 
@@ -46,6 +48,20 @@ h3 {
 h6 {
   font-size: 15px;
   font-weight: 300;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000000;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000000;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #000000;
 }
 footer {
   background: #303030;
@@ -124,6 +140,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   border-radius: 3px;
   padding: 5px 25px;
   font-weight: 300;
+  transition: all .2s;
   &:hover, &:active, &:focus {
     background: #303030;
     color: #ffffff;
@@ -605,8 +622,67 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     position: absolute;
     z-index: 0;
     font-size: 250px;
-    left: 50px;
+    left: 5%;
     padding-top: 50px;
     font-family: $playfair;
+    opacity: .4;
+  }
+}
+
+.registraion-page {
+  padding: 100px 0 175px;
+  h1 {
+    color: #000000;
+    font-family: $playfair;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 50px !important;
+  }
+  .btn-member2 {
+    @extend .btn-member;
+    display: block;
+    margin: 0 auto;
+  }
+  select, textarea, input[type='text'] {
+    font-style: italic;
+    width: 100%;
+    border: none;
+    background: white;
+    color: #000000;
+    height: 35px;
+    border-bottom: #000000 solid 2px;
+    border-radius: 0px;
+    font-family: $lato;
+    font-weight: 300;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    margin: 30px 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  label {
+    color: red;
+    display:block;
+    margin-top: -35px;
+  }
+  p {
+    color: red;
+  }
+}
+
+// 13. Thanks Page
+
+.thanks {
+  height: 88vh;
+  .top {
+    margin: 300px 0;
+  }
+  h1 {
+    font-family: $playfair;
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
 }

@@ -1,18 +1,4 @@
 class PagesController < ApplicationController
-  def home
-  end
-
-  def swimshow
-  end
-
-  def about
-  end
-
-  def showdates
-  end
-
-  def events
-  end
 
   def restaurant
     @restaurant_dmw = Restaurant.order(:name).where(location_id: 1).paginate(:page => params[:page], :per_page => 9)
@@ -31,15 +17,13 @@ class PagesController < ApplicationController
   def create_media
     @registration = MediaRegistration.create(media_params)
     if @registration.save
-      redirect_to root_path
-    else
-      redirect_to root_path
+      redirect_to thanks_path
     end
   end
 
   private
 
   def media_params
-    params.require(:media_registration).permit(:first_name)
+    params.require(:media_registration).permit(:first_name,:last_name,:title,:other,:publication,:type_of_media,:address1,:address2,:city,:state,:province,:postal_code,:country,:email,:phone,:extension,:fax,:website,:media_outlet,:comments)
   end
 end

@@ -31,6 +31,7 @@
 //= require fittext
 //= require map.js
 //= require function.js
+//= require validate.js
 
 // Everything custom down here
 

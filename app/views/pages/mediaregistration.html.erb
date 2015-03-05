@@ -1,25 +1,67 @@
-<br>
-<br>
-<%= simple_form_for(@registration) do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :title %>
-  <%= f.input :other %>
-  <%= f.input :publication %>
-  <%= f.input :type_of_media %>
-  <%= f.input :address1 %>
-  <%= f.input :address2 %>
-  <%= f.input :city %>
-  <%= f.input :state %>
-  <%= f.input :province %>
-  <%= f.input :postal_code %>
-  <%= f.input :country %>
-  <%= f.input :email %>
-  <%= f.input :phone %>
-  <%= f.input :extension %>
-  <%= f.input :fax %>
-  <%= f.input :website %>
-  <%= f.input :media_outlet %>
-  <%= f.input :comments %>
-  <%= f.button :submit %>
-<% end %>
+<section class="registraion-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <h1>Media Registration</h1>
+        <%= form_for(@registration) do |f| %>
+          <%= f.text_field :first_name, placeholder: "First Name*", style: 'width:47.5%;margin-right: 5%;' %><%= f.text_field :last_name, placeholder: "Last Name*",style: 'width:47.5%;' %><br>
+          <%= f.select :title, nil, {prompt: 'Select Title*'} do %>
+            <% [['Editor'], ['Publisher'], ['Reporter'], ['Freelancer'], ['Photographer'], ['Video'], ['Camera/Auto Tech'], ['Editorial Fashion/Style Director'], ['Writer'], ['Producer'], ['Stylist'], ['Other']].each do |i| %>
+              <%= content_tag(:option, i.first) %>
+            <% end %>
+          <% end %><br>
+          <%= f.text_field :other, placeholder: "If Other, Let us know your Title" %><br>
+          <%= f.text_field :publication, placeholder: "Publication*" %><br>
+          <%= f.select :type_of_media, nil, {prompt: 'Select Type of Media*'} do %>
+            <% [['Magazine'], ['Print/Newspaper'], ['Broadcast'], ['Internet'], ['Photo Agency'], ['Freelance'], ['Stylist'], ['Newswire'], ['Newsletter'], ['TV (National/Regional)'], ['TV (Cable)']].each do |i| %>
+              <%= content_tag(:option, i.first) %>
+            <% end %>
+          <% end %><br>
+          <%= f.text_field :address1, placeholder: "Address 1*" %><br>
+          <%= f.text_field :address2, placeholder: "Address 2" %><br>
+          <%= f.country_select :country, priority: %w(US CA), prompt: 'Please select a country*' %><br>
+          <%= f.text_field :city, placeholder: "City*", style: 'width:47.5%;margin-right: 5%;' %><%= f.text_field :state, placeholder: "State", style: 'width:47.5%;' %><br>
+          <%= f.text_field :postal_code, placeholder: "Postal Code*" %><br>
+          <%= f.text_field :province, placeholder: "Province" %><br>
+          <%= f.text_field :email, placeholder: "Email*" %><br>
+          <%= f.text_field :phone, placeholder: "Phone*", style: 'width:65%;margin-right: 5%;' %><%= f.text_field :extension, placeholder: "Extension", style: 'width:30%;' %><br>
+          <%= f.text_field :fax, placeholder: "Fax" %><br>
+          <%= f.text_field :website, placeholder: "Website" %><br>
+          <%= f.select :media_outlet, nil, {prompt: 'Select Media Outlet*'} do %>
+            <% [['Trade'], ['Consumer']].each do |i| %>
+              <%= content_tag(:option, i.first) %>
+            <% end %>
+          <% end %><br>
+          <%= f.text_area :comments, placeholder: "Comments" %><br>
+          <p>* = Required</p><br>
+          <%= f.submit 'Submit', class: 'btn btn-member2' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// Media Registration Page
+$(document).ready(function () {
+  $("#new_media_registration").validate({
+    debug: true,
+    rules: {
+      "media_registration[first_name]": {required: true},
+      "media_registration[last_name]": {required: true},
+      "media_registration[title]": {required: true},
+      "media_registration[email]": {required: true, email: true},
+      "media_registration[phone]": {required: true, digits: true, minlength: 10},
+      "media_registration[publication]": {required: true},
+      "media_registration[type_of_media]": {required: true},
+      "media_registration[address1]": {required: true},
+      "media_registration[country]": {required: true},
+      "media_registration[city]": {required: true},
+      "media_registration[postal_code]": {required: true, digits: true, minlength: 5, maxlength: 5},
+      "media_registration[media_outlet]": {required: true},
+      "media_registration[fax]": {required: false, digits: true}
+    }
+  });
+});
+</script>
