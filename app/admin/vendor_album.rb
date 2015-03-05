@@ -4,7 +4,7 @@ ActiveAdmin.register VendorAlbum do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :name, :logo, pictures_attributes: [:id, :title]
+  permit_params :name, :logo, pictures_attributes: [:id, :title, :image]
   #
   # or
   #
@@ -21,8 +21,22 @@ ActiveAdmin.register VendorAlbum do
     column :logo do |va|
       image_tag va.logo.url(:admin)
     end
-    column :pictures
     actions
+  end
+
+  show do
+    h3 vendor_album.name
+    div do
+
+        ul do
+          vendor_album.pictures.each do |img|
+            li do
+              image_tag(img.image.url(:preview))
+            end
+          end
+        end
+
+    end
   end
 
 
@@ -33,6 +47,7 @@ ActiveAdmin.register VendorAlbum do
       f.input :logo
       f.has_many :pictures do |a|
         a.input :title
+        a.input :image
       end
     end
     f.actions

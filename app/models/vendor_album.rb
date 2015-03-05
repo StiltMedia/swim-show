@@ -13,7 +13,7 @@ class VendorAlbum < ActiveRecord::Base
 
   :styles => {
     :admin    => ['100x100#',  :jpg, :quality => 70],
-    :thumb    => ['250x250#',  :jpg, :quality => 70],
+    :thumb    => ['300x250#',  :jpg, :quality => 70],
     :preview  => ['500x500#',  :jpg, :quality => 70]
   },
 
