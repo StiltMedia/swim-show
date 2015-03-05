@@ -38,8 +38,9 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 
 # Upload Files
-gem 'carrierwave', '~> 0.10.0'
-gem 'mini_magick', '~> 4.0.4'
+gem 'paperclip', '~> 4.2.1'
+gem 'aws-sdk', '< 2.0'
+
 
 # Backend
 gem 'devise', '~> 3.4.1'
