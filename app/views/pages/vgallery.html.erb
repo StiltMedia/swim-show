@@ -19,21 +19,22 @@
 
 
 <script type="text/javascript">
+<% @vendor.each do |v| %>
 jQuery(document).ready(function($) {
-  $('<% @vendor.each do |v| %>#<%= v.id %><% end %>').bind('click', function(event) {
+  $('#<%= v.id %>').bind('click', function(event) {
     // stops default click behavior
     event.preventDefault();
 
     $.iLightBox(
       [
-        <% @vendor.each do |v| %>
+
         <% v.pictures.each do |img| %>
         {
           url: "<%= img.image.url(:retina) %>",
           type: 'image'
         },
         <% end %>
-        <% end %>
+
       ],
       {
         skin: 'metro-black',
@@ -45,4 +46,5 @@ jQuery(document).ready(function($) {
     );
   });
 });
+<% end %>
 </script>
