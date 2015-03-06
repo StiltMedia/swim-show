@@ -3,10 +3,41 @@
     <div class="row">
         <% @vendor.each do |v| %>
           <div class="col-sm-4">
-            <%= image_tag v.logo.url(:thumb), class: 'img-responsive' %>
+            <a href="#" id="open_in_modal" data-options=""><%= image_tag v.logo.url(:thumb) %></a>
           </div>
         <% end %>
       </div>
     </div>
   </div>
 </section>
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $('#open_in_modal').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+
+    $.iLightBox(
+      [
+        <% @vendor.each do |v| %>
+        <% v.pictures.each do |img| %>
+        {
+          url: "<%= img.image.url(:retina) %>",
+          type: 'image'
+        },
+        <% end %>
+        <% end %>
+      ],
+      {
+        skin: 'metro-black',
+        startFrom: 0,
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+</script>

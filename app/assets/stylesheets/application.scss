@@ -11,6 +11,8 @@ $playfair: 'Playfair Display', serif;
 @import "background";
 @import "ytplayer";
 @import "style";
+@import "ilightbox";
+@import "metro-black-skin";
 
 
 /************************************************************************************
@@ -690,4 +692,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .vgallery {
   padding: 150px 0;
+  .col-sm-4 {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }

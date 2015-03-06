@@ -32,6 +32,9 @@
 //= require map.js
 //= require function.js
 //= require validate.js
+//= require jquery.requestAnimationFrame
+//= require jquery.mousewheel
+//= require ilightbox.packed
 
 // Everything custom down here
 
