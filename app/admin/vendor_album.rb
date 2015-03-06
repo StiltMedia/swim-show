@@ -24,18 +24,17 @@ ActiveAdmin.register VendorAlbum do
     actions
   end
 
-  show do
-    h3 vendor_album.name
-    div do
 
-        ul do
-          vendor_album.pictures.each do |img|
-            li do
-              image_tag(img.image.url(:preview))
-            end
+  show do
+    div class: "vendor-view" do
+      h2 "Images"
+      ul class: "images-ul" do
+        vendor_album.pictures.each do |img|
+          li do
+            image_tag(img.image.url(:thumb))
           end
         end
-
+      end
     end
   end
 

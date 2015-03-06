@@ -54,6 +54,7 @@ gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'will_paginate', '~> 3.0.6'
 gem 'simple_form'
 gem 'carmen-rails'
+gem 'arbre', '~> 1.0.3'
 # My Stuff ends
 
 
