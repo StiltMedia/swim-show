@@ -191,6 +191,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .pagination {
   font-family: $playfair;
   font-size: 20px;
+  text-align: center;
+  display: block;
 
   .previous_page {
     display: none;
@@ -691,11 +693,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 
 .vgallery {
-  padding: 150px 0;
+  background: #f7f7f7;
+  padding: 100px 0 150px;
+  h1 {
+    font-family: $playfair;
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 100px;
+  }
   .col-sm-4 {
     img {
       display: block;
       margin: 0 auto;
+      padding-bottom: 80px;
     }
   }
 }

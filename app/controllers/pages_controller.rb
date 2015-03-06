@@ -22,7 +22,7 @@ class PagesController < ApplicationController
   end
 
   def vgallery
-    @vendor = VendorAlbum.all
+    @vendor = VendorAlbum.all.order(:name).paginate(:page => params[:page], :per_page => 12)
   end
 
   private
