@@ -32,7 +32,6 @@
 //= require map.js
 //= require function.js
 //= require validate.js
-//= require touchTouch.jquery
 
 // Everything custom down here
 
