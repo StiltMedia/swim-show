@@ -11,6 +11,7 @@ $playfair: 'Playfair Display', serif;
 @import "background";
 @import "ytplayer";
 @import "style";
+@import "touchTouch";
 
 
 /************************************************************************************
@@ -685,4 +686,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   p {
     text-align: center;
   }
+}
+
+
+.vgallery {
+  padding: 150px 0;
 }

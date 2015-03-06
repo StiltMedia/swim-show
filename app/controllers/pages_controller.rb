@@ -21,6 +21,10 @@ class PagesController < ApplicationController
     end
   end
 
+  def vgallery
+    @vendor = VendorAlbum.all
+  end
+
   private
 
   def media_params

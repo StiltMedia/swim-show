@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/restaurants' => 'pages#restaurant'
   get '/current-lines' => 'pages#currentlines'
   get '/media-registration' => 'pages#mediaregistration'
+  get '/gallery' => 'pages#vgallery'
   get '/thanks' => 'pages#thanks'
 
   post '/media-registration' => 'pages#create_media', as: :media_registrations
