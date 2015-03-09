@@ -38,7 +38,7 @@ ActiveAdmin.register Classified do
   end
 
 
-  show do
+  show title: :company do
   attributes_table do
     row :company
     row :position

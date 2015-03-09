@@ -8,25 +8,51 @@
   </div>	<!-- end container -->
 </section>
 
-<section>
-
-  <div class="morph-button morph-button-overlay morph-button-fixed">
-    <button type="button">More Info</button>
-    <div class="morph-content">
-      <div>
-        <div class="content-style-overlay">
-          <span class="icon icon-close">Close the overlay</span>
-          <h2>About Parsley</h2>
-          <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-          <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-          <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-          <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-          <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-          <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-        </div>
+<section class="classifieds-content">
+  <div class="container">
+    <div class="row">
+      <% @classified.each do |c| %>
+        <div class="col-sm-6">
+          <h1><%= c.company %></h1>
+          <h4><%= c.position %></h4>
+          <div class="col-sm-8 col-sm-offset-2">
+            <p><%= c.short_description %></p>
+          </div>
+          <div class="morph-button morph-button-overlay morph-button-fixed">
+            <button type="button" class="btn btn-member">More Info</button>
+            <div class="morph-content">
+                <div class="show-more">
+                  <div class="content-style-overlay">
+                    <span class="icon icon-close">Close the overlay</span>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h1><%= c.company %></h1>
+                          <h4><%= c.position %></h4>
+                        </div>
+                        <div class="delimiter100" style="margin-top:100px;"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <%= raw c.description %>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-1">
+                          <h5>Please contact us at:</h5>
+                          <p><%= c.phone %></p>
+                          <p><%= c.email %></p>
+                          <p><a href="<%= raw c.website %>" target="_blank"><%= c.website %></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- morph-button -->
+        <% end %>
       </div>
     </div>
-  </div><!-- morph-button -->
+  </div>
 </section>
 
 </div><!-- /container -->

@@ -25,6 +25,11 @@ class PagesController < ApplicationController
     @vendor = VendorAlbum.all.order(:name).paginate(:page => params[:page], :per_page => 12)
   end
 
+  def classifieds
+    @classified = Classified.all.order(:company).paginate(:page => params[:page], :per_page => 8)
+  end
+
+
   private
 
   def media_params
