@@ -14,6 +14,15 @@ ActiveAdmin.register Classified do
   #   permitted
   # end
 
+  index do
+    selectable_column
+    id_column
+    column :company
+    column :email
+    column :phone
+    column :website
+    actions
+  end
 
   form do |f|
     f.inputs do
@@ -27,5 +36,23 @@ ActiveAdmin.register Classified do
     end
     f.actions
   end
+
+
+  show do
+  attributes_table do
+    row :company
+    row :position
+    row :short_description
+    row :email
+    row :phone
+    row :website
+    row :description do
+      raw classified.description
+    end
+    row :created_at
+    row :updated_at
+  end
+  active_admin_comments
+end
 
 end
