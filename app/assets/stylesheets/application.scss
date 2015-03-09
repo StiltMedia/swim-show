@@ -32,8 +32,10 @@ Table of contents for my custom stuff:
 9. Travel Page
 10. Nightlife Page
 11. Restaurant Page
-12. Media Registrion Page
-13. Thanks Page
+12. Current Lines
+13. Media Registrion Page
+14. Thanks Page
+15. Classifieds
 
 ************************************************************************************/
 
@@ -635,6 +637,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
+
+// 13. Media Registrion Page
+
 .registraion-page {
   padding: 100px 0 175px;
   h1 {
@@ -677,7 +682,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
-// 13. Thanks Page
+// 14. Thanks Page
 
 .thanks {
   height: 88vh;
@@ -709,5 +714,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       margin: 0 auto;
       padding-bottom: 80px;
     }
+  }
+}
+
+
+// 15. Classifieds
+
+.classifieds-head {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/claasifieds.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 20%;
   }
 }
