@@ -35,6 +35,9 @@
 //= require jquery.requestAnimationFrame
 //= require jquery.mousewheel
 //= require ilightbox.packed
+//= require modernizr.custom
+//= require infobtn
+//= require uiMorphingButton_fixed
 
 // Everything custom down here
 

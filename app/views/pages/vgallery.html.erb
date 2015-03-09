@@ -17,24 +17,20 @@
 </section>
 
 
-
 <script type="text/javascript">
 <% @vendor.each do |v| %>
 jQuery(document).ready(function($) {
   $('#<%= v.id %>').bind('click', function(event) {
     // stops default click behavior
     event.preventDefault();
-
     $.iLightBox(
       [
-
         <% v.pictures.each do |img| %>
         {
           url: "<%= img.image.url(:retina) %>",
           type: 'image'
         },
         <% end %>
-
       ],
       {
         skin: 'metro-black',

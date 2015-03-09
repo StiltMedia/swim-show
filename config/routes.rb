@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/current-lines' => 'pages#currentlines'
   get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
+  get '/classifieds' => 'pages#classifieds'
   get '/thanks' => 'pages#thanks'
 
   post '/media-registration' => 'pages#create_media', as: :media_registrations
