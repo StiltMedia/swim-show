@@ -1,0 +1,48 @@
+<section class="contact">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-4">
+        <h1>Contact Us</h1>
+        <p>If you require additional information or personalized assistance,<br>please do not hesitate to contact us at:</p>
+      </div>
+    </div>
+    <div class="delimiter"></div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-4">
+        <h4>Mail</h4>
+        <p class="info">Swimwear Association of Florida<br>8900 SW 117th Ave. Suite C-205<br>Miami, FL 33186</p>
+        <h4>Phone / Fax</h4>
+        <p class="info">305.596.7889 / 305.596.7713</p>
+        <h4>Email</h4>
+        <p class="info">info@swimshow.com</p>
+      </div>
+      <div class="col-sm-6">
+        <%= form_for(@contact) do |f| %>
+          <%= f.text_field :first_name, placeholder: "First Name*", style: 'padding-top:0px;width:40%;margin-right: 5%;' %><%= f.text_field :last_name, placeholder: "Last Name*",style: 'padding-top:0px;width:40%;' %><br>
+          <%= f.text_field :email, placeholder: "Email*", style: 'width:40%;margin-right: 5%;' %><%= f.text_field :subject, placeholder: "Subject*",style: 'width:40%;' %><br>
+          <%= f.text_field :message, placeholder: "Message*", style: 'width:85%;' %><br>
+          <p class="info">* = Required</p>
+          <div class="delimiter25"></div>
+          <%= f.submit 'Send Message', class: 'btn btn-member' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// Media Registration Page
+$(document).ready(function () {
+  $("#new_contact").validate({
+    debug: true,
+    rules: {
+      "contact[first_name]": {required: true},
+      "contact[last_name]": {required: true},
+      "contact[email]": {required: true, email: true},
+      "contact[subject]": {required: true},
+      "contact[message]": {required: true}
+    }
+  });
+});
+</script>

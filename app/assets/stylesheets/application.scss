@@ -35,7 +35,8 @@ Table of contents for my custom stuff:
 12. Current Lines
 13. Media Registrion Page
 14. Thanks Page
-15. Classifieds
+15. Classifieds Page
+16. Contact Page
 
 ************************************************************************************/
 
@@ -144,7 +145,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   border-color: #303030;
   font-family: $lato;
   border-radius: 3px;
-  padding: 5px 25px;
+  padding: 5px 25px !important;
   font-weight: 300;
   transition: all .2s;
   &:hover, &:active, &:focus {
@@ -772,5 +773,49 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       font-weight: 300;
       font-family: $lato;
     }
+  }
+}
+
+
+// 16. Contact Page
+
+.contact {
+  .new_contact {
+    text-align: left;
+  }
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/contact.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100%;
+  padding: 135px 0;
+  .top {
+    padding-top: 20%;
+  }
+  h1 {
+    text-align: left;
+    font-size: 40px !important;
+  }
+  p {
+    text-align: left;
+  }
+  h4 {
+    text-align: left;
+  }
+  .info {
+    font-size: 13px !important;
+  }
+  input {
+    background: transparent;
+    border-bottom: #000000 solid 1px;
+    padding: 40px 0px 0 10px;
+  }
+  label {
+    color: red;
+    display:block;
+    margin-top: 0px;
   }
 }

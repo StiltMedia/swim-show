@@ -11,17 +11,19 @@
 <section class="classifieds-content">
   <div class="container">
     <div class="row">
-      <% @classified.each do |c| %>
-        <div class="col-sm-6">
-          <h1><%= c.company %></h1>
-          <h4><%= c.position %></h4>
-          <div class="col-sm-8 col-sm-offset-2">
-            <p><%= c.short_description %></p>
+      <div class="col-sm-12">
+        <% @classified.each do |c| %>
+          <div class="col-sm-6">
+            <h1><%= c.company %></h1>
+            <h4><%= c.position %></h4>
+            <div class="col-sm-8 col-sm-offset-2">
+              <p><%= c.short_description %></p>
+            </div>
           </div>
-        </div>
         <% end %>
-      </div><!-- end row -->
-      <%= will_paginate @classified %>
+      </div>
+    </div><!-- end row -->
+    <%= will_paginate @classified %>
   </div><!-- end container -->
 </section>
 

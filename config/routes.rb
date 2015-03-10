@@ -17,9 +17,11 @@ Rails.application.routes.draw do
   get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
+  get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
 
   post '/media-registration' => 'pages#create_media', as: :media_registrations
+  post '/contact' => 'pages#create_contact', as: :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

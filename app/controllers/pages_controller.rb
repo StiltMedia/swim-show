@@ -29,10 +29,26 @@ class PagesController < ApplicationController
     @classified = Classified.all.order(:company).paginate(:page => params[:page], :per_page => 8)
   end
 
+  def contact
+    @contact = Contact.new
+  end
+
+  def create_contact
+    @contact = Contact.create(contact_params)
+    if @contact.save
+      redirect_to thanks_path
+    end
+  end
+
 
   private
 
   def media_params
     params.require(:media_registration).permit(:first_name,:last_name,:title,:other,:publication,:type_of_media,:address1,:address2,:city,:state,:province,:postal_code,:country,:email,:phone,:extension,:fax,:website,:media_outlet,:comments)
   end
+
+  def contact_params
+    params.require(:contact).permit(:first_name,:last_name,:email,:subject,:message)
+  end
+  
 end
