@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
+  get '/west-coast-regional' => 'pages#westcoastregional'
   get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
 

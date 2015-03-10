@@ -819,3 +819,27 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 0px;
   }
 }
+
+
+// 17. West Coast Regional
+
+.west-coast {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/west-coast-regional.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100%;
+  padding: 140px 0;
+  .top {
+    padding-top: 20%;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  h4 {
+    font-family: $lato;
+  }
+}
