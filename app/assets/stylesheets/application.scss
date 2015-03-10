@@ -37,6 +37,8 @@ Table of contents for my custom stuff:
 14. Thanks Page
 15. Classifieds Page
 16. Contact Page
+17. West Coast Regional
+18. About Page
 
 ************************************************************************************/
 
@@ -790,10 +792,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100%;
-  padding: 135px 0;
+  height: 100vh;
   .top {
-    padding-top: 20%;
+    padding-top: 10%;
   }
   h1 {
     text-align: left;
@@ -831,15 +832,47 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100%;
-  padding: 140px 0;
+  height: 100vh;
+
   .top {
-    padding-top: 20%;
+    padding-top: 10%;
   }
   h1 {
     font-size: 40px !important;
   }
   h4 {
     font-family: $lato;
+  }
+}
+
+
+// 18. About Page
+
+.about {
+  @extend .showdates-head;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/about.jpg) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  h2 {
+    text-align: left;
+    font-family: $playfair;
+  }
+  p {
+    text-align: left;
+  }
+  .top {
+    padding-top: 10%;
+  }
+}
+
+.about-content {
+  padding: 150px 0 160px;
+
+  h2 {
+    font-family: $playfair;
   }
 }
