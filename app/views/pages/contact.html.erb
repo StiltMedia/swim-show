@@ -29,20 +29,3 @@
     </div>
   </div>
 </section>
-
-
-<script>
-// Media Registration Page
-$(document).ready(function () {
-  $("#new_contact").validate({
-    debug: true,
-    rules: {
-      "contact[first_name]": {required: true},
-      "contact[last_name]": {required: true},
-      "contact[email]": {required: true, email: true},
-      "contact[subject]": {required: true},
-      "contact[message]": {required: true}
-    }
-  });
-});
-</script>
