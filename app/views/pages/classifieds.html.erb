@@ -18,41 +18,11 @@
           <div class="col-sm-8 col-sm-offset-2">
             <p><%= c.short_description %></p>
           </div>
-            <div class="morph-button morph-button-overlay morph-button-fixed">
-              <button type="button" class="btn btn-member">More Info</button>
-              <div class="morph-content">
-                <div class="show-more">
-                  <div class="content-style-overlay">
-                    <span class="icon icon-close">Close the overlay</span>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h1><%= c.company %></h1>
-                          <h4><%= c.position %></h4>
-                        </div>
-                        <div class="delimiter100" style="margin-top:100px;"></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <%= raw c.description %>
-                        </div>
-                        <div class="col-sm-4 col-sm-offset-1">
-                          <h5>Please contact us at:</h5>
-                          <p><%= c.phone %></p>
-                          <p><%= c.email %></p>
-                          <p><a href="<%= raw c.website %>" target="_blank"><%= c.website %></a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- morph-button -->
+        </div>
         <% end %>
-      </div>
+      </div><!-- end row -->
       <%= will_paginate @classified %>
-    </div>
+  </div><!-- end container -->
 </section>
 
 <script>
@@ -94,7 +64,7 @@
 
   var el = document.querySelector( '.morph-button' );
 
-  new UIMorphingButton( el, {
+  new UIMorphingButton(el, {
     closeEl : '.icon-close',
     onBeforeOpen : function() {
       // don't allow to scroll

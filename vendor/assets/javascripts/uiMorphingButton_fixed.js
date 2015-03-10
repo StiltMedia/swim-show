@@ -8,7 +8,6 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
-
 ;( function( window ) {
 
 	'use strict';
@@ -49,9 +48,7 @@
 
 	UIMorphingButton.prototype._init = function() {
 		// the button
-
 		this.button = this.el.querySelector( 'button' );
-
 		// state
 		this.expanded = false;
 		// content el
@@ -59,6 +56,7 @@
 		// init events
 		this._initEvents();
 	}
+
 	UIMorphingButton.prototype._initEvents = function() {
 		var self = this;
 		// open
