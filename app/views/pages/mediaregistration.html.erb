@@ -44,24 +44,24 @@
 
 <script>
 // Media Registration Page
-// $(document).ready(function () {
-//   $("#new_media_registration").validate({
-//     debug: true,
-//     rules: {
-//       "media_registration[first_name]": {required: true},
-//       "media_registration[last_name]": {required: true},
-//       "media_registration[title]": {required: true},
-//       "media_registration[email]": {required: true, email: true},
-//       "media_registration[phone]": {required: true, digits: true, minlength: 10},
-//       "media_registration[publication]": {required: true},
-//       "media_registration[type_of_media]": {required: true},
-//       "media_registration[address1]": {required: true},
-//       "media_registration[country]": {required: true},
-//       "media_registration[city]": {required: true},
-//       "media_registration[postal_code]": {required: true, digits: true, minlength: 5, maxlength: 5},
-//       "media_registration[media_outlet]": {required: true},
-//       "media_registration[fax]": {required: false, digits: true}
-//     }
-//   });
-// });
+$(document).ready(function () {
+  $("#new_media_registration").validate({
+    // debug: true,
+    rules: {
+      "media_registration[first_name]": {required: true},
+      "media_registration[last_name]": {required: true},
+      "media_registration[title]": {required: true},
+      "media_registration[email]": {required: true, email: true},
+      "media_registration[phone]": {required: true, digits: true, minlength: 10},
+      "media_registration[publication]": {required: true},
+      "media_registration[type_of_media]": {required: true},
+      "media_registration[address1]": {required: true},
+      "media_registration[country]": {required: true},
+      "media_registration[city]": {required: true},
+      "media_registration[postal_code]": {required: true, digits: true, minlength: 5, maxlength: 5},
+      "media_registration[media_outlet]": {required: true},
+      "media_registration[fax]": {required: false, digits: true}
+    }
+  });
+});
 </script>
