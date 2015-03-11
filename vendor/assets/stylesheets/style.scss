@@ -1822,14 +1822,19 @@ img.mfp-img {
 // 15. Video Section
 *************************************************************************/
 .section-video {
-  background-color: #1f2941;
+  background-color: #ffffff;
   width: 100%;
-  height: 600px;
+  height: 700px;
   position: relative;
 }
-.section-video h3,
-.section-video p {
-  color: white;
+.section-video {
+  h1, h3, p {
+    font-family:$playfair;
+    color: #ffffff;
+  }
+  .play {
+    width: 300px;
+  }
 }
 .section-video .fa {
   font-size: 30px;
@@ -1848,15 +1853,15 @@ img.mfp-img {
 .section-video .video-text-wrap {
   position: absolute;
   text-align: center;
-  top: 10%;
+  top: 15%;
   z-index: 2;
 }
 .section-video .player-icon {
-  background-color: rgba(255, 255, 255, 0.2);
+  // background-color: rgba(255, 255, 255, 0.2);
   padding: 9px;
   display: inline-block;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  // border-radius: 50%;
+  // border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 25px;
   margin-bottom: 55px;
   -webkit-transition: border .2s;
