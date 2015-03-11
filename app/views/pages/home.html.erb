@@ -1,18 +1,26 @@
 <section class="front-header" role="banner">
-  <div class="container">
-    <div class="col-sm-12 col-md-12 clearfix">
-      <div class="top">
-        <h1 class="title">GET READY...</h1>
-        <h1 class="date">JULY 18-21</h1>
-        <div class="detail-button">
-          <a href="#pero-loco" class="btn scrolling-btn">Learn More</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 clearfix">
+        <div class="top">
+          <h1 class="title">GET READY...</h1>
+          <h1 class="date">JULY 18-21</h1>
+          <div class="detail-button">
+            <%= link_to 'Learn More', swimshow_path, class: 'btn scrolling-btn' %>
+          </div>
         </div>
       </div>
-    </div> <!-- end col-sm-10 -->
-  </div>	<!-- end container -->
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="#swim-show" class="scroll-anchor"><p class="scroll-down">scroll down</p>
+        <p class="font-a"><i class="fa fa-angle-down fa-2x"></i></p></a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section-video" id="pero-loco">
+<section class="section-video" id="swim-show">
   <div class="video-text-wrap col-sm-8 col-sm-offset-2">
     <h1 class="video-title">Days of Our SwimShow Lives</h1>
     <div class="player-icon">
@@ -20,7 +28,7 @@
     </div> <!-- end player-icon -->
     <p>Take a quick peek and reminisce on your event packed days<br>at SwimShow</p>
   </div>
-  <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=OkROKZ5N_HA',containment:'self',startAt:1,mute:false,autoPlay:false,loop:false,opacity:.5,showYTLogo:false, realfullscreen:true,optimizeDisplay:true,quality:'highres'}"></div>
+  <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=OkROKZ5N_HA',containment:'self',startAt:1,mute:false,autoPlay:false,loop:false,opacity:.8,showYTLogo:false, realfullscreen:true,optimizeDisplay:true,quality:'highres'}"></div>
 </section>
 
 <section class="home-member">

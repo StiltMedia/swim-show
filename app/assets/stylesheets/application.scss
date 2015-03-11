@@ -218,6 +218,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
+//Scroll Down
+
+.scroll-down {
+  text-align: center;
+  margin-top: 12%;
+  margin-bottom: 0px;
+}
+.font-a {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: -15px;
+}
+.scroll-anchor {
+  color: #000000;
+  &:hover {
+    color: #000000;
+  }
+}
+
 // Custom code for interior pages
 // Lets start with the home page
 // 2. El Home
@@ -229,7 +248,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   position: relative;
   overflow-y: hidden;
   .top {
-    padding-top: 25%;
+    padding-top: 20%;
   }
   .title{
     font-family: $playfair;
