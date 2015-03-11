@@ -29,40 +29,35 @@
   </div>	<!-- end container -->
 </section>
 
-<!-- COUNTER -->
 <section class="section-counter">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Get Ready for July 18 - 21</h2>
+  <div class="ce-countdown ce-countdown--theme-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Get Ready for July 18 - 21</h2>
+        </div>
+      </div>
+      <div class="delimiter100"></div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="col-sm-3"><span class="ce-days"></span><br><h6 class="ce-days-label sub-info"></h6></div>
+          <div class="col-sm-3"><span class="ce-hours"></span><br><h6 class="ce-hours-label sub-info"></h6></div>
+          <div class="col-sm-3"><span class="ce-minutes"></span><br><h6 class="ce-minutes-label sub-info"></h6></div>
+          <div class="col-sm-3"><span class="ce-seconds"></span><br><h6 class="ce-seconds-label sub-info"></h6></div>
+        </div>
+      </div>
+      <div class="delimiter100"></div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="top-headline">
+            <h3><em>...enjoy the <strong>SWIM!</strong></em></h3>
+          </div> <!-- end headline -->
+        </div> <!-- end col-sm-8 -->
       </div>
     </div>
-    <div class="counter-wrap col-sm-12">
-      <div class="col-sm-6 col-md-3">
-        <p class="counter-number">217</p>
-        <h6 class="sub-info">Months</h6>
-      </div> <!-- end col-sm-3 -->
-      <div class="col-sm-6 col-md-3">
-        <p class="counter-number">365</p>
-        <h6 class="sub-info">Days</h6>
-      </div> <!-- end col-sm-3 -->
-      <div class="col-sm-6 col-md-3">
-        <p class="counter-number">403</p>
-        <h6 class="sub-info">Hours</h6>
-      </div> <!-- end col-sm-3 -->
-      <div class="col-sm-6 col-md-3">
-        <p class="counter-number">189</p>
-        <h6 class="sub-info">Seconds</h6>
-      </div> <!-- end col-sm-3 -->
-    </div> <!-- end counter-wrap -->
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="top-headline">
-        <h3><em>...enjoy the <strong>SWIM!</strong></em></h3>
-      </div> <!-- end headline -->
-    </div> <!-- end col-sm-8 -->
-  </div> <!-- end container -->
+  </div>
 </section>
-<!-- END COUNTER -->
+
 <section class="swim-sect-3">
   <div class="container">
     <div class="row">
@@ -73,3 +68,16 @@
     </div>
   </div>
 </section>
+
+
+<script>
+  $(document).ready(function() {
+    $('.ce-countdown').countEverest({
+      //Set your target date here!
+      day: 18,
+                month: 7,
+      year: 2015,
+      pluralLabels: true
+    });
+  });
+</script>

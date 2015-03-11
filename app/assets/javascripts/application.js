@@ -38,6 +38,7 @@
 //= require modernizr.custom
 //= require infobtn
 //= require uiMorphingButton_fixed
+//= require jquery.counteverest.min
 
 // Everything custom down here
 

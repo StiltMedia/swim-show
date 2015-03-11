@@ -298,18 +298,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 40px !important;
     font-weight: 300;
   }
-  h6 {
-    margin-bottom: 50px;
-  }
 }
-
-#clock {
-  span {
-    font-family: $lato;
-    font-size: 60px;
-    font-weight: 400;
-    color: #ffffff;
-  }
+.ce-days-digit, .ce-hours-digit, .ce-minutes-digit, .ce-seconds-digit {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 90px;
 }
 // 3. Swimshow Page
 .swim-header {
