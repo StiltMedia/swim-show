@@ -50,5 +50,5 @@ class PagesController < ApplicationController
   def contact_params
     params.require(:contact).permit(:first_name,:last_name,:email,:subject,:message)
   end
-  
+
 end
