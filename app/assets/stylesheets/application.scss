@@ -167,6 +167,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .rightb {
   border-right: #e1e1e1 solid 1px;
+  @media (max-width: 767px) {
+    border: none;
+  }
 }
 
 .box {
@@ -221,9 +224,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 //Scroll Down
 
 .scroll-down {
+  position: absolute;
+  bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin-top: 12%;
-  margin-bottom: 0px;
+  p {
+    padding: 0 !important;
+  }
 }
 .font-a {
   text-align: center;
@@ -331,7 +341,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-swimshow.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
-  height: 100% !important;
+  height: 100vh;
   padding: 50px 0px;
   h1 {
     padding: 0 0 5%;
@@ -405,6 +415,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   h1 {font-family: $playfair;font-size: 70px !important;}
   p {font-size: 16px;font-weight: 300;}
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 40px !important;
+    }
+  }
 }
 
 .dates {
@@ -752,7 +767,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   text-align: center;
   height: 100vh;
   .top {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 }
 .classifieds-content {
