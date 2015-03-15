@@ -15,7 +15,7 @@ $playfair: 'Playfair Display', serif;
 @import "metro-black-skin";
 @import "infobtn-component";
 @import "infobtn-content";
-
+@import "push";
 
 /************************************************************************************
 
@@ -251,7 +251,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // Lets start with the home page
 // 2. El Home
 .front-header {
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-1.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/home.jpg) repeat-y center bottom;
   max-width: 100%;
   min-height: 570px;
   background-size: cover;
@@ -262,9 +262,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   .title{
     font-family: $playfair;
+    color: white;
   }
   .date {
     font-family: $lato;
+    color: white;
   }
   h1 {
     font-size: 70px !important;
@@ -338,7 +340,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 3. Swimshow Page
 .swim-header {
   @extend .front-header;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-swimshow.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-1.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -347,26 +349,26 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding: 0 0 5%;
     font-family: $playfair;
     font-size: 40px !important;
-    color: #4d4a4a;
+    color: white;
   }
   h2 {
     font-size: 20px !important;
     font-weight: 400;
     text-transform: uppercase;
-    color: #4d4a4a;
+    color: white;
   }
   h3 {
     font-size: 15px !important;
     font-weight: 300;
-    color: #4d4a4a;
+    color: white;
   }
   h4 {
     font-size: 15px !important;
     font-weight: 300;
-    color: #4d4a4a;
+    color: white;
   }
   p {
-    color: #4d4a4a;
+    color: white;
     font-weight: 300;
     padding: 1% 0;
   }
@@ -374,15 +376,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .swim-sect-2 {
   @extend .swim-header;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-swim2.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-2.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   padding: 100px 0px 120px;
   h1 {
     padding: 0;
+    color: #4d4a4a;
   }
   h3 {
     padding: 0 0 5%;
+    color: #4d4a4a;
+  }
+  p {
+    color: #4d4a4a;
   }
 }
 .swim-sect-3 {
@@ -784,7 +791,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin: 30px 0 10px;
     font-family: $lato;
     text-align: center;
-  }
+}
   .show-more {
     p {
       text-align: left;

@@ -39,6 +39,9 @@
 //= require infobtn
 //= require uiMorphingButton_fixed
 //= require jquery.counteverest.min
+//= require jquery.touchSwipe.min
+//= require jquery.peity.min
+//= require push
 
 // Everything custom down here
 
