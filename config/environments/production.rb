@@ -84,7 +84,7 @@ Rails.application.configure do
       :address =>        'smtp.mandrillapp.com',
       :user_name =>      ENV['MANDRILL_USERNAME'],
       :password =>       ENV['MANDRILL_APIKEY'],
-      :domain =>         'http://swimshow.heroku.com',
+      :domain =>         'https://swimshow.herokuapp.com/',
       :authentication => :plain
   }
   ActionMailer::Base.delivery_method = :smtp
