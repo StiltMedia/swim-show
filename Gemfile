@@ -57,7 +57,6 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'simple_form'
 gem 'carmen-rails'
 gem 'arbre', '~> 1.0.3'
-gem 'newrelic_rpm'
 # My Stuff ends
 
 
