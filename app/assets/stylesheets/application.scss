@@ -448,7 +448,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 // 4. Show Dates
 .showdates-head {
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/showdates.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/showdates.jpg) repeat-y center bottom;
   background-attachment: fixed;
   max-width: 100%;
   background-size: cover;
@@ -488,7 +488,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 5. Special Events
 .special-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/special-events.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/specialevent.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
