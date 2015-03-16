@@ -3,7 +3,7 @@ class Contact < ActiveRecord::Base
 
   def contact_mailer
     contact = self
-    Mailer.contact_form(contact).deliver
+    Mailer.contact_form(contact).deliver_now
   end
 
 end
