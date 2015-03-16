@@ -648,6 +648,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
+.restaurant-content2 {
+  @extend .restaurant-content;
+}
+
 // 12. Current Lines
 
 .lines-head {
