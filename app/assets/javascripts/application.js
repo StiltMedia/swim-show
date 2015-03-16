@@ -39,9 +39,8 @@
 //= require infobtn
 //= require uiMorphingButton_fixed
 //= require jquery.counteverest.min
-//= require jquery.touchSwipe.min
-//= require jquery.peity.min
-//= require push
+//= require ody-sidebar-menu
+//= require jquery.mCustomScrollbar.concat.min
 
 // Everything custom down here
 

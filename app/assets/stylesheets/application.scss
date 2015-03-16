@@ -15,7 +15,8 @@ $playfair: 'Playfair Display', serif;
 @import "metro-black-skin";
 @import "infobtn-component";
 @import "infobtn-content";
-@import "push";
+@import "ody-sidebar-menu";
+@import "jquery.mCustomScrollbar";
 
 /************************************************************************************
 
@@ -94,6 +95,16 @@ footer {
   .social-last {
     padding: 0px 0px 0px 10px;
   }
+  @media (min-width: 601px) {
+    .pull-left {
+      float: none !important;
+    }
+    .pull-right {
+      float: none !important;
+      padding: 0 0 20px;
+    }
+    text-align: center;
+  }
 }
 
 
@@ -122,6 +133,9 @@ footer {
     &:hover{
       border-bottom: #ec816f solid;
     }
+  }
+  @media (max-width: 1010px) {
+    display: none;
   }
 }
 
