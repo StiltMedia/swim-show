@@ -272,7 +272,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   position: relative;
   overflow-y: hidden;
   .top {
-    padding-top: 20%;
+    padding-top: 15%;
   }
   .title{
     font-family: $playfair;
@@ -281,14 +281,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .date {
     font-family: $lato;
     color: white;
+    font-size: 60px !important;
   }
   h1 {
     font-size: 70px !important;
+    text-align: center;
   }
   .scroll-down {
     p {
       color: white;
     }
+  }
+  .detail-button .btn {
+    margin: 0 auto;
+    display: block;
+    width: 160px;
   }
   @media (max-width: 736px) {
     .detail-button .btn {
@@ -700,7 +707,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .restaurant-content;
 }
 
-// 12. Current Lines
+// 12.  Lines
 
 .lines-head {
   @extend .showdates-head;
@@ -710,9 +717,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   .top {
-    padding-top: 70vh;
+    padding-top: 10%;
   }
 }
 
