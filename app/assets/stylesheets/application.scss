@@ -95,7 +95,7 @@ footer {
   .social-last {
     padding: 0px 0px 0px 10px;
   }
-  @media (min-width: 601px) {
+  @media (max-width: 601px) {
     .pull-left {
       float: none !important;
     }
