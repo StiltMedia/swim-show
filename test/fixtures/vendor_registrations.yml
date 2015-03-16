@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  company: MyString
+  title: MyString
+  address_1: MyString
+  address_2: MyString
+  city: MyString
+  state: MyString
+  province: MyString
+  postal_code: MyString
+  country: MyString
+  email: MyString
+  opt_out_email: MyString
+  website: MyString
+  phone: MyString
+  extension: MyString
+  phone_2: MyString
+  fax: MyString
+  opt_out_phone: MyString
+  type_of_store: MyString
+  status: MyString
+  number_of_stores: MyString
+  attended_swimshow: MyString
+  attended_other_tradeshows: MyString
+  any_other_tradeshow: MyString
+  mail_show_directory: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  company: MyString
+  title: MyString
+  address_1: MyString
+  address_2: MyString
+  city: MyString
+  state: MyString
+  province: MyString
+  postal_code: MyString
+  country: MyString
+  email: MyString
+  opt_out_email: MyString
+  website: MyString
+  phone: MyString
+  extension: MyString
+  phone_2: MyString
+  fax: MyString
+  opt_out_phone: MyString
+  type_of_store: MyString
+  status: MyString
+  number_of_stores: MyString
+  attended_swimshow: MyString
+  attended_other_tradeshows: MyString
+  any_other_tradeshow: MyString
+  mail_show_directory: MyString
