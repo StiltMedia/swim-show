@@ -86,7 +86,7 @@ footer {
   a {
     color: #ffffff;
     &:hover {
-      color: #9B9B9B;
+      color: #ec816f;
     }
   }
   .social {
@@ -461,6 +461,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   h1 {font-family: $playfair;font-size: 70px !important;}
   p {font-size: 16px;font-weight: 300;}
+  .como {font-size: 25px;font-weight: 400;}
   @media (max-width: 600px) {
     h1 {
       font-size: 40px !important;
@@ -752,7 +753,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background: white;
     color: #000000;
     height: 35px;
-    border-bottom: #000000 solid 2px;
+    border-bottom: #000000 solid 1px;
     border-radius: 0px;
     font-family: $lato;
     font-weight: 300;
