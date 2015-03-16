@@ -3,7 +3,7 @@ $(function(){
 	function rs() {
 		var NavUlHeight = $('.ody-menu').height() - $('.ody-user').height() - $('.ody-social').height();
 		$('ul.ody-main-menu').css({'height': NavUlHeight});
-	} setInterval(rs, 100);	
+	} setInterval(rs, 100);
 
 	/* ON TRIGGER BTN CLICK SHOW MENU */
 	var NavStart = 'false';
@@ -31,10 +31,10 @@ $(function(){
 
 	/* DETECT IF LI HAS CHILDREN */
 	$('.ody-main-menu li').has('ul').children('a').append('<i class="fa fa-plus dropdown-trigger">');
-	$('li').has('ul').children('a').addClass('dropdown');	
+	$('li').has('ul').children('a').addClass('dropdown');
 
 	/* ON LI WITH CHILDREN CLICK CHILDREN SHOW - HIDE */
-	$('.dropdown').click(function(dropdown) {
+	$('#dropdown').click(function(dropdown) {
 		dropdown.preventDefault();
 
 		$(this).next('ul').slideToggle(500);
