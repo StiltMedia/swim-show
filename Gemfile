@@ -43,6 +43,7 @@ gem 'aws-sdk', '< 2.0'
 
 
 # Backend
+gem 'sendgrid'
 gem 'devise', '~> 3.4.1'
 gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
