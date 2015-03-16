@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/restaurants' => 'pages#restaurant'
   get '/current-lines' => 'pages#currentlines'
   get '/media-registration' => 'pages#mediaregistration'
+  get '/vendor-registration' => 'pages#vendor_registration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
   get '/west-coast-regional' => 'pages#westcoastregional'
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
   get '/thanks' => 'pages#thanks'
 
   post '/media-registration' => 'pages#create_media', as: :media_registrations
+  post '/vendor-registration' => 'pages#create_vendor', as: :vendor_registrations
   post '/contact' => 'pages#create_contact', as: :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
