@@ -707,7 +707,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .restaurant-content;
 }
 
-// 12.  Lines
+// 12. Current Lines
 
 .lines-head {
   @extend .showdates-head;
@@ -720,6 +720,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 50vh;
   .top {
     padding-top: 10%;
+  }
+  h1 {
+    color: white;
+  }
+  @media (max-width: 736px) {
+    padding-top: 20%;
   }
 }
 
@@ -737,6 +743,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-top: 50px;
     font-family: $playfair;
     opacity: .4;
+  }
+  @media (max-width: 736px) {
+    .letter {
+      font-size: 220px;
+      padding-top: 0px;
+      opacity: .3;
+    }
   }
 }
 
