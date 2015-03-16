@@ -527,7 +527,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 6. Exhibitors
 .exhibitors-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/exhibitors.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/exhibitors.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -543,7 +543,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .retailers-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/retailers.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/showdates.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -566,7 +566,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .media-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/media-head.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/media.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -575,6 +575,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 100vh;
   .top {
     padding-top: 50%;
+  }
+  h1, p {
+    color: white;
   }
 }
 .media-content {
