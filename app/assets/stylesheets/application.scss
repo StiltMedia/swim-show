@@ -937,6 +937,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   h4 {
     font-family: $lato;
   }
+  @media (max-width: 1024px) {
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 736px) {
+    height: 100%;
+    padding-bottom: 100px;
+  }
 }
 
 
