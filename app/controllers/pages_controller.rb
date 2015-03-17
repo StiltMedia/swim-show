@@ -46,7 +46,7 @@ class PagesController < ApplicationController
 
   def create_vendor
     @vr = VendorRegistration.create(vendor_params)
-    # @product = Product.create
+    @product = Product.create(:vendor_id,:category,:price_point)
     if @vr.save
       redirect_to thanks_path
     end
