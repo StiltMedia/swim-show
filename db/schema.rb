@@ -127,7 +127,7 @@ ActiveRecord::Schema.define(version: 20150317154959) do
   end
 
   create_table "price_points", force: :cascade do |t|
-    t.string   "range"
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
