@@ -3,34 +3,38 @@
       <div class="row">
         <br>
         <br>
-        <%= form_for(@vr) do |f| %>
-          <%= f.text_field :first_name %>
-          <%= f.text_field :last_name %>
-          <%= f.text_field :company %>
-          <%= f.text_field :title %>
-          <%= f.text_field :address_1 %>
-          <%= f.text_field :address_2 %>
-          <%= f.text_field :city %>
-          <%= f.text_field :state %>
-          <%= f.text_field :province %>
-          <%= f.text_field :postal_code %>
-          <%= f.text_field :country %>
-          <%= f.text_field :email %>
-          <%= f.text_field :opt_out_email %>
-          <%= f.text_field :website %>
-          <%= f.text_field :phone %>
-          <%= f.text_field :extension %>
-          <%= f.text_field :phone_2 %>
-          <%= f.text_field :fax %>
-          <%= f.text_field :opt_out_phone %>
-          <%= f.text_field :type_of_store %>
-          <%= f.text_field :status %>
-          <%= f.text_field :number_of_stores %>
-          <%= f.text_field :attended_swimshow %>
-          <%= f.text_field :attended_other_tradeshows %>
-          <%= f.text_field :any_other_tradeshow %>
-          <%= f.text_field :mail_show_directory %>
-          <%= f.text_field :product_id %>
+        <%= form_for @vr do |f| %>
+          <%= f.text_field :first_name, placeholder: "First Name" %><br>
+          <%= f.text_field :last_name, placeholder: "Last Name" %><br>
+          <%= f.text_field :company, placeholder: "Company"%><br>
+          <%= f.text_field :title, placeholder: "Title" %><br>
+          <%= f.text_field :address_1, placeholder: "Address"%><br>
+          <%= f.text_field :address_2, placeholder: "Address 2" %><br>
+          <%= f.text_field :city, placeholder: "City" %><br>
+          <%= f.text_field :state, placeholder: "State" %><br>
+          <%= f.text_field :province, placeholder: "Province" %><br>
+          <%= f.text_field :postal_code, placeholder: "Postal Code" %><br>
+          <%= f.country_select :country, priority: %w(US CA), prompt: 'Please select a country*' %><br>
+          <%= f.text_field :email, placeholder: "Email" %><br>
+          <%= f.text_field :opt_out_email, placeholder: "Opt out of Email" %><br>
+          <%= f.text_field :website, placeholder: "Website" %><br>
+          <%= f.text_field :phone, placeholder: "Phone" %><br>
+          <%= f.text_field :extension, placeholder: "Extension" %><br>
+          <%= f.text_field :phone_2, placeholder: "Secondary Phone" %><br>
+          <%= f.text_field :fax, placeholder: "Fax" %><br>
+          <%= f.text_field :opt_out_phone, placeholder: "Opt out of Phone" %><br>
+          <%= f.text_field :type_of_store, placeholder: "Type of Store" %><br>
+          <%= f.text_field :status, placeholder: "Status" %><br>
+          <%= f.text_field :number_of_stores, placeholder: "Number of Stores" %><br>
+          <%= f.text_field :attended_swimshow, placeholder: "Attended Swimshow?" %><br>
+          <%= f.text_field :attended_other_tradeshows, placeholder: "Attended other Tradeshows" %><br>
+          <%= f.text_field :any_other_tradeshow, placeholder: "Any other Tradeshows" %><br>
+          <%= f.text_field :mail_show_directory, placeholder: "Mail Show Directory?" %><br>
+          <%= f.fields_for :product do |product| %>
+            <%= product.text_field :category, placeholder: "Category" %><br>
+            <%= product.text_field :price_point, placeholder: "Price Point" %><br>
+          <% end %>
+          <%= f.submit 'Submit', class: 'btn btn-member' %>
         <% end %>
       </div>
     </div>
