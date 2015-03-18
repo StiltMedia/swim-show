@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/nightlife' => 'pages#nightlife'
   get '/restaurants' => 'pages#restaurant'
   get '/current-lines' => 'pages#currentlines'
+  get '/vendor-registration' => 'pages#vregistration'
   get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
@@ -22,6 +23,7 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
 
+  post '/vendor-registration' => 'pages#create_vendor', as: :vendor_registrations
   post '/media-registration' => 'pages#create_media', as: :media_registrations
   post '/contact' => 'pages#create_contact', as: :contacts
   # The priority is based upon order of creation: first created -> highest priority.

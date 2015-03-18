@@ -21,6 +21,18 @@ class PagesController < ApplicationController
     end
   end
 
+  def vregistration
+    @vr = VendorRegistration.new
+  end
+
+  def create_vendor
+    @vr = VendorRegistration.create(vendor_params)
+    if @vr.save
+      redirect_to thanks_path
+    end
+  end
+
+
   def vgallery
     @vendor = VendorAlbum.all.order(:name).paginate(:page => params[:page], :per_page => 12)
   end
