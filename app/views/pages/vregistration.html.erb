@@ -1,0 +1,42 @@
+<div class="paraeltop"></div>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= simple_form_for @vr do |f| %>
+          <%= f.input :first_name %>
+          <%= f.input :last_name %>
+          <%= f.input :company %>
+          <%= f.input :title %>
+          <%= f.input :address_1 %>
+          <%= f.input :address_2 %>
+          <%= f.input :city %>
+          <%= f.input :state %>
+          <%= f.input :province %>
+          <%= f.input :postal_code %>
+          <%= f.input :country, as: :country, include_blank: 'Choose your Country', priority: ['US', 'CA', 'MX', 'GB', 'FR'] %>
+          <%= f.input :email %>
+          <%= f.input :opt_out_email, as: :radio_buttons %>
+          <%= f.input :website %>
+          <%= f.input :phone %>
+          <%= f.input :extension %>
+          <%= f.input :phone_2 %>
+          <%= f.input :fax %>
+          <%= f.input :opt_out_phone, as: :radio_buttons %>
+          <%= f.input :type_of_store %>
+          <%= f.input :status %>
+          <%= f.input :number_of_stores %>
+          <%= f.input :attended_swimshow %>
+          <%= f.input :attended_other_tradeshows %>
+          <%= f.input :mail_show_directory %>
+          <%= f.association :products, collection: Category.all %>
+          <%= f.button :submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- products_attributes: [:price_point_id,:category_id]) -->
