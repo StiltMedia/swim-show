@@ -5,37 +5,79 @@
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <h1>Vendor Registration</h1>
         <%= simple_form_for @vr do |f| %>
-
-        <%= f.input :first_name, placeholder: "First Name*", label: false %>
-        <%= f.input :last_name, placeholder: "Last Name*", label: false %>
+        <div class="row">
+          <div class="col-sm-6">
+            <%= f.input :first_name, placeholder: "First Name*", label: false, required: true %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.input :last_name, placeholder: "Last Name*", label: false %>
+          </div>
+        </div>
         <%= f.input :company, placeholder: "Company*", label: false %>
-        <%= f.input :title, placeholder: "Title*", label: false %>
+        <%= f.input :title, placeholder: "Title*", label: false, collection: ['Owner/Partner','President','Vice President','GMM','DMM','Buyer','Assistant Buyer','Store Manager','Merchandise Manager','Department Manager','Sales Staff'], prompt: "Select Title*", required: true %>
         <%= f.input :address_1, placeholder: "Address Line 1*", label: false %>
         <%= f.input :address_2, placeholder: "Address Line 2", label: false %>
-        <%= f.input :city, placeholder: "City*", label: false %>
-        <%= f.input :state, placeholder: "State", label: false %>
-        <%= f.input :province, placeholder: "Province", label: false %>
-        <%= f.input :postal_code, placeholder: "Postal Code*", label: false %>
+        <div class="container-fluid inner">
+          <div class="row">
+            <div class="col-xs-6">
+              <%= f.input :city, placeholder: "City*", label: false %>
+            </div>
+            <div class="col-xs-6">
+              <%= f.input :state, placeholder: "State", label: false %>
+            </div>
+            <div class="col-xs-6">
+              <%= f.input :postal_code, placeholder: "Postal Code*", label: false %>
+            </div>
+            <div class="col-xs-6">
+              <%= f.input :province, placeholder: "Province", label: false %>
+            </div>
+          </div>
+        </div>
         <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
-        <p>In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
+        <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <br>
-        <p><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
-        <%= f.input :opt_out_email, as: :radio_buttons, label: false %>
+        <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
+        <%= f.input :opt_out_email, as: :radio_buttons, label: false, required: true %>
         <%= f.input :website, placeholder: "Website", label: false %>
-        <%= f.input :phone, placeholder: "Phone*", label: false %>
-        <%= f.input :extension, placeholder: "Extension", label: false %>
+        <div class="container-fluid inner">
+          <div class="row">
+            <div class="col-xs-8">
+              <%= f.input :phone, placeholder: "Phone*", label: false %>
+            </div>
+            <div class="col-xs-4">
+              <%= f.input :extension, placeholder: "Extension", label: false %>
+            </div>
+          </div>
+        </div>
+
         <%= f.input :phone_2, placeholder: "Phone 2", label: false %>
         <%= f.input :fax, placeholder: "Fax", label: false %>
-        <p><strong>Do you wish to opt-out your phone number from vendors/exhibitors?</strong></p>
-        <%= f.input :opt_out_phone, as: :radio_buttons, label: false %>
+        <p class="check2"><strong>Do you wish to opt-out your phone number from vendors/exhibitors?</strong></p>
+        <%= f.input :opt_out_phone, as: :radio_buttons, label: false, required: true %>
         <br>
-        <div >
+        <div class="container-fluid">
+          <div class="row">
+            <p class="check2"><strong>Insert your product categories and price points</strong></p>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <h6>Select Category</h6>
+            </div>
+            <div class="col-xs-6">
+              <h6>Wholesale Price Point</h6>
+            </div>
+          </div>
+        </div>
+        <div>
           <%= f.fields_for :products do |builder| %>
             <%= render 'product_fields', f: builder %>
           <% end %>
           <%= link_to_add_association 'Add Product', f, :products %>
         </div>
+
+
+
 
         <%= f.select :type_of_store, nil, {prompt: 'Type of Store*'} do %>
           <% [["Department Store"],["Boutique"],["Specialty Store"],["Specialty Chain Store"],["Sporting Goods Store"],["Mass Merchant"],["Catalog"],["Buying Office"],["Online Retailer"],["Outlet Store"],["Other"]].each do |i| %>
@@ -56,10 +98,15 @@
             <%= content_tag(:option, i.first) %>
           <% end %>
         <% end %>
-        <p><strong>Have you Attended our SwimShow in the Past?</strong></p>
-        <%= f.input :attended_swimshow, as: :radio_buttons, label: false %>
-        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: [["Magic/ISAM"],["Surf Expo"],["CurvExpo"],["Mode City Paris"],["Salon Int’l. de la Lingerie Paris"],["Lingerie Collective"],["ENK Shows"],["Coast"],["Swim Collective"],["Other"]] %>
-        <%= f.input :mail_show_directory %>
+        <p class="check2"><strong>Have you Attended our SwimShow in the Past?</strong></p>
+        <%= f.input :attended_swimshow, as: :radio_buttons, label: false, required: true %>
+
+        <p class="check"><strong>Other Tradeshows Attended</strong></p>
+        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: ["Magic/ISAM","Surf Expo","CurvExpo","Mode City Paris","Salon Int’l. de la Lingerie Paris","Lingerie Collective","ENK Shows","Coast","Swim Collective","Other"], label: false %>
+        <%= f.input :other_tradeshow_name, placeholder: 'If other, let us know', label: false %>
+        <p class="check2"><strong>Do you wish to have a show directory mailed to you prior to tradeshow?</strong></p>
+        <%= f.input :mail_show_directory, as: :radio_buttons, label: false, required: true %>
+
         <%= f.button :submit %>
 
 
@@ -71,3 +118,31 @@
     </div>
   </div>
 </section>
+
+
+<script>
+// Vendor Registration Page
+$(document).ready(function () {
+  $("#new_vendor_registration").validate({
+    // debug: true,
+    rules: {
+      "vendor_registration[first_name]": {required: true},
+      "vendor_registration[last_name]": {required: true},
+      "vendor_registration[company]": {required: true},
+      "vendor_registration[title]": {required: true},
+      "vendor_registration[address_1]": {required: true},
+      "vendor_registration[city]": {required: true},
+      "vendor_registration[postal_code]": {required: true, digits: true, minlength: 5},
+      "vendor_registration[country]": {required: true},
+      "vendor_registration[email]": {required: true, email: true},
+      "vendor_registration[phone]": {required: true, digits: true, minlength: 10},
+      "vendor_registration[extension]": {required: false, digits: true},
+      "vendor_registration[phone_2]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[type_of_store]": {required: true},
+      "vendor_registration[status]": {required: true},
+      "vendor_registration[number_of_stores]": {required: true}
+    }
+  });
+});
+</script>

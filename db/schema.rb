@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150319022711) do
+ActiveRecord::Schema.define(version: 20150319115625) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -176,6 +176,7 @@ ActiveRecord::Schema.define(version: 20150319022711) do
     t.string   "mail_show_directory"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.string   "other_tradeshow_name"
   end
 
 end

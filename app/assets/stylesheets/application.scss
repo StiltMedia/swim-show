@@ -771,7 +771,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
     margin: 0 auto;
   }
-  select, textarea, input[type='text'] {
+  select, textarea, input[type='text'], input[type='email'], input.string {
     font-style: italic;
     width: 100%;
     border: none;
@@ -1030,9 +1030,45 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .radio label, .checkbox label {
     line-height: 23px;
   }
-  .radio, .checkbox {
+  .radio {
     display: inline-block;
     padding: 0 10px;
   }
+  .checkbox {
+    display: block;
+    padding: 10px 10px;
+  }
+  .check {
+    padding-bottom: 20px;
+    color: black;
+  }
+  .check2 {
+    padding-bottom: 0px;
+    color: black;
+  }
+  label {
+    color: black;
+  }
+  .info {
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+  }
+  .inner {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .center {
+    padding: 38px 0px;
+  }
+  h6 {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .products {
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
 
 }
