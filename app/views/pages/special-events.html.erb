@@ -25,14 +25,16 @@
               <h1>Breakfast Bar</h1>
               <p>Saturday - Tuesday<br>9:00 - 10:30am Daily</p>
               <br>
-              <a href="#" class="btn btn-member">View 2013 Images</a>
+              <a href="#" id="breakfast" class="btn btn-member">View 2014 Images</a>
               <br>
           </div>
           <div class="col-xs-12 col-sm-6">
-              <h1>Trend Seminars</h1>
-              <p>Saturday, 12:30 - 1:30pm Daily<br>Monday, 11:00 - Noon</p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+              <h1>Trend Seminar</h1>
+              <p>Saturday 12:30pm - 1:30pm</p>
               <br>
-              <a href="#" class="btn btn-member">View 2013 Images</a>
+              <a href="#" id="trend"class="btn btn-member">View 2014 Images</a>
               <br>
           </div>
         </div>
@@ -41,37 +43,184 @@
               <h1>Swim Lounge</h1>
               <p>Saturday & Monday Evenings<br>6:00 - 7:30pm</p>
               <br>
-              <a href="#" class="btn btn-member">View 2013 Images</a>
+              <a href="#" id ="lounge" class="btn btn-member">View 2014 Images</a>
               <br>
           </div>
           <div class="col-xs-12 col-sm-6">
               <h1>Fashion Show & After Party</h1>
-              <p>Sunday 6:00pm</p>
+              <p>Location TBA add “New & Improved”</p>
               <br>
-              <a href="#" class="btn btn-member top-link">View 2013 Images</a>
-              <a href="#" class="btn btn-member">View 2013 Video</a>
+              <a href="#" id="swimimg" class="btn btn-member top-link">View 2014 Images</a>
+              <a href="#" id="swimvid" class="btn btn-member">View 2014 Video</a>
               <br>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
-              <h1>Informal Modeling</h1>
-              <p>Saturday & Monday<br>1:30 - 2:00pm</p>
-              <br>
-          </div>
           <div class="col-xs-12 col-sm-6">
               <h1>Tech Lounge</h1>
               <p>Coming Soon</p>
-              <br>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+              <h1>Art Entertainment</h1>
+              <p>Coming Soon</p>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-              <h1>Art Entertainment</h1>
-              <p>Coming Soon</p>
+            <h1>High Tea</h1>
+            <p>Saturday thru Tuesday 3:30pm - 4:30pm</p>
+            <br>
+            <a href="#" id="high-tea" class="btn btn-member">View 2014 Images</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<script charset="utf-8">
+jQuery(document).ready(function($) {
+  $('#swimvid').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+
+        {
+          url: "http://player.vimeo.com/video/108812823",
+          type: 'iframe',
+        },
+
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+jQuery(document).ready(function($) {
+  $('#swimimg').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/Bleu-Rod-Beattie-Jets-by-Jessika-Allen.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/Grain-de-Sable-Salinas.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0261.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0264.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0278.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0334.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0337.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0345.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0460.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0716.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_0732.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1206.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1221.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1532.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1651.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1809.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/IMG_1935.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/Luli-Fama-Luli-Fama.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/Pigeon-Poulhalec-Hassen6.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/Vitamin-A-florabella.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/fashion-show/leMar-L-Space.jpg'}
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+jQuery(document).ready(function($) {
+  $('#lounge').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1251.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1259.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1267.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1279.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1287.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1305.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/swim-lounge/WRE_1308.jpg'}
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+jQuery(document).ready(function($) {
+  $('#trend').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/trend-seminars/DSC_5068.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/trend-seminars/DSC_5069.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/trend-seminars/DSC_5071.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/trend-seminars/DSC_5072.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/trend-seminars/DSC_5079.jpg'}
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+jQuery(document).ready(function($) {
+  $('#breakfast').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4612.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4617.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4647.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4650.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4659.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4664.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_4722.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_6896.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/breakfast-bar/DSC_6928.jpg'}
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+jQuery(document).ready(function($) {
+  $('#high-tea').bind('click', function(event) {
+    // stops default click behavior
+    event.preventDefault();
+    $.iLightBox(
+      [
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/high-tea/WRE_2160.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/high-tea/WRE_2175.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/high-tea/WRE_2195.jpg'},
+        {url: 'https://s3.amazonaws.com/swim-show/special-events/high-tea/WRE_922.jpg'}
+      ],
+      {skin: 'metro-black',
+        overlay: {
+          opacity: 0.7
+        }
+      }
+    );
+  });
+});
+
+</script>

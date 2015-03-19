@@ -471,9 +471,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .top {
     padding-top: 45%;
   }
-  h1 {font-family: $playfair;font-size: 70px !important;}
-  p {font-size: 16px;font-weight: 300;}
-  .como {font-size: 25px;font-weight: 400;}
+  h1 {font-family: $playfair;font-size: 70px !important;color: white;}
+  p {font-size: 16px;font-weight: 300;color: white;}
+  .como {font-size: 25px;font-weight: 400;color: white;}
   @media (max-width: 600px) {
     h1 {
       font-size: 40px !important;
@@ -508,6 +508,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  h1, p {
+    color:#303030;
+  }
   .top {
     padding-top: 15%;
   }
@@ -692,6 +695,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .top {
     padding-top: 60%;
   }
+  h1, p {color:#303030;}
 }
 .restaurant-content {
   @extend .swim-sect-3;
@@ -844,7 +848,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   .top {
     padding-top: 10%;
   }
@@ -863,7 +867,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin: 30px 0 10px;
     font-family: $lato;
     text-align: center;
-}
+  }
   .show-more {
     p {
       text-align: left;
@@ -887,6 +891,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       font-weight: 300;
       font-family: $lato;
     }
+  }
+  .classifieds {
+    min-height: 400px;
   }
 }
 

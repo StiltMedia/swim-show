@@ -5,12 +5,6 @@
         <h1>Classifieds</h1>
       </div>
     </div>
-    <div class="row scroll-down">
-      <div class="col-xs-12">
-        <a href="#swim-show" class="scroll-anchor"><p>scroll down</p>
-        <p class="font-a"><i class="fa fa-angle-down fa-2x"></i></p></a>
-      </div>
-    </div>
   </div>	<!-- end container -->
 </section>
 
@@ -19,7 +13,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <% @classified.each do |c| %>
-          <div class="col-xs-12 col-sm-6" style="margin-bottom:30px;">
+          <div class="col-xs-12 col-sm-6 classifieds">
             <h1><%= c.company %></h1>
             <h4><%= c.position %></h4>
             <p><%= c.short_description %></p>
