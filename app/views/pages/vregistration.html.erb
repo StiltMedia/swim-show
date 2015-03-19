@@ -15,7 +15,7 @@
         <%= f.input :state %>
         <%= f.input :province %>
         <%= f.input :postal_code %>
-        <%= f.input :country %>
+        <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"] %>
         <%= f.input :email %>
         <%= f.input :opt_out_email %>
         <%= f.input :website %>
@@ -23,18 +23,13 @@
         <%= f.input :extension %>
         <%= f.input :phone_2 %>
         <%= f.input :fax %>
-        <%= f.fields_for :products do |p| %>
-          <%= p.select :category, nil, {prompt: 'Select Category'} do %>
-            <% [["Missy"],["Contemporary Missy"],["Contemporary"],["Designer"],["Lifestyle/Activewear"],["Junior"],["Contemporary Junior"],["Performance"],["Plus Sizes"],["Cover-Ups"],["Resortwear"],["Mastectomy"],["Separates"],["Bra Sized"],["Bra Sized Separates"],["Figure Control"],["Private Label"],["Children’s/Pre-Teens"],["Maternity"],["Accessories/Sandals"],["Men’s"],["Boy’s"],["Lingerie"]].each do |i| %>
-              <%= content_tag(:option, i.first) %>
-            <% end %>
-          <% end %>
-          <%= p.select :price_point, nil, {prompt: 'Wholesale Price Point'} do %>
-            <% [["$30 & Below"],["$31-$60"],["$61-$100"],["$101-$150"],["$151 & Over"]].each do |i| %>
-              <%= content_tag(:option, i.first) %>
-            <% end %>
-          <% end %>
+
+        <%= f.fields_for :products do |builder| %>
+          <%= render 'product_fields', f: builder %>
         <% end %>
+
+
+        <%= link_to_add_fields "Add Product", f, :products %>
         <%= f.input :opt_out_phone %>
         <%= f.input :type_of_store %>
         <%= f.input :status %>
@@ -52,3 +47,18 @@
     </div>
   </div>
 </section>
+
+
+<script>
+  jQuery ->
+  $('form').on 'click', '.remove_fields', (event) ->
+    $(this).prev('input[type=hidden]').val('1')
+    $(this).closest('fieldset').hide()
+    event.preventDefault()
+
+  $('form').on 'click', '.add_fields', (event) ->
+    time = new Date().getTime()
+    regexp = new RegExp($(this).data('id'), 'g')
+    $(this).before($(this).data('fields').replace(regexp, time))
+    event.preventDefault()
+</script>

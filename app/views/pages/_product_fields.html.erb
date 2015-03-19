@@ -1,0 +1,14 @@
+<%= f.fields_for :products do |p| %>
+  <%= p.select :category, nil, {prompt: 'Select Category'} do %>
+    <% [["Missy"],["Contemporary Missy"],["Contemporary"],["Designer"],["Lifestyle/Activewear"],["Junior"],["Contemporary Junior"],["Performance"],["Plus Sizes"],["Cover-Ups"],["Resortwear"],["Mastectomy"],["Separates"],["Bra Sized"],["Bra Sized Separates"],["Figure Control"],["Private Label"],["Children’s/Pre-Teens"],["Maternity"],["Accessories/Sandals"],["Men’s"],["Boy’s"],["Lingerie"]].each do |i| %>
+      <%= content_tag(:option, i.first) %>
+    <% end %>
+  <% end %>
+  <%= p.select :price_point, nil, {prompt: 'Wholesale Price Point'} do %>
+    <% [["$30 & Below"],["$31-$60"],["$61-$100"],["$101-$150"],["$151 & Over"]].each do |i| %>
+      <%= content_tag(:option, i.first) %>
+    <% end %>
+  <% end %>
+<% end %>
+<%= f.hidden_field :_destroy %>
+<%= link_to "remove", '#', class: "remove_fields" %>
