@@ -58,6 +58,7 @@ gem 'simple_form'
 # gem 'carmen-rails'
 gem 'country_select', github: 'stefanpenner/country_select'
 gem 'arbre', '~> 1.0.3'
+gem "cocoon"
 # My Stuff ends
 
 

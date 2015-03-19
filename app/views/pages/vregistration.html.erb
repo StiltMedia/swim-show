@@ -23,13 +23,13 @@
         <%= f.input :extension %>
         <%= f.input :phone_2 %>
         <%= f.input :fax %>
+        <div >
+          <%= f.fields_for :products do |builder| %>
+            <%= render 'product_fields', f: builder %>
+          <% end %><br>
+          <%= link_to_add_association 'Add Product', f, :products %>
+        </div>
 
-        <%= f.fields_for :products do |builder| %>
-          <%= render 'product_fields', f: builder %>
-        <% end %>
-
-
-        <%= link_to_add_fields "Add Product", f, :products %>
         <%= f.input :opt_out_phone %>
         <%= f.input :type_of_store %>
         <%= f.input :status %>
@@ -50,15 +50,15 @@
 
 
 <script>
-  jQuery ->
-  $('form').on 'click', '.remove_fields', (event) ->
-    $(this).prev('input[type=hidden]').val('1')
-    $(this).closest('fieldset').hide()
-    event.preventDefault()
-
-  $('form').on 'click', '.add_fields', (event) ->
-    time = new Date().getTime()
-    regexp = new RegExp($(this).data('id'), 'g')
-    $(this).before($(this).data('fields').replace(regexp, time))
-    event.preventDefault()
+  // jQuery ->
+  // $('form').on 'click', '.remove_fields', (event) ->
+  //   $(this).prev('input[type=hidden]').val('1')
+  //   $(this).closest('fieldset').hide()
+  //   event.preventDefault()
+  //
+  // $('form').on 'click', '.add_fields', (event) ->
+  //   time = new Date().getTime()
+  //   regexp = new RegExp($(this).data('id'), 'g')
+  //   $(this).before($(this).data('fields').replace(regexp, time))
+  //   event.preventDefault()
 </script>

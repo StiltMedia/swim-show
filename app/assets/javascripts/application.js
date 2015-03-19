@@ -41,6 +41,7 @@
 //= require jquery.counteverest.min
 //= require ody-sidebar-menu
 //= require jquery.mCustomScrollbar.concat.min
+//= require cocoon
 
 // Everything custom down here
 

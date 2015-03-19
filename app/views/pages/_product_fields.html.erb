@@ -1,3 +1,4 @@
+<div class='nested-fields'>
 <%= f.fields_for :products do |p| %>
   <%= p.select :category, nil, {prompt: 'Select Category'} do %>
     <% [["Missy"],["Contemporary Missy"],["Contemporary"],["Designer"],["Lifestyle/Activewear"],["Junior"],["Contemporary Junior"],["Performance"],["Plus Sizes"],["Cover-Ups"],["Resortwear"],["Mastectomy"],["Separates"],["Bra Sized"],["Bra Sized Separates"],["Figure Control"],["Private Label"],["Children’s/Pre-Teens"],["Maternity"],["Accessories/Sandals"],["Men’s"],["Boy’s"],["Lingerie"]].each do |i| %>
@@ -9,6 +10,6 @@
       <%= content_tag(:option, i.first) %>
     <% end %>
   <% end %>
+  <%= link_to_remove_association "remove product", f %>
 <% end %>
-<%= f.hidden_field :_destroy %>
-<%= link_to "remove", '#', class: "remove_fields" %>
+</div>
