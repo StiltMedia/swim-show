@@ -23,6 +23,7 @@ class PagesController < ApplicationController
 
   def vregistration
     @vr = VendorRegistration.new
+    @vr.products.build
   end
 
   def create_vendor

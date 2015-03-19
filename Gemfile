@@ -55,7 +55,8 @@ gem "figaro"
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'will_paginate', '~> 3.0.6'
 gem 'simple_form'
-gem 'carmen-rails'
+# gem 'carmen-rails'
+gem 'country_select', github: 'stefanpenner/country_select'
 gem 'arbre', '~> 1.0.3'
 # My Stuff ends
 
