@@ -756,7 +756,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 // 13. Media Registrion Page
 
-.registraion-page {
+.registration-page {
   padding: 100px 0 175px;
   h1 {
     color: #000000;
@@ -1022,4 +1022,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   h2 {
     font-family: $playfair;
   }
+}
+
+
+.vendor-registration {
+  @extend .registration-page;
+  .radio label, .checkbox label {
+    line-height: 23px;
+  }
+  .radio, .checkbox {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
 }

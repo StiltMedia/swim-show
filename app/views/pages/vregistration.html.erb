@@ -1,43 +1,67 @@
 <div class="paraeltop"></div>
-<section>
+<section class="vendor-registration">
   <div class="container">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h1>Vendor Registration</h1>
         <%= simple_form_for @vr do |f| %>
 
-        <%= f.input :first_name %>
-        <%= f.input :last_name %>
-        <%= f.input :company %>
-        <%= f.input :title %>
-        <%= f.input :address_1 %>
-        <%= f.input :address_2 %>
-        <%= f.input :city %>
-        <%= f.input :state %>
-        <%= f.input :province %>
-        <%= f.input :postal_code %>
-        <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"] %>
-        <%= f.input :email %>
-        <%= f.input :opt_out_email %>
-        <%= f.input :website %>
-        <%= f.input :phone %>
-        <%= f.input :extension %>
-        <%= f.input :phone_2 %>
-        <%= f.input :fax %>
+        <%= f.input :first_name, placeholder: "First Name*", label: false %>
+        <%= f.input :last_name, placeholder: "Last Name*", label: false %>
+        <%= f.input :company, placeholder: "Company*", label: false %>
+        <%= f.input :title, placeholder: "Title*", label: false %>
+        <%= f.input :address_1, placeholder: "Address Line 1*", label: false %>
+        <%= f.input :address_2, placeholder: "Address Line 2", label: false %>
+        <%= f.input :city, placeholder: "City*", label: false %>
+        <%= f.input :state, placeholder: "State", label: false %>
+        <%= f.input :province, placeholder: "Province", label: false %>
+        <%= f.input :postal_code, placeholder: "Postal Code*", label: false %>
+        <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
+        <%= f.input :email, placeholder: "Email*", label: false %>
+        <p>In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
+        <br>
+        <p><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
+        <%= f.input :opt_out_email, as: :radio_buttons, label: false %>
+        <%= f.input :website, placeholder: "Website", label: false %>
+        <%= f.input :phone, placeholder: "Phone*", label: false %>
+        <%= f.input :extension, placeholder: "Extension", label: false %>
+        <%= f.input :phone_2, placeholder: "Phone 2", label: false %>
+        <%= f.input :fax, placeholder: "Fax", label: false %>
+        <p><strong>Do you wish to opt-out your phone number from vendors/exhibitors?</strong></p>
+        <%= f.input :opt_out_phone, as: :radio_buttons, label: false %>
+        <br>
         <div >
           <%= f.fields_for :products do |builder| %>
             <%= render 'product_fields', f: builder %>
-          <% end %><br>
+          <% end %>
           <%= link_to_add_association 'Add Product', f, :products %>
         </div>
 
-        <%= f.input :opt_out_phone %>
-        <%= f.input :type_of_store %>
-        <%= f.input :status %>
-        <%= f.input :number_of_stores %>
-        <%= f.input :attended_swimshow %>
-        <%= f.input :attended_other_tradeshows %>
+        <%= f.select :type_of_store, nil, {prompt: 'Type of Store*'} do %>
+          <% [["Department Store"],["Boutique"],["Specialty Store"],["Specialty Chain Store"],["Sporting Goods Store"],["Mass Merchant"],["Catalog"],["Buying Office"],["Online Retailer"],["Outlet Store"],["Other"]].each do |i| %>
+            <%= content_tag(:option, i.first) %>
+          <% end %>
+        <% end %>
+
+
+        <%= f.select :status, nil, {prompt: 'Status*'} do %>
+          <% [["Buyer"],["Manager"],["Merchandise Manager"],["Owner"]].each do |i| %>
+            <%= content_tag(:option, i.first) %>
+          <% end %>
+        <% end %>
+
+
+        <%= f.select :number_of_stores, nil, {prompt: 'Number of Stores*'} do %>
+          <% [["1"],["2-5"],["6-20"],["More than 20"]].each do |i| %>
+            <%= content_tag(:option, i.first) %>
+          <% end %>
+        <% end %>
+        <p><strong>Have you Attended our SwimShow in the Past?</strong></p>
+        <%= f.input :attended_swimshow, as: :radio_buttons, label: false %>
+        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: [["Magic/ISAM"],["Surf Expo"],["CurvExpo"],["Mode City Paris"],["Salon Int’l. de la Lingerie Paris"],["Lingerie Collective"],["ENK Shows"],["Coast"],["Swim Collective"],["Other"]] %>
         <%= f.input :mail_show_directory %>
         <%= f.button :submit %>
+
 
 
 
@@ -47,18 +71,3 @@
     </div>
   </div>
 </section>
-
-
-<script>
-  // jQuery ->
-  // $('form').on 'click', '.remove_fields', (event) ->
-  //   $(this).prev('input[type=hidden]').val('1')
-  //   $(this).closest('fieldset').hide()
-  //   event.preventDefault()
-  //
-  // $('form').on 'click', '.add_fields', (event) ->
-  //   time = new Date().getTime()
-  //   regexp = new RegExp($(this).data('id'), 'g')
-  //   $(this).before($(this).data('fields').replace(regexp, time))
-  //   event.preventDefault()
-</script>
