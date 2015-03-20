@@ -496,6 +496,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   h1 {font-family: $playfair;font-size: 70px !important;color: white;}
   p {font-size: 16px;font-weight: 300;color: white;}
   .como {font-size: 25px;font-weight: 400;color: white;}
+  @media (max-width: 1024px) {
+    .top {
+      padding-top: 75%;
+    }
+  }
   @media (max-width: 600px) {
     h1 {
       font-size: 40px !important;
@@ -534,7 +539,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color:#303030;
   }
   .top {
-    padding-top: 15%;
+    padding-top: 25%;
+  }
+  @media (max-width: 1024px) {
+    .top {
+      padding-top: 35%;
+    }
+  }
+  @media (max-width: 736px) {
+    .top {
+      padding-top: 85%;
+    }
   }
 }
 .special-events {
