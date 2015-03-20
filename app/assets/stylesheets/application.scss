@@ -403,7 +403,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  padding: 50px 0px;
+  padding: 7em 0px;
   h1 {
     padding: 0 0 5%;
     font-family: $playfair;
@@ -936,17 +936,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-
-
-  .top {
-    padding-top: 10%;
-  }
+  padding: 125px 0;
   h1 {
     text-align: left;
     font-size: 40px !important;
+    color: #303030;
   }
   p {
     text-align: left;
+    color: #303030;
   }
   h4 {
     text-align: left;
@@ -965,12 +963,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 0px;
   }
   @media (max-width: 1024px) {
-    height: 100%;
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
   @media (max-width: 736px) {
     height: 100%;
-    padding-bottom: 100px;
   }
 }
 
@@ -986,7 +982,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
-
+  padding: 175px 0 0 0;
   .top {
     padding-top: 10%;
   }
@@ -995,14 +991,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   h4 {
     font-family: $lato;
+    color: white;
+  }
+  .btn-member {
+    color: white;
+    border-color: white;
   }
   @media (max-width: 1024px) {
     height: 100%;
-    padding-bottom: 100px;
+    padding: 125px 0;
   }
   @media (max-width: 736px) {
     height: 100%;
-    padding-bottom: 100px;
   }
 }
 
@@ -1120,5 +1120,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   p {
     text-align: center;
+  }
+  @media (max-width: 767px) {
+    .top {
+      margin: 80% 0;
+    }
   }
 }
