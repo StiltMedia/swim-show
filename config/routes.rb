@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
+  get '/coming-soon' => 'pages#coming-soon'
 
   post '/vendor-registration' => 'pages#create_vendor', as: :vendor_registrations
   post '/media-registration' => 'pages#create_media', as: :media_registrations

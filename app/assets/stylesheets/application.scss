@@ -44,10 +44,16 @@ Table of contents for my custom stuff:
 ************************************************************************************/
 
 // 1. This Global Homie
+body {
 
-body{
-  padding-top:60px;
+  height: 100%;
+  margin: 0;
 }
+
+#wrapper {
+  min-height: 100%;
+}
+
 p {
   font-family: $lato;
   font-weight: 300;
@@ -76,8 +82,9 @@ h6 {
 footer {
   background: #303030;
   color: #ffffff;
-  height: 100%;
   width: 100%;
+  position:absolute;
+  bottom: 0;
   p {
     padding: 20px 0px;
     margin: 0 0 0px;
@@ -239,7 +246,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .scroll-down {
   position: absolute;
-  bottom: 60px;
+  bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -301,10 +308,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     .detail-button .btn {
       margin: 0 auto;
       display: block;
-      width: 150px;
+      width: 130px;
+      font-size: 12px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    .top {
+      padding-top: 25%;
+    }
+    .title {
+      font-size: 40px !important;
+    }
+    .date {
+      font-size: 30px !important;
     }
     h1 {
-      font-size: 50px !important;
       text-align: center;
     }
   }
@@ -812,9 +830,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 14. Thanks Page
 
 .thanks {
-  height: 88vh;
+  height:100vh;
   .top {
-    margin: 300px 0;
+    margin: 30% 0;
   }
   h1 {
     font-family: $playfair;
@@ -918,7 +936,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+
+
   .top {
     padding-top: 10%;
   }
@@ -1085,4 +1104,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 
 
+}
+
+
+// Coming Soon
+
+.coming-soon {
+  height:100vh;
+  .top {
+    margin: 30% 0;
+  }
+  h1 {
+    font-family: $playfair;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 }

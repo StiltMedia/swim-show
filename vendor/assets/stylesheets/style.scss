@@ -1827,8 +1827,6 @@ img.mfp-img {
   width: 100%;
   height: 700px;
   position: relative;
-}
-.section-video {
   h1, h3, p {
     font-family:$playfair;
     color: #ffffff;
@@ -1856,6 +1854,9 @@ img.mfp-img {
   text-align: center;
   top: 15%;
   z-index: 2;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 .section-video .player-icon {
   // background-color: rgba(255, 255, 255, 0.2);
