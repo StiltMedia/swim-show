@@ -563,7 +563,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .retailers-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/showdates.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/retail.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -572,6 +572,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 100vh;
   .top {
     padding-top: 50%;
+  }
+  h1, p {
+    color: #303030;
   }
 }
 .retailer-content {
