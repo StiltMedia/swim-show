@@ -6,7 +6,7 @@
         <%= form_for(@registration) do |f| %>
           <%= f.text_field :first_name, placeholder: "First Name*", style: 'width:47.5%;margin-right: 5%;' %><%= f.text_field :last_name, placeholder: "Last Name*",style: 'width:47.5%;' %><br>
           <%= f.select :title, nil, {prompt: 'Select Title*'} do %>
-            <% [['Editor'], ['Publisher'], ['Reporter'], ['Freelancer'], ['Photographer'], ['Video'], ['Camera/Auto Tech'], ['Editorial Fashion/Style Director'], ['Writer'], ['Producer'], ['Stylist'], ['Other']].each do |i| %>
+            <% [['Editor'], ['Publisher'], ['Reporter'], ['Freelancer'], ['Blogger'], ['Photographer'], ['Video'], ['Camera/Auto Tech'], ['Editorial Fashion/Style Director'], ['Writer'], ['Producer'], ['Stylist'], ['Other']].each do |i| %>
               <%= content_tag(:option, i.first) %>
             <% end %>
           <% end %><br>
