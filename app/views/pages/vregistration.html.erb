@@ -4,6 +4,8 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <h1>Retailer Registration</h1>
+        <br>
+        <p class="check2">Pre-Registration 2015</p>
         <%= simple_form_for @vr do |f| %>
         <div class="row">
           <div class="col-sm-6">
@@ -35,6 +37,8 @@
         </div>
         <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
+        <%= f.input :instagram, placeholder: "Instagram", label: false %>
+        <%= f.input :facebook, placeholder: "Facebook", label: false %>
         <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <br>
         <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
@@ -80,7 +84,7 @@
 
 
         <%= f.select :type_of_store, nil, {prompt: 'Type of Store*'} do %>
-          <% [["Department Store"],["Boutique"],["Specialty Store"],["Specialty Chain Store"],["Sporting Goods Store"],["Mass Merchant"],["Catalog"],["Buying Office"],["Online Retailer"],["Outlet Store"],["Other"]].each do |i| %>
+          <% [["Department Store"],["Boutique"],["Specialty Store"],["Specialty Chain Store"],["Sporting Goods Store"],["Mass Merchant"],["Catalog"],["Buying Office"],["Online Retailer"],["Outlet Store"],["Other"],["Resort"],["Spa Boutique"],["Pro Shop"],["Luxury Hotel Discount"],["Off Price"]].each do |i| %>
             <%= content_tag(:option, i.first) %>
           <% end %>
         <% end %>
@@ -102,7 +106,7 @@
         <%= f.input :attended_swimshow, as: :radio_buttons, label: false, required: true %>
 
         <p class="check"><strong>Other Tradeshows Attended</strong></p>
-        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: ["Magic/ISAM","Surf Expo","CurvExpo","Mode City Paris","Salon Int’l. de la Lingerie Paris","Lingerie Collective","ENK Shows","Coast","Swim Collective","Other"], label: false %>
+        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: ["Magic/ISAM","Surf Expo","CurvExpo","Mode City Paris","Salon Int’l. de la Lingerie Paris","Lingerie Collective","ENK Shows","Cabana","Coast","Swim Collective","Other"], label: false %>
         <%= f.input :other_tradeshow_name, placeholder: 'If other, let us know', label: false %>
         <p class="check2"><strong>Do you wish to have a show directory mailed to you prior to tradeshow?</strong></p>
         <%= f.input :mail_show_directory, as: :radio_buttons, label: false, required: true %>
