@@ -35,7 +35,7 @@
 <section class="travel-content">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-left">
         <h2>Hotels</h2>
         <p>Please contact the SAF office directly</p>
         <p><strong>Phone: 305.596.7889<br>Fax: 305.596.7713<br>E-mail: info@swimshow.com</strong></p>
@@ -43,19 +43,19 @@
         <p>Please do not book through any hotel booking agencies that contact you<br>directly stating they are working with this association.</p>
         <p>We do not utilize any of these services and do not recommend any of them.</p>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/hotel.jpg', class: 'img-responsive' %>
       </div>
     </div>
     <div class="delimiter"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-left">
         <div>
           <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/restaurant.jpg', class: 'img-responsive' %>
           <br>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-right">
         <div>
         <h2>Restaurants</h2>
         <p>Take a look at the different restaurants in Miami.</p>
@@ -66,24 +66,23 @@
     </div>
     <div class="delimiter"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-left">
         <h2>Miami Nightlife</h2>
         <p>Get to know some of the places around Miami to have the night of your life.</p>
         <br>
         <%= link_to 'View Places', nightlife_path, class: 'btn btn-member' %>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <br>
+      <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/night-life.jpg', class: 'img-responsive' %>
       </div>
     </div>
     <div class="delimiter"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-left">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/transportation.jpg', class: 'img-responsive' %>
         <br>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-right">
         <h2>Transportation</h2>
         <p>TBA</p>
         <!-- <p>Shuttle Bus Service:</p>
@@ -96,16 +95,24 @@
     </div>
     <div class="delimiter"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-6 v-center">
+      <div class="col-sm-12 col-md-6 slide-left">
         <h2>Airport Shuttle</h2>
         <p>Promo Code to be Announced Shortly</p>
         <!-- <p>Use Promo Code DLLLR to receive a 20% discount on airport transportation.</p>
         <br>
         <a target="_blank" href="http://www.supershuttle.com/default.aspx?GC=DLLLR" class="btn btn-member">Super Shuttle</a> -->
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/airport-shuttle.jpg', class: 'img-responsive' %>
       </div>
     </div>
   </div>
 </section>
+
+<script charset="utf-8">
+
+  $(window).fadeThis(
+    {speed: 1000, distance:100, reverse: false }
+  );
+
+</script>
