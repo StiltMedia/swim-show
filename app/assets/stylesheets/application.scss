@@ -1052,8 +1052,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  padding: 125px 0;
   height: 100vh;
+  .top {
+    padding-top: 15em;
+  }
   h1 {
     text-align: left;
     font-size: 40px !important;
@@ -1080,10 +1082,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 0px;
   }
   @media (max-width: 1024px) {
-    padding: 100px 0;
+    .top {
+      padding-top: 7em;
+    }
   }
   @media (max-width: 736px) {
+    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/mobile-contact.jpg) repeat-y center bottom;
+    background-size: cover;
     height: 100%;
+    background-position: right -90em bottom 3em;
+    padding-bottom: 7em;
   }
 }
 
