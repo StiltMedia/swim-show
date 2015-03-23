@@ -1,18 +1,19 @@
 <section class="vgallery">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <h1>Lines Gallery</h1>
       </div>
     </div>
     <div class="row">
-      <% @vendor.each do |v| %>
-        <div class="col-sm-4">
-          <a href="#" id="<%= v.id %>"><%= image_tag v.logo.url(:thumb) %></a>
-        </div>
-      <% end %>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <% @vendor.each do |v| %>
+          <div class="col-sm-2">
+            <a href="#" id="<%= v.id %>"><%= image_tag v.logo.url(:thumb), class: 'img-responsive' %></a>
+          </div>
+        <% end %>
+      </div>
     </div>
-    <%= will_paginate @vendor %>
   </div>
 </section>
 

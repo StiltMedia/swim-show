@@ -35,7 +35,7 @@ class PagesController < ApplicationController
 
 
   def vgallery
-    @vendor = VendorAlbum.all.order(:name).paginate(:page => params[:page], :per_page => 12)
+    @vendor = VendorAlbum.all.order(:name)
   end
 
   def classifieds
