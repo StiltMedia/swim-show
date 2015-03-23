@@ -1,0 +1,13 @@
+<div class="row scroll">
+  <% @restaurant_dmw.each do |r| %>
+    <div class="col-sm-4">
+      <div class="box">
+        <h3><%= r.name %></h3>
+        <p><%= r.address %></p>
+        <p><%= r.phone %></p>
+        <p class="hover"><%= r.description %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= will_paginate @restaurant_dmw :is_active: true %>

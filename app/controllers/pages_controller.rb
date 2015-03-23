@@ -2,7 +2,18 @@ class PagesController < ApplicationController
 
   def restaurant
     @restaurant_dmw = Restaurant.order(:name).where(location_id: 1).paginate(:page => params[:page], :per_page => 3)
-    @restaurant_mb = Restaurant.order(:name).where(location_id: 2).paginate(:page => params[:page], :per_page => 9)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @restaurant_dmw }
+      format.js
+    end
+
+    # @restaurant_mb = Restaurant.order(:name).where(location_id: 2).paginate(:page => params[:page], :per_page => 9)
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @restaurant_mb }
+    #   format.js
+    # end
   end
 
   def nightlife

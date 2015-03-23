@@ -22,42 +22,14 @@
       </div>
     </div>
     <div class="delimiter100"></div>
-    <div class="row scroll">
-      <% @restaurant_dmw.each do |r| %>
-        <div class="col-sm-4">
-          <div class="box">
-            <h3><%= r.name %></h3>
-            <p><%= r.address %></p>
-            <p><%= r.phone %></p>
-            <p class="hover"><%= r.description %></p>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <%= will_paginate @restaurant_dmw %>
+    <%= render "pages/restaurant" %>
   </div>
 </section>
 
-<section class="restaurant-content2" style="background:#f7f7f7;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1>Miami Beach</h1>
-      </div>
-    </div>
-    <div class="delimiter100"></div>
-    <div class="row">
-      <% @restaurant_mb.each do |r| %>
-        <div class="col-sm-4">
-          <div class="box">
-            <h3><%= r.name %></h3>
-            <p><%= r.address %></p>
-            <p><%= r.phone %></p>
-            <p class="hover"><%= r.description %></p>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <%= will_paginate @restaurant_mb %>
-  </div>
-</section>
+
+
+<script>
+$(function(){
+   $('.pagination a').attr('data-remote', 'true')
+});
+</script>
