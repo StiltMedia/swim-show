@@ -492,9 +492,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   position: relative;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   .top {
-    padding-top: 45%;
+    padding-top: 25%;
   }
   h1 {font-family: $playfair;font-size: 70px !important;color: white;}
   p {font-size: 16px;font-weight: 300;color: white;}
@@ -538,12 +538,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   h1, p {
     color:#303030;
   }
   .top {
-    padding-top: 25%;
+    padding-top: 12%;
   }
   @media (max-width: 1024px) {
     .top {
@@ -609,12 +609,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   .top {
-    padding-top: 50%;
+    padding-top: 25%;
   }
   h1, p {
-    color: #303030;
+    color: white;
   }
 }
 .retailer-content {
@@ -635,9 +635,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   .top {
-    padding-top: 50%;
+    padding-top: 30%;
   }
   h1, p {
     color: white;
@@ -968,6 +968,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   padding: 125px 0;
+  height: 100vh;
   h1 {
     text-align: left;
     font-size: 40px !important;
@@ -1013,7 +1014,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
-  padding: 175px 0 0 0;
+  padding: 200px 0 0 0;
   .top {
     padding-top: 10%;
   }
