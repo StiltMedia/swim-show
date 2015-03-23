@@ -784,15 +784,32 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/nightlife.jpg) repeat-y center bottom;
   background-attachment: fixed;
+  background-position: right 0em bottom 0em;
   background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 100vh;
+  height: 600px;
   .top {
-    padding-top: 50%;
+    padding-top: 18em;
     h1 {
       color: #ffffff;
+    }
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0px bottom 0em;
+    background-size: contain;
+    .top {
+      padding-top: 13em;
+    }
+    h1 {
+      color: white;
+      font-size: 50px !important;
+    }
+  }
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -17em bottom 0em;
+    .top {
+      padding-top: 11em;
     }
   }
 }
@@ -812,15 +829,31 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/restaurant-main.jpg) repeat-y center bottom;
   background-attachment: fixed;
+  background-position: right 0em bottom -24em;
   background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 100vh;
+  height: 600px;
   .top {
-    padding-top: 60%;
+    padding-top: 16em;
   }
   h1, p {color:#303030;}
+  @media (max-width: 1440px) {
+    background-position: right 0em bottom -11em;
+    .top {
+      padding-top: 18em;
+    }
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0px bottom 0em;
+    background-size: contain;
+    .top {
+      padding-top: 13em;
+    }
+  }
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -18em bottom -12em;
+  }
 }
 .restaurant-content {
   @extend .swim-sect-3;
