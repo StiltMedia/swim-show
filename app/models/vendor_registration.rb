@@ -2,8 +2,6 @@ class VendorRegistration < ActiveRecord::Base
   has_many :products, :dependent => :destroy
   accepts_nested_attributes_for :products, allow_destroy: true
 
-  serialize :attended_other_tradeshows, Array
-
   after_create :vendor_mailer
 
   def vendor_mailer

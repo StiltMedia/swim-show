@@ -42,7 +42,10 @@
         <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <br>
         <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
-        <%= f.input :opt_out_email, as: :radio_buttons, label: false, required: true %>
+        <%= f.input :opt_out_email,
+        :collection => [['Yes','Yes Test' ], ['No', 'No Test']],
+        :label_method => :last,
+        :value_method => :first, as: :radio_buttons, label: false, required: true %>
         <%= f.input :website, placeholder: "Website", label: false %>
         <div class="container-fluid inner">
           <div class="row">

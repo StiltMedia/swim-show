@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
-        <div>
+        <div class="travel-box">
         <h2>Restaurants</h2>
         <p>Take a look at the different restaurants in Miami.</p>
         <br>
@@ -69,10 +69,12 @@
     <div class="delimiter"></div>
     <div class="row">
       <div class="col-sm-12 col-md-6 slide-left">
-        <h2>Miami Nightlife</h2>
-        <p>Get to know some of the places around Miami to have the night of your life.</p>
-        <br>
-        <%= link_to 'View Places', nightlife_path, class: 'btn btn-member' %>
+        <div class="travel-box">
+          <h2>Miami Nightlife</h2>
+          <p>Get to know some of the places around Miami to have the night of your life.</p>
+          <br>
+          <%= link_to 'View Places', nightlife_path, class: 'btn btn-member' %>
+        </div>
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/night-life.jpg', class: 'img-responsive' %>
@@ -85,24 +87,28 @@
         <br>
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
-        <h2>Transportation</h2>
-        <p>TBA</p>
-        <!-- <p>Shuttle Bus Service:</p>
-        <a target="_blank" href="https://s3.amazonaws.com/swim-show/Website+Images/SwimShow-Bus-Schedule-2014-04.pdf" class="btn btn-member">Current Shuttle Service</a>
-        <br>
-        <p>Scooter Service:<br>Swimwear Association of Florida will provide free scooter transportation for those unable to walk the tradeshow. The scooters will be available at the ‘D’ hall registration area, located on the Convention Center Drive side of the building.</p>
-        <p>If you would like to reserve your scooter in advance,<br>please contact the SAF office</p>
-        <p><strong>Phone: 305.596.7889</strong></p> -->
+        <div class="travel-box2">
+          <h2>Transportation</h2>
+          <p>TBA</p>
+          <!-- <p>Shuttle Bus Service:</p>
+          <a target="_blank" href="https://s3.amazonaws.com/swim-show/Website+Images/SwimShow-Bus-Schedule-2014-04.pdf" class="btn btn-member">Current Shuttle Service</a>
+          <br>
+          <p>Scooter Service:<br>Swimwear Association of Florida will provide free scooter transportation for those unable to walk the tradeshow. The scooters will be available at the ‘D’ hall registration area, located on the Convention Center Drive side of the building.</p>
+          <p>If you would like to reserve your scooter in advance,<br>please contact the SAF office</p>
+          <p><strong>Phone: 305.596.7889</strong></p> -->
+        </div>
       </div>
     </div>
     <div class="delimiter"></div>
     <div class="row">
       <div class="col-sm-12 col-md-6 slide-left">
-        <h2>Airport Shuttle</h2>
-        <p>Promo Code to be Announced Shortly</p>
-        <!-- <p>Use Promo Code DLLLR to receive a 20% discount on airport transportation.</p>
-        <br>
-        <a target="_blank" href="http://www.supershuttle.com/default.aspx?GC=DLLLR" class="btn btn-member">Super Shuttle</a> -->
+        <div class="travel-box2">
+          <h2>Airport Shuttle</h2>
+          <p>Promo Code to be Announced Shortly</p>
+          <!-- <p>Use Promo Code DLLLR to receive a 20% discount on airport transportation.</p>
+          <br>
+          <a target="_blank" href="http://www.supershuttle.com/default.aspx?GC=DLLLR" class="btn btn-member">Super Shuttle</a> -->
+        </div>
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/airport-shuttle.jpg', class: 'img-responsive' %>
@@ -110,7 +116,7 @@
     </div>
   </div>
 </section>
-
+<div class="delimiter"></div>
 <script charset="utf-8">
 
   $(window).fadeThis(
