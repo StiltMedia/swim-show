@@ -43,6 +43,7 @@
 //= require jquery.mCustomScrollbar.concat.min
 //= require cocoon
 //= require jquery.fadethis.min
+//= require jquery.jscroll.min
 
 
 // Everything custom down here

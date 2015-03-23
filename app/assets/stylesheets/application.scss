@@ -232,7 +232,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: none;
   }
   .next_page {
-    display: none;
+    
   }
   em {
     font-style: normal;
@@ -513,6 +513,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .dates {
   @extend .home-member;
+  padding: 180px 0;
   h3{
     font-family:$lato;
     font-size: 18px !important;
