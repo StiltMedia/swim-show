@@ -826,19 +826,30 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/current-lines.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 50vh;
+  background-position: right 0em top 5.5em;
+  // background-size: cover;
+  height: 600px;
   .top {
-    padding-top: 10%;
+    padding-top: 18em;
   }
   h1 {
     color: white;
   }
+  @media (max-width: 1440px) {
+    background-position: right -16em top 5.5em;
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right -370px bottom 0em;
+    .top {
+      padding-top: 12em;
+    }
+  }
   @media (max-width: 736px) {
-    padding-top: 20%;
+    .top {
+      padding-top: 12em;
+    }
+    background-size: contain;
   }
 }
 
@@ -962,13 +973,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/classifieds.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 50vh;
+  background-position: right 0em bottom -10em;
+  height: 600px;
   .top {
-    padding-top: 10%;
+    padding-top: 18em;
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0em bottom 0em;
+    background-size: contain;
+    .top {
+      padding-top: 12em;
+    }
+  }
+  @media (max-width: 736px) {
+    .top {
+      padding-top: 12em;
+    }
+    background-size: cover;
+    background-position: right 0em bottom 3em
   }
 }
 .classifieds-content {
@@ -1076,9 +1099,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
-  padding: 200px 0 0 0;
   .top {
-    padding-top: 10%;
+    padding-top: 20em;
   }
   h1 {
     font-size: 40px !important;
@@ -1091,12 +1113,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: white;
     border-color: white;
   }
+  @media (max-width: 1440px) {
+    .top {
+      padding-top: 14em;
+    }
+  }
   @media (max-width: 1024px) {
-    height: 100%;
-    padding: 125px 0;
+    .top {
+      padding-top: 9em;
+    }
   }
   @media (max-width: 736px) {
     height: 100%;
+    padding-bottom: 150px;
   }
 }
 
@@ -1108,6 +1137,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/about.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
@@ -1136,9 +1166,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 736px) {
+    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/mobile-about.jpg) repeat-y center bottom;
+    background-size: cover;
     height: 100%;
     padding-bottom: 100px;
-
+    background-position: right 0em bottom 0em;
   }
 }
 
