@@ -12,7 +12,7 @@ class Mailer < ApplicationMailer
 
   def vendor_registration_form(vendor)
     @vendor = vendor
-    mail :to  => "info@stiltmedia.com", :from => "SwimShow@swimshow.com", :subject => "Retailer Pre-Registration 2015"
+    mail :to  => "marknatera@gmail.com", :from => "SwimShow@swimshow.com", :subject => "Retailer Pre-Registration 2015"
   end
 
 end
