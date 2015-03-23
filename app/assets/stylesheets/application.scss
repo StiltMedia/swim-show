@@ -406,7 +406,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  padding: 7em 0px;
+  .top {
+    padding-top: 14em;
+  }
   h1 {
     padding: 0 0 5%;
     font-family: $playfair;
@@ -440,11 +442,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       color: #303030;
     }
   }
+  @media (max-width: 1440px) {
+    .top {
+      padding-top: 8em;
+    }
+  }
   @media (max-width: 1024px) {
     height: 100%;
-    padding-bottom: 100px;
-    .scroll-down {
-      bottom: 10px;
+    .top {
+      padding: 6em 0 3em;
     }
   }
   @media (max-width: 736px) {
@@ -461,7 +467,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-2.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
-  padding: 100px 0px 120px;
   h1 {
     padding: 0;
     color: #4d4a4a;
@@ -472,6 +477,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   p {
     color: #4d4a4a;
+  }
+  @media (max-width: 1024px) {
+    height: 100%;
+    .top {
+      padding: 6em 0 6em;
+    }
   }
 }
 .swim-sect-3 {
@@ -485,7 +496,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 40px !important;
     color: #4d4a4a;
     padding-bottom: 20px;
-
   }
 }
 
