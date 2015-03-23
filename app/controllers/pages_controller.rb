@@ -39,7 +39,7 @@ class PagesController < ApplicationController
   end
 
   def classifieds
-    @classified = Classified.all.order(:company).paginate(:page => params[:page], :per_page => 8)
+    @classified = Classified.all.order(:company)
   end
 
   def contact

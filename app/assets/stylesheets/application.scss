@@ -180,6 +180,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 .pre-registration {
+    padding: 100px 0px 190px !important;
     @extend .swim-sect-3;
     background: #f7f7f7 !important;
 }
@@ -410,29 +411,34 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding: 0 0 5%;
     font-family: $playfair;
     font-size: 40px !important;
-    color: white;
+    color: #303030;
     text-align: left;
   }
   h2 {
     font-size: 20px !important;
     font-weight: 400;
     text-transform: uppercase;
-    color: white;
+    color: #303030;
   }
   h3 {
     font-size: 15px !important;
     font-weight: 300;
-    color: white;
+    color: #303030;
   }
   h4 {
     font-size: 15px !important;
     font-weight: 300;
-    color: white;
+    color: #303030;
   }
   p {
-    color: white;
+    color: #303030;
     font-weight: 300;
     padding: 1% 0;
+  }
+  .scroll-down{
+    p {
+      color: #303030;
+    }
   }
   @media (max-width: 1024px) {
     height: 100%;
@@ -485,26 +491,31 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 // 4. Show Dates
 .showdates-head {
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/showdates.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/half-page/showdates.jpg) repeat-y center top;
   background-attachment: fixed;
-  max-width: 100%;
-  background-size: cover;
-  position: relative;
-  overflow-y: hidden;
+  background-position: right 0 top -100px;
+  // background-size: contain;
+  // max-width: 100%;
+  // overflow-y: hidden;
   text-align: center;
-  height: 50vh;
+  height: 600px;
   .top {
-    padding-top: 25%;
+    padding-top: 250px;
   }
   h1 {font-family: $playfair;font-size: 70px !important;color: white;}
   p {font-size: 16px;font-weight: 300;color: white;}
   .como {font-size: 25px;font-weight: 400;color: white;}
   @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0 bottom 0px;
+    background-size: contain;
     .top {
-      padding-top: 75%;
+      padding-top: 40%;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -100px bottom -100px;
     h1 {
       font-size: 40px !important;
     }
@@ -524,35 +535,41 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding: 10px 0px;
     line-height: 1.7em;
   }
+  @media (max-width: 1024px) {
+    padding: 75px 0;
+  }
 }
 .dates-btm {
   @extend .swim-sect-3;
+  padding: 50px 0 120px;
 }
 
 // 5. Special Events
 .special-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/specialevent.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/half-page/specialevents.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 50vh;
+  background-position: right 0 top -200px;
+  height: 600px;
   h1, p {
-    color:#303030;
+    color: white;
   }
   .top {
-    padding-top: 12%;
+    padding-top: 18em;
   }
   @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0px bottom 0px;
+    background-size: contain;
     .top {
-      padding-top: 35%;
+      padding-top: 12em;
     }
   }
   @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -150px bottom -240px;
     .top {
-      padding-top: 85%;
+      padding-top: 13em;
     }
   }
 }
@@ -579,6 +596,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .row {
     padding-bottom: 60px;
   }
+  @media (max-width: 736px) {
+    padding: 70px 0;
+  }
 }
 
 // 6. Exhibitors
@@ -597,6 +617,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   h1, p {
     color: #303030;
   }
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -310px bottom 0px;
+  }
 }
 
 // 7. Retailers Page
@@ -605,16 +629,33 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/retail.jpg) repeat-y center bottom;
   background-attachment: fixed;
+  background-position: right 0em bottom -8em;
   background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 50vh;
+  height: 600px;
   .top {
-    padding-top: 25%;
+    padding-top: 15em;
   }
   h1, p {
     color: white;
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0px bottom 0px;
+    background-size: contain;
+    .top {
+      padding-top: 11em;
+    }
+    h1 {
+      color: white;
+      font-size: 40px !important;
+    }
+  }
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -490px bottom -140px;
+    .top {
+      padding-top: 10em;
+    }
   }
 }
 .retailer-content {
@@ -622,6 +663,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   ul, li {
     padding-left: 15px;
     list-style-type: circle;
+  }
+  @media (max-width: 736px) {
+    padding: 70px 0;
   }
 }
 
@@ -631,16 +675,33 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/media.jpg) repeat-y center bottom;
   background-attachment: fixed;
+  background-position: right 0em bottom -8em;
   background-size: cover;
-  max-width: 100%;
-  overflow-y: hidden;
-  text-align: center;
-  height: 50vh;
+  height: 600px;
   .top {
-    padding-top: 30%;
+    padding-top: 15em;
   }
   h1, p {
     color: white;
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+    background-position: right 0px bottom -5em;
+    background-size: contain;
+    .top {
+      padding-top: 11em;
+    }
+    h1 {
+      color: white;
+      font-size: 60px !important;
+    }
+  }
+  @media (max-width: 736px) {
+    background-size: cover;
+    background-position: right -27em bottom -10em;
+    .top {
+      padding-top: 12em;
+    }
   }
 }
 .media-content {
@@ -699,6 +760,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
     border: #f7f7f7 solid 15px;
   }
+
 }
 
 // 10. Nightlife Page
