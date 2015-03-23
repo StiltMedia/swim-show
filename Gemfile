@@ -54,6 +54,7 @@ gem 'awesome_print', '~> 1.6.1'
 gem "figaro"
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'will_paginate', '~> 3.0.6'
+gem 'ajax_pagination'
 gem 'simple_form'
 # gem 'carmen-rails'
 gem 'country_select', github: 'stefanpenner/country_select'

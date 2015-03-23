@@ -8,5 +8,9 @@ module ApplicationHelper
   # end
   #   link_to(name, '#', class: "add_fields", data: {id: id, fields: fields.gsub("\n", "")})
   # end
+  def paginate(collection, params= {})
+    will_paginate collection, params.merge(:renderer => RemoteLinkPaginationHelper::LinkRenderer)
+  end
 
+  
 end
