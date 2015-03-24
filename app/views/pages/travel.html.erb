@@ -119,7 +119,7 @@
 <div class="delimiter"></div>
 <script charset="utf-8">
 
-if (/* device is a not mobile */) {
+if ($(window).width() > 1024) {
   $(window).fadeThis(
     {speed: 1000, distance: 50, reverse: false}
   );
