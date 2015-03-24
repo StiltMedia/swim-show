@@ -17,6 +17,8 @@ $playfair: 'Playfair Display', serif;
 @import "infobtn-content";
 @import "ody-sidebar-menu";
 @import "jquery.mCustomScrollbar";
+@import "language-select";
+@import "language-elastic";
 
 
 /************************************************************************************
@@ -133,7 +135,7 @@ footer {
 
 .navbar-nav {
   float: right;
-  padding: 13px 40px 0px;
+  padding: 13px 98px 0px;
   li > a {
     color: #000000 !important;
     padding-bottom: 28px;
@@ -143,7 +145,12 @@ footer {
       border-bottom: #ec816f solid;
     }
   }
-  @media (max-width: 1010px) {
+  @media (max-width: 1127px) {
+    display: none;
+  }
+}
+.language {
+  @media (max-width: 1127px) {
     display: none;
   }
 }

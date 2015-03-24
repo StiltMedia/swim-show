@@ -44,7 +44,8 @@
 //= require cocoon
 //= require jquery.fadethis.min
 //= require jquery.jscroll.min
-
+//= require language-classie
+//= require language-select
 
 // Everything custom down here
 

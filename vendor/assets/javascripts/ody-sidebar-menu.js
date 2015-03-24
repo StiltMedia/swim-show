@@ -40,6 +40,12 @@ $(function(){
 		$(this).next('ul').slideToggle(500);
 		$(this).toggleClass('active');
 	});
+	$('#dropdown2').click(function(dropdown) {
+		dropdown.preventDefault();
+
+		$(this).next('ul').slideToggle(500);
+		$(this).toggleClass('active');
+	});
 
 	/* ENABLE SCROLL FOR MAIN MENU */
 	$(".ody-main-menu").mCustomScrollbar({
