@@ -109,7 +109,10 @@
         <%= f.input :attended_swimshow, as: :radio_buttons, label: false, required: true %>
 
         <p class="check"><strong>Other Tradeshows Attended</strong></p>
-        <%= f.input :attended_other_tradeshows, as: :check_boxes, collection: ["Magic/ISAM","Surf Expo","CurvExpo","Mode City Paris","Salon Int’l. de la Lingerie Paris","Lingerie Collective","ENK Shows","Cabana","Coast","Swim Collective","Other"], label: false %>
+        <%= f.input :attended_other_tradeshows,
+          as: :check_boxes,
+          collection: [["Magic/ISAM"],["Surf Expo"],["CurvExpo"],["Mode City Paris"],["Salon Int’l. de la Lingerie Paris"],["Lingerie Collective"],["ENK Shows"],["Cabana"],["Coast"],["Swim Collective"],["Other"]],
+          label: false %>
         <%= f.input :other_tradeshow_name, placeholder: 'If other, let us know', label: false %>
         <p class="check2"><strong>Do you wish to have a show directory mailed to you prior to tradeshow?</strong></p>
         <%= f.input :mail_show_directory, as: :radio_buttons, label: false, required: true %>
