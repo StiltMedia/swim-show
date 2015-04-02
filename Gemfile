@@ -35,6 +35,7 @@ gem 'newrelic_rpm'
 
 # for design
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'autoprefixer-rails'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 
 # Upload Files

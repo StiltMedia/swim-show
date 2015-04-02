@@ -280,6 +280,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
+.fixed-heading {
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  position: fixed;
+}
+
 // Custom code for interior pages
 // Lets start with the home page
 // 2. El Home
@@ -415,6 +423,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  background-position: right 0em top 5em;
   .top {
     padding-top: 14em;
   }
@@ -456,17 +465,36 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       padding-top: 8em;
     }
   }
+  @media (max-width: 1280px) {
+    background-position: right -10em top 5em;
+    height: 100vh;
+    .top {
+      padding: 8em 0 4em;
+    }
+  }
   @media (max-width: 1024px) {
-    height: 100%;
+    height: 100vh;
+    background-position: right -12em top 5em;
     .top {
       padding: 6em 0 3em;
     }
   }
   @media (max-width: 736px) {
+    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-1-mobile.jpg) repeat-y center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    background-position: right -12em top 5em;
     height: 100%;
     padding-bottom: 100px;
     .scroll-down {
       bottom: 10px;
+      p {
+        color: white;
+      }
+    }
+    h1, h2, h3, h4, p {
+      color: white;
     }
   }
 }
@@ -476,6 +504,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-2.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
+  .top {
+    padding-top: 20em;
+  }
   h1 {
     padding: 0;
     color: #4d4a4a;
@@ -487,10 +518,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   p {
     color: #4d4a4a;
   }
-  @media (max-width: 1024px) {
-    height: 100%;
+  @media (max-width: 1440px) {
     .top {
-      padding: 6em 0 6em;
+      padding-top: 12em;
+    }
+  }
+  @media (max-width: 1280px) {
+    background-position: right -10em top 0em;
+    .top {
+      padding-top: 14em;
+    }
+  }
+  @media (max-width: 1024px) {
+    background-position: right -23em top 0em;
+    height: 100vh;
+    .top {
+      padding-top: 10em;
     }
   }
 }
@@ -566,19 +609,30 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 5. Special Events
 .special-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/half-page/specialevents.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/specialevent.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: right 0 top -200px;
+  background-position: right 0 bottom -2em;
   height: 600px;
+  background-size: cover;
   h1, p {
     color: white;
   }
   .top {
     padding-top: 18em;
   }
+  @media (max-width: 1440px) {
+    background-position: right 0em top 2em;
+  }
+  @media (max-width: 1280px) {
+    height: 500px;
+    background-position: right 0em top 1em;
+    .top {
+      padding-top: 16em;
+    }
+  }
   @media (max-width: 1024px) {
     height: 400px;
-    background-position: right 0px bottom 0px;
+    background-position: right 0em bottom 1em;
     background-size: contain;
     .top {
       padding-top: 12em;
@@ -586,14 +640,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     background-size: cover;
-    background-position: right -150px bottom -240px;
+    background-position: right 0em top 2em;
     .top {
       padding-top: 13em;
     }
   }
 }
 .special-events {
-  padding: 150px 0 90px;
+  padding: 70px 0 90px;
   h1 {
     font-family: $playfair;
     font-size: 30px !important;
@@ -678,7 +732,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 .retailer-content {
-  padding: 150px 0;
+  padding: 70px 0;
   ul, li {
     padding-left: 15px;
     list-style-type: circle;
@@ -694,14 +748,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/media.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: right 0em bottom -8em;
+  background-position: right 0em bottom -19em;
   background-size: cover;
   height: 600px;
   .top {
-    padding-top: 15em;
+    padding-top: 17em;
+    position: fixed;
+    z-index: 0;
   }
   h1, p {
     color: white;
+  }
+  @media (max-width: 1440px) {
+    background-position: right 0em bottom -14em;
+  }
+  @media (max-width: 1280px) {
+    height: 500px;
+    .top {
+      padding-top: 13em;
+    }
   }
   @media (max-width: 1024px) {
     height: 400px;
@@ -711,15 +776,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       padding-top: 11em;
     }
     h1 {
-      color: white;
       font-size: 60px !important;
     }
   }
   @media (max-width: 736px) {
     background-size: cover;
-    background-position: right -27em bottom -10em;
+    background-position: right -24em bottom -8em;
+    h1 {
+      font-size: 35px !important;
+    }
     .top {
       padding-top: 12em;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
     }
   }
 }
@@ -1111,6 +1181,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  background-position: right 0em top 2em;
   .top {
     padding-top: 15em;
   }
@@ -1140,15 +1211,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 0px;
   }
   @media (max-width: 1024px) {
+    background-position: right -14em top 2em;
     .top {
       padding-top: 7em;
     }
   }
   @media (max-width: 736px) {
-    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/mobile-contact.jpg) repeat-y center bottom;
-    background-size: cover;
     height: 100%;
-    background-position: right -90em bottom 3em;
+    background-position: right -30em bottom 0em;
     padding-bottom: 7em;
   }
 }

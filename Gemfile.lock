@@ -291,6 +291,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   arbre (~> 1.0.3)
+  autoprefixer-rails
   awesome_print (~> 1.6.1)
   aws-sdk (< 2.0)
   better_errors (~> 2.1.1)
