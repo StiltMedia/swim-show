@@ -5,7 +5,7 @@ class VendorRegistration < ActiveRecord::Base
 
   accepts_nested_attributes_for :products, allow_destroy: true
 
-  # after_create :vendor_mailer
+  after_create :vendor_mailer
 
   def vendor_mailer
     vendor = self
