@@ -35,10 +35,13 @@
             </div>
           </div>
         </div>
+        
         <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
         <%= f.input :instagram, placeholder: "Instagram", label: false %>
         <%= f.input :facebook, placeholder: "Facebook", label: false %>
+        <%= f.input :twitter, placeholder: "Twitter", label: false %>
+
         <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <br>
         <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
