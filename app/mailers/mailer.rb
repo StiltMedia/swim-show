@@ -7,7 +7,7 @@ class Mailer < ApplicationMailer
 
   def media_registration_form(media)
     @media = media
-    mail :to  => "info@stiltmedia.com", :from => "SwimShow@swimshow.com", :subject => "Media Registration 2015"
+    mail :to  => ["info@stiltmedia.com","judy@swimshow.com"], :from => "SwimShow@swimshow.com", :subject => "Media Registration 2015"
   end
 
   def vendor_registration_form(vendor)

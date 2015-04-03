@@ -26,6 +26,7 @@
           <%= f.text_field :email, placeholder: "Email*" %><br>
           <%= f.text_field :instagram, placeholder: "Instagram" %><br>
           <%= f.text_field :facebook, placeholder: "Facebook" %><br>
+          <%= f.text_field :twitter, placeholder: "Twitter" %><br>
           <%= f.text_field :phone, placeholder: "Phone*", style: 'width:65%;margin-right: 5%;' %><%= f.text_field :extension, placeholder: "Extension", style: 'width:30%;' %><br>
           <%= f.text_field :fax, placeholder: "Fax" %><br>
           <%= f.text_field :website, placeholder: "Website" %><br>
@@ -36,7 +37,7 @@
           <% end %><br>
           <%= f.text_area :comments, placeholder: "Comments" %><br>
           <p>* = Required</p><br>
-          <%= f.submit 'Submit', class: 'btn btn-member2', data: {disable_with: "Submitting"} %>
+          <%= f.submit 'Submit', class: 'btn btn-member2' %><%#, data: {disable_with: "Submitting"}%>
         <% end %>
       </div>
     </div>
@@ -46,9 +47,7 @@
 
 <script>
 // Media Registration Page
-$(document).ready(function () {
   $("#new_media_registration").validate({
-    // debug: true,
     rules: {
       "media_registration[first_name]": {required: true},
       "media_registration[last_name]": {required: true},
@@ -65,5 +64,4 @@ $(document).ready(function () {
       "media_registration[fax]": {required: false, digits: true}
     }
   });
-});
 </script>

@@ -86,7 +86,7 @@ class PagesController < ApplicationController
   private
 
   def media_params
-    params.require(:media_registration).permit(:first_name,:last_name,:title,:other,:publication,:type_of_media,:address1,:address2,:city,:state,:province,:postal_code,:country,:email,:instagram,:facebook,:phone,:extension,:fax,:website,:media_outlet,:comments)
+    params.require(:media_registration).permit(:first_name,:last_name,:title,:other,:publication,:type_of_media,:address1,:address2,:city,:state,:province,:postal_code,:country,:email,:instagram,:facebook,:twitter,:phone,:extension,:fax,:website,:media_outlet,:comments)
   end
 
   def vendor_params
