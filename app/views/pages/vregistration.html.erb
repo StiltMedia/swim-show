@@ -35,18 +35,17 @@
             </div>
           </div>
         </div>
-        
+
         <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
+        <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <%= f.input :instagram, placeholder: "Instagram", label: false %>
         <%= f.input :facebook, placeholder: "Facebook", label: false %>
         <%= f.input :twitter, placeholder: "Twitter", label: false %>
 
-        <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
-        <br>
         <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
         <%= f.input :opt_out_email,
-        :collection => [['Yes','Yes Test' ], ['No', 'No Test']],
+        :collection => [['Yes','Yes, I would like to opt-out my email from vendor/exhibitors. I would only receive emails from the SAF office.' ], ['No', 'No, I would like to receive emails from vendors/exhibitors and the SAF office.']],
         :label_method => :last,
         :value_method => :first, as: :radio_buttons, label: false, required: true %>
         <%= f.input :website, placeholder: "Website", label: false %>
@@ -130,27 +129,31 @@
 
 <script>
 // Vendor Registration Page
-// $(document).ready(function () {
-//   $("#new_vendor_registration").validate({
-//     // debug: true,
-//     rules: {
-//       "vendor_registration[first_name]": {required: true},
-//       "vendor_registration[last_name]": {required: true},
-//       "vendor_registration[company]": {required: true},
-//       "vendor_registration[title]": {required: true},
-//       "vendor_registration[address_1]": {required: true},
-//       "vendor_registration[city]": {required: true},
-//       "vendor_registration[postal_code]": {required: true, digits: true, minlength: 5},
-//       "vendor_registration[country]": {required: true},
-//       "vendor_registration[email]": {required: true, email: true},
-//       "vendor_registration[phone]": {required: true, digits: true, minlength: 10},
-//       "vendor_registration[extension]": {required: false, digits: true},
-//       "vendor_registration[phone_2]": {required: false, digits: true, minlength: 10},
-//       "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
-//       "vendor_registration[type_of_store]": {required: true},
-//       "vendor_registration[status]": {required: true},
-//       "vendor_registration[number_of_stores]": {required: true}
-//     }
-//   });
-// });
+  $("#new_vendor_registration").validate({
+    rules: {
+      "vendor_registration[first_name]": {required: true},
+      "vendor_registration[last_name]": {required: true},
+      "vendor_registration[company]": {required: true},
+      "vendor_registration[title]": {required: true},
+      "vendor_registration[address_1]": {required: true},
+      "vendor_registration[city]": {required: true},
+      "vendor_registration[postal_code]": {required: true, digits: true, minlength: 5},
+      "vendor_registration[country]": {required: true},
+      "vendor_registration[email]": {required: true, email: true},
+      "vendor_registration[phone]": {required: true, digits: true, minlength: 10},
+      "vendor_registration[extension]": {required: false, digits: true},
+      "vendor_registration[phone_2]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[type_of_store]": {required: true},
+      "vendor_registration[status]": {required: true},
+      "vendor_registration[number_of_stores]": {required: true}
+    }
+      // messages: {
+      //   example5: "Just check the box<h5 class='text-error'>You aren't going to read the EULA</h5>"
+      // },
+      // tooltip_options: {
+      //   example4: {trigger:'focus'},
+      //   example5: {placement:'right',html:true}
+      // },
+  });
 </script>

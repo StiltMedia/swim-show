@@ -32,6 +32,7 @@
 //= require map.js
 //= require function.js
 //= require jquery.validate.min
+//= require jquery-validate.bootstrap-tooltip
 //= require jquery.requestAnimationFrame
 //= require jquery.mousewheel
 //= require ilightbox.packed
