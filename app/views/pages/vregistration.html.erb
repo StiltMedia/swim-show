@@ -25,7 +25,6 @@
               <%= f.input :city, placeholder: "City*", label: false %>
             </div>
             <div class="col-xs-6">
-              <%# f.input :state, placeholder: "State", collection: [us_states.first], label: false %>
               <%= f.select :state, options_for_select(us_states), prompt: "Select State" %>
             </div>
             <div class="col-xs-6">
@@ -36,8 +35,8 @@
             </div>
           </div>
         </div>
-
-        <%= f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
+        <%= f.select :country, options_for_select(countries_3), prompt: 'Please Select a Country*' %>
+        <%# f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
         <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
         <%= f.input :instagram, placeholder: "Instagram", label: false %>
