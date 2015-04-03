@@ -26,6 +26,8 @@ module SwimShow
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     config.assets.precompile += Ckeditor.assets
     config.assets.precompile += %w(ckeditor/*)
-    
+
+    Rack::Utils.multipart_part_limit = 0
+
   end
 end
