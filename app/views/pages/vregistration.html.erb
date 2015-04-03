@@ -25,7 +25,8 @@
               <%= f.input :city, placeholder: "City*", label: false %>
             </div>
             <div class="col-xs-6">
-              <%= f.input :state, placeholder: "State", label: false %>
+              <%# f.input :state, placeholder: "State", collection: [us_states.first], label: false %>
+              <%= f.select :state, options_for_select(us_states), prompt: "Select State" %>
             </div>
             <div class="col-xs-6">
               <%= f.input :postal_code, placeholder: "Postal Code*", label: false %>
@@ -113,7 +114,7 @@
         :collection => [['Yes','Yes' ], ['No', 'No']],
         :label_method => :last,
         :value_method => :first, as: :radio_buttons, label: false, required: true %>
-        <br>
+        <%= f.input :comments, placeholder: 'Comments', label: false %>
         <%= f.submit 'Submit Retailer Pre-Registration', class: 'btn btn-member2' %>
 
 

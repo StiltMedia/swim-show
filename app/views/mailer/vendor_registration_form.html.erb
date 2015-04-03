@@ -29,4 +29,5 @@ Have you Attended SwimShow: <%= @vendor.attended_swimshow %><br>
 Attended other Tradeshows: <% @vendor.tradeshows.each do |t| %><%= t.name %> &nbsp;<% end %><br>
 Other Tradeshow Name: <%= @vendor.other_tradeshow_name %><br>
 Wants the show directory to be sent via mail: <%= @vendor.mail_show_directory %><br>
+Comments: <%= @vendor.comments %><br>
 Created at: <%= @vendor.created_at %>
