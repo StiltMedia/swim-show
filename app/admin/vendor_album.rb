@@ -4,7 +4,7 @@ ActiveAdmin.register VendorAlbum do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :name, :logo, pictures_attributes: [:id, :title, :image]
+  permit_params :name, :logo, pictures_attributes: [:id, :title, :image, :_destroy]
   #
   # or
   #
@@ -47,6 +47,7 @@ ActiveAdmin.register VendorAlbum do
       f.has_many :pictures do |a|
         a.input :title
         a.input :image
+        a.input :_destroy, :as=>:boolean, :label=>'Remove'
       end
     end
     f.actions
