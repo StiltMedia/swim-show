@@ -49,8 +49,6 @@ gem 'mandrill-api'
 gem 'devise', '~> 3.4.1'
 gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
-gem 'better_errors', '~> 2.1.1'
-gem 'binding_of_caller', '~> 0.7.2'
 gem 'awesome_print', '~> 1.6.1'
 gem "figaro"
 gem 'ckeditor', github: 'galetahub/ckeditor'
@@ -74,6 +72,9 @@ group :development, :test do
   gem 'spring'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'habtm_generator'
+  gem 'better_errors', '~> 2.1.1'
+  gem 'binding_of_caller', '~> 0.7.2'
 end
 
 group :production do

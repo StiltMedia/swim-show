@@ -10,7 +10,7 @@ City: <%= @vendor.city %><br>
 State: <%= @vendor.state %><br>
 Province: <%= @vendor.province %><br>
 Postal Code: <%= @vendor.postal_code %><br>
-Country: <% @vendor.country %><br>
+Country: <%= @vendor.country %><br>
 Email: <%= @vendor.email %><br>
 Instagram: <%= @vendor.instagram %><br>
 Facebook: <%= @vendor.facebook %><br>
@@ -25,7 +25,7 @@ Type of Store: <%= @vendor.type_of_store %><br>
 Status: <%= @vendor.status %><br>
 Number of Stores: <%= @vendor.number_of_stores %><br>
 Have you Attended SwimShow: <%= @vendor.attended_swimshow %><br>
-Attened other Tradeshows: <%= @vendor.attended_other_tradeshows %><br>
+Attended other Tradeshows: <% @vendor.tradeshows.each do |t| %><%= t.name %> &nbsp;<% end %><br>
 Other Tradeshow Name: <%= @vendor.other_tradeshow_name %><br>
 Wants the show directory to be sent via mail: <%= @vendor.mail_show_directory %><br>
 Created at: <%= @vendor.created_at %>
