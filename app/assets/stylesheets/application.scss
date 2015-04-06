@@ -404,6 +404,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 40px !important;
     font-weight: 300;
   }
+  p {
+    color: white;
+  }
 }
 .ce-days-digit, .ce-hours-digit, .ce-minutes-digit, .ce-seconds-digit {
   font-size: 60px;
@@ -586,7 +589,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .dates {
   @extend .home-member;
-  padding: 70px 0;
+  padding: 80px 0;
+  position: relative;
   h3{
     font-family:$lato;
     font-size: 18px !important;
@@ -733,6 +737,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .retailer-content {
   padding: 70px 0;
+  position: relative;
   ul, li {
     padding-left: 15px;
     list-style-type: circle;
@@ -805,6 +810,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .media-content-2 {
   padding: 0 0 150px;
+  position: relative;
   h2 {
     font-family: $playfair;
     padding-bottom: 50px;

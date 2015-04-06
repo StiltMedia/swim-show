@@ -39,15 +39,17 @@
         <%# f.input :country, as: :country, priority: ["United States", "United Kingdom","Canada"], label: false, prompt: 'Please Select a Country*' %>
         <%= f.input :email, placeholder: "Email*", label: false %>
         <p class="info">In order to receive your pre registration bar code, which enables you to speed through retailer registration using our kiosks, you CAN NOT use the same email address for more than one person. Any questions, please contact the SAF Office</p>
-        <%= f.input :instagram, placeholder: "Instagram", label: false %>
-        <%= f.input :facebook, placeholder: "Facebook", label: false %>
-        <%= f.input :twitter, placeholder: "Twitter", label: false %>
-
         <p class="check2"><strong>Do you wish to opt-out your email from vendors/exhibitors?</strong></p>
         <%= f.input :opt_out_email,
         :collection => [['Yes','Yes, I would like to opt-out my email from vendor/exhibitors. I would only receive emails from the SAF office.' ], ['No', 'No, I would like to receive emails from vendors/exhibitors and the SAF office.']],
         :label_method => :last,
         :value_method => :first, as: :radio_buttons, label: false, required: true %>
+
+        <%= f.input :instagram, placeholder: "Instagram", label: false %>
+        <%= f.input :facebook, placeholder: "Facebook", label: false %>
+        <%= f.input :twitter, placeholder: "Twitter", label: false %>
+
+
         <%= f.input :website, placeholder: "Website", label: false %>
         <div class="container-fluid inner">
           <div class="row">
@@ -61,13 +63,12 @@
         </div>
 
         <%= f.input :phone_2, placeholder: "Phone 2", label: false %>
-        <%= f.input :fax, placeholder: "Fax", label: false %>
-
         <p class="check2"><strong>Do you wish to opt-out your phone number from vendors/exhibitors?</strong></p>
         <%= f.input :opt_out_phone,
         :collection => [['Yes','Yes' ], ['No', 'No']],
         :label_method => :last,
         :value_method => :first, as: :radio_buttons, label: false, required: true %>
+        <%= f.input :fax, placeholder: "Fax", label: false %>
         <br>
 
         <div class="container-fluid">
@@ -108,11 +109,12 @@
 
         <%= f.input :other_tradeshow_name, placeholder: 'If other, let us know', label: false %>
 
-        <p class="check2"><strong>Do you wish to have a show directory mailed to you prior to tradeshow?</strong></p>
+        <p class="check2"><strong>Do you wish to have a show directory mailed to you prior to tradeshow?</strong><br>Domestic mailing only</p>
         <%= f.input :mail_show_directory,
         :collection => [['Yes','Yes' ], ['No', 'No']],
         :label_method => :last,
         :value_method => :first, as: :radio_buttons, label: false, required: true %>
+
         <%= f.input :comments, placeholder: 'Comments', label: false %>
         <%= f.submit 'Submit Retailer Pre-Registration', class: 'btn btn-member2' %>
 
