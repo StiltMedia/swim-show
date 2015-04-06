@@ -1258,13 +1258,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .west-coast {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/westcoast.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/west-coast.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  .bkg {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
   .top {
     padding-top: 20em;
   }
