@@ -117,10 +117,19 @@ footer {
     text-align: center;
   }
 }
-
+.logo-header {
+  position:fixed;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+}
 
 .paraeltop {
   padding-top:79px;
+}
+
+.navbar {
+  height: 75px;
 }
 
 .navbar-inverse {
@@ -130,7 +139,6 @@ footer {
 .navbar-brand{
   padding: 15px 20px;
   width: 220px;
-  height: auto;
 }
 
 .navbar-nav {
