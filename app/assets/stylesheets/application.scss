@@ -285,7 +285,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   right: 0;
   left: 0;
   z-index: 0;
-  position: fixed;
+  position: absolute;
 }
 
 // Custom code for interior pages
@@ -586,7 +586,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .dates {
   @extend .home-member;
-  padding: 180px 0;
+  padding: 70px 0;
   h3{
     font-family:$lato;
     font-size: 18px !important;
@@ -753,7 +753,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 600px;
   .top {
     padding-top: 17em;
-    position: fixed;
+    position: absolute;
     z-index: 0;
   }
   h1, p {
@@ -1121,7 +1121,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 .classifieds-content {
-  padding: 200px 0 150px;
+  padding: 70px 0 150px;
   h1 {
     font-family: $playfair;
     text-align: center;
@@ -1168,9 +1168,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 16. Contact Page
 
 .contact {
-  .new_contact {
-    text-align: left;
-  }
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/contact.jpg) repeat-y center bottom;
   background-attachment: fixed;
@@ -1180,27 +1177,62 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   text-align: center;
   height: 100vh;
   background-position: right 0em top 2em;
+  .bkg {
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  input, select, textarea{
+    color: white;
+  }
+  .new_contact {
+    text-align: left;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+     color: white;
+  }
+  .btn-member {
+    color: white;
+    border-color: white;
+    &:hover {
+      color: #303030;
+      background: white;
+    }
+  }
   .top {
-    padding-top: 15em;
+    padding-top: 13em;
   }
   h1 {
     text-align: left;
     font-size: 40px !important;
-    color: #303030;
+    color: white;
   }
   p {
     text-align: left;
-    color: #303030;
+    color: white;
   }
   h4 {
     text-align: left;
+    color: white;
   }
   .info {
     font-size: 13px !important;
   }
   input {
     background: transparent;
-    border-bottom: #000000 solid 1px;
+    border-bottom: white solid 1px;
     padding: 40px 0px 0 10px;
   }
   label {
