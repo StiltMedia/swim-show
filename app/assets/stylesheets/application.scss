@@ -437,11 +437,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 3. Swimshow Page
 .swim-header {
   @extend .front-header;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-1.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/swim-overview.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   background-position: right 0em top 5em;
+  .bkg {
+    display: none;
+  }
   .top {
     padding-top: 14em;
   }
@@ -498,9 +502,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 736px) {
-    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-1-mobile.jpg) repeat-y center bottom;
-    background-attachment: fixed;
-    background-size: cover;
     height: 100%;
     background-position: right -12em top 5em;
     height: 100%;
@@ -514,14 +515,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     h1, h2, h3, h4, p {
       color: white;
     }
+    .bkg {
+      display: block;
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
   }
 }
 
 .swim-sect-2 {
   @extend .swim-header;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/swimshow-2.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/swim-overview2.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  .bkg {
+    display: none;
+  }
   .top {
     padding-top: 20em;
   }
@@ -542,7 +554,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 1280px) {
-    background-position: right -10em top 0em;
     .top {
       padding-top: 14em;
     }
@@ -552,6 +563,29 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height: 100vh;
     .top {
       padding-top: 10em;
+    }
+  }
+  @media (max-width: 736px) {
+    background-position: right -52em top 0em;
+    height: 100%;
+    h1 {
+      color: white;
+    }
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    .bkg {
+      display: block;
+      background: rgba(0,0,0,0.3);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    .top {
+      padding-top: 6em;
     }
   }
 }
@@ -571,10 +605,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 // 4. Show Dates
 .showdates-head {
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/half-page/showdates.jpg) repeat-y center top;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/show-dates.jpg) repeat-y center top;
   background-attachment: fixed;
-  background-position: right 0 top -100px;
-  // background-size: contain;
+  background-position: center;
+  background-size: cover;
   // max-width: 100%;
   // overflow-y: hidden;
   text-align: center;
