@@ -8,5 +8,8 @@ module ApplicationHelper
   # end
   #   link_to(name, '#', class: "add_fields", data: {id: id, fields: fields.gsub("\n", "")})
   # end
+  def active_page?(path='')
+    request.path_info == '/' + path
+  end
 
 end

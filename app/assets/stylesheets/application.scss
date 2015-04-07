@@ -129,7 +129,7 @@ footer {
 }
 
 .navbar {
-  height: 75px;
+  height: 79px;
 }
 
 .navbar-inverse {
@@ -152,6 +152,12 @@ footer {
     &:hover{
       border-bottom: #ec816f solid;
     }
+    &:active{
+      border-bottom: #ec816f solid;
+    }
+  }
+  .active-link {
+    border-bottom: #ec816f solid;
   }
   @media (max-width: 1127px) {
     display: none;
@@ -167,6 +173,7 @@ footer {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     border-top: none;
     display: block;
+    top: 66px;
     a {
       padding: 1em;
     }

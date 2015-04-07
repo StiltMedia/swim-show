@@ -11,10 +11,38 @@
       <li><%= link_to 'Travel', travel_path %></li>
     </ul>
 </li>
-<li><%= link_to 'Current Lines', current_lines_path %></li>
-<li><%= link_to 'Gallery', gallery_path %></li>
-<li><%= link_to 'Classifieds', classifieds_path %></li>
+<% if active_page?("current-lines") %>
+  <li><%= link_to 'Current Lines', current_lines_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'Current Lines', current_lines_path %></li>
+<% end %>
+
+<% if active_page?("gallery") %>
+  <li><%= link_to 'Gallery', gallery_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'Gallery', gallery_path %></li>
+<% end %>
+
+<% if active_page?("classifieds") %>
+  <li><%= link_to 'Classifieds', classifieds_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'Classifieds', classifieds_path %></li>
+<% end %>
 <!-- <li><a href="#">News</a></li> -->
-<li><%= link_to 'West Coast Regional', west_coast_regional_path %></li>
-<li><%= link_to 'About Us', about_path %></li>
-<li><%= link_to 'Contact', contact_path %></li>
+<% if active_page?("west-coast-regional") %>
+  <li><%= link_to 'West Coast Regional', west_coast_regional_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'West Coast Regional', west_coast_regional_path %></li>
+<% end %>
+
+<% if active_page?("about") %>
+  <li><%= link_to 'About Us', about_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'About Us', about_path %></li>
+<% end %>
+
+<% if active_page?("contact") %>
+  <li><%= link_to 'Contact', contact_path, class: 'active-link' %></li>
+<% else %>
+  <li><%= link_to 'Contact', contact_path %></li>
+<% end %>
