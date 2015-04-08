@@ -1080,17 +1080,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: white;
   }
   @media (max-width: 1440px) {
-    background-position: 70% 100%;
+    background-position: 70% 130%;
   }
   @media (max-width: 1024px) {
     height: 400px;
-    background-position: 70% 130%;
+    background-position: 70% 230%;
+    background-size: contain;
     .top {
       padding-top: 12em;
     }
   }
   @media (max-width: 736px) {
-    background-position: 70% 75%;
+    background-position: 70% 110%;
+    background-size: inherit;
     .top {
       padding-top: 12em;
     }
@@ -1373,7 +1375,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   .top {
-    padding-top: 13em;
+    padding-top: 17em;
   }
   h1 {
     text-align: left;
@@ -1403,16 +1405,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 1440px) {
     .top {
-      padding-top: 7em;
+      padding-top: 10em;
     }
   }
-  @media (max-width: 1280px) {
-    .top {
-      padding-top: 6em;
-    }
-  }
+  // @media (max-width: 1280px) {
+  //   .top {
+  //     padding-top: 6em;
+  //   }
+  // }
   @media (max-width: 1024px) {
     background-position: right -14em top 2em;
+    .top {
+      padding-top: 8em;
+    }
   }
   @media (max-width: 736px) {
     height: 100%;
@@ -1466,6 +1471,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @media (max-width: 736px) {
     height: 100%;
     padding-bottom: 150px;
+    background-position: 65% 50%;
+    background-size: cover;
   }
 }
 
