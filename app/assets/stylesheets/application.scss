@@ -613,6 +613,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   // overflow-y: hidden;
   text-align: center;
   height: 600px;
+  position: relative;
+  .bkg {
+    display: none;
+  }
   .top {
     padding-top: 250px;
   }
@@ -632,6 +636,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background-position: center;
     h1 {
       font-size: 40px !important;
+    }
+    .bkg {
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
     }
   }
 }
@@ -662,9 +673,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 5. Special Events
 .special-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/specialevent.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/special-events.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: right 0 bottom -2em;
+  background-position: center;
   height: 600px;
   background-size: cover;
   h1, p {
@@ -730,13 +741,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 6. Exhibitors
 .exhibitors-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/exhibitors.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/exhibitors.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   max-width: 100%;
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  .bkg {
+    display: none;
+  }
   .top {
     padding-top: 50%;
   }
@@ -745,7 +760,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     background-size: cover;
-    background-position: right -310px bottom 0px;
+    background-position: right -170px bottom 0px;
+    .top {
+      padding-top: 8em;
+    }
+    .bkg {
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
+    }
+    h1, p {
+      color: white;
+    }
   }
 }
 
@@ -753,17 +781,31 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .retailers-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/retail.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/retailers.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: right 0em bottom -8em;
+  background-position: center -120px;
   background-size: cover;
   height: 600px;
+  position: relative;
+  .bkg {
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+  }
   .top {
     padding-top: 15em;
   }
   h1, p {
     color: white;
   }
+  @media (max-width: 1440px) {
+    background-position: center;
+  }
+  // @media (max-width: 1280px) {
+  //
+  // }
   @media (max-width: 1024px) {
     height: 400px;
     background-position: right 0px bottom 0px;
@@ -800,11 +842,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .media-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/media.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/media.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-position: right 0em bottom -19em;
   background-size: cover;
   height: 600px;
+  position: relative;
+  .bkg {
+    display: none;
+  }
   .top {
     padding-top: 17em;
     position: absolute;
@@ -838,6 +884,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background-position: right -24em bottom -8em;
     h1 {
       font-size: 35px !important;
+    }
+    .bkg {
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
     }
     .top {
       padding-top: 12em;
