@@ -1091,8 +1091,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 736px) {
-    background-position: 70% 110%;
-    background-size: initial;
+    background-position: 70% -15em;
+    background-size: cover;
     .top {
       padding-top: 12em;
     }
