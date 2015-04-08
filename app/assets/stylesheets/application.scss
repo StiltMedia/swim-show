@@ -820,7 +820,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     background-size: cover;
-    background-position: right -490px bottom -140px;
+    background-position: center;
     .top {
       padding-top: 10em;
     }
@@ -881,7 +881,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     background-size: cover;
-    background-position: right -24em bottom -8em;
+    background-position: center;
     h1 {
       font-size: 35px !important;
     }
@@ -1062,7 +1062,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/current-lines.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: center 250%;
+  background-position: center 380%;
   // background-size: cover;
   height: 600px;
   position: relative;
@@ -1222,6 +1222,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-attachment: fixed;
   background-position: right 0em bottom -10em;
   height: 600px;
+  position: relative;
+  .bkg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2)
+  }
   .top {
     padding-top: 18em;
   }
@@ -1330,7 +1338,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 100vh;
   position: relative;
   .bkg {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1466,7 +1474,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .about {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/about.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/about.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -1474,6 +1482,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  background-position: center;
+  .bkg {
+    display: none;
+  }
   h2 {
     text-align: left;
     font-family: $playfair;
@@ -1498,11 +1510,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 736px) {
-    background: url(https://s3.amazonaws.com/swim-show/istock-test-images/edited/mobile-about.jpg) repeat-y center bottom;
-    background-size: cover;
+    .bkg {
+      display: block;
+      position: absolute;
+      background: rgba(255,255,255,0.6);
+      width: 100%;
+      height: 100%;
+    }
     height: 100%;
     padding-bottom: 100px;
-    background-position: right 0em bottom 0em;
+    background-position: 85% 50%;
   }
 }
 
