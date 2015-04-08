@@ -503,7 +503,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     height: 100%;
-    background-position: right -12em top 5em;
+    background-position: right 65% 50%;
     height: 100%;
     padding-bottom: 100px;
     .scroll-down {
@@ -517,7 +517,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
     .bkg {
       display: block;
-      background: rgba(0,0,0,0.2);
+      background: rgba(0,0,0,0.4);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1092,7 +1092,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 736px) {
     background-position: 70% 110%;
-    background-size: inherit;
+    background-size: initial;
     .top {
       padding-top: 12em;
     }
@@ -1485,7 +1485,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @media (max-width: 736px) {
     height: 100%;
     padding-bottom: 150px;
-    background-position: 65% 50%;
+    background-position: 75% 50%;
     background-size: cover;
     p, h4, h1 {
       color: white;
