@@ -39,8 +39,8 @@
                       <div class="col-sm-6">
                         <p>Please contact us at:</p>
                         <p>
-                          <strong><%= c.email %></strong><br>
-                          <strong><%= c.website %></strong><br>
+                          <strong><a href="mailto:<%= c.email %>" target="_top"><%= c.email %></a></strong><br>
+                          <strong><a href="http://<%= c.website %>" target="_blank"><%= c.website %></a></strong><br>
                           <strong><%= c.phone %></strong>
                         </p>
                       </div>

@@ -437,12 +437,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 3. Swimshow Page
 .swim-header {
   @extend .front-header;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/swim-overview.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/west-coast-regional.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-position: right 0em top 5em;
+  background-position: right 0em top 0em;
   .bkg {
     display: none;
   }
@@ -496,7 +496,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 1024px) {
     height: 100vh;
-    background-position: right -12em top 5em;
+    background-position: right -19em top 5em;
     .top {
       padding: 6em 0 3em;
     }
@@ -1431,41 +1431,55 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .west-coast {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/west-coast-regional.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/swim-overview.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: initial;
   max-width: 100%;
-  overflow-y: hidden;
   text-align: center;
   height: 100vh;
+  position: relative;
+  background-position: 50% -30%;
   .bkg {
     background: rgba(0,0,0,0.3);
     width: 100%;
     height: 100%;
     position: absolute;
+    display: none;
   }
   .top {
     padding-top: 20em;
   }
   h1 {
     font-size: 40px !important;
+    color: #303030;
   }
   h4 {
     font-family: $lato;
-    color: white;
+    color: #303030;
+  }
+  p {
+    color: #303030;
   }
   .btn-member {
-    color: white;
-    border-color: white;
+    color: #303030;
+    border-color: #303030;
+    &:hover {
+      color: white;
+    }
   }
   @media (max-width: 1440px) {
+    background-size: cover;
+    background-position: 50% -170%;
     .top {
-      padding-top: 14em;
+      padding-top: 12em;
     }
+  }
+  @media (max-width: 1280px) {
+    background-position: center;
   }
   @media (max-width: 1024px) {
     .top {
-      padding-top: 9em;
+      padding-top: 8em;
     }
   }
   @media (max-width: 736px) {
@@ -1473,6 +1487,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-bottom: 150px;
     background-position: 65% 50%;
     background-size: cover;
+    p, h4, h1 {
+      color: white;
+    }
+    .bkg {
+      display: block;
+    }
+    .btn-member {
+      color: white;
+      border-color: white;
+      &:hover {
+        color: #303030;
+        background: white;
+      }
+    }
   }
 }
 
@@ -1640,4 +1668,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         width: 20%;
         float: left;
     }
+}
+.map {
+  position: relative;
+  .scroll-down {
+    display: none;
+  }
+  @media (max-width: 736px) {
+    .scroll-down {
+      display: block;
+      bottom: 10px;
+    }
+  }
 }

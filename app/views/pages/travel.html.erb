@@ -1,6 +1,14 @@
 <div class="paraeltop"></div>
-<iframe width='100%' height='475px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/marknatera.l8ff3j6o/attribution.html?access_token=pk.eyJ1IjoibWFya25hdGVyYSIsImEiOiJaU1BLcl9NIn0.IPz03ag_AFq_44TdoNj_Ng'></iframe>
-<section class="location">
+<section class="map">
+  <iframe width='100%' height='450px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/marknatera.l8ff3j6o/attribution.html?access_token=pk.eyJ1IjoibWFya25hdGVyYSIsImEiOiJaU1BLcl9NIn0.IPz03ag_AFq_44TdoNj_Ng'></iframe>
+  <div class="scroll-down">
+    <div class="col-xs-12">
+      <a href="#swim-show" class="scroll-anchor">
+      <p class="font-a"><i class="fa fa-angle-down fa-2x"></i></p></a>
+    </div>
+  </div>
+</section>
+<section class="location" id="swim-show">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -118,11 +126,9 @@
 </section>
 <div class="delimiter"></div>
 <script charset="utf-8">
-
 if ($(window).width() > 1024) {
   $(window).fadeThis(
     {speed: 1000, distance: 50, reverse: false}
   );
 }
-
 </script>
