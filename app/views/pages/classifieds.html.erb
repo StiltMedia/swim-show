@@ -17,211 +17,40 @@
             <h1><%= c.company %></h1>
             <h4><%= c.position %></h4>
             <p><%= c.short_description %></p>
+            <!-- Large modal -->
+            <button type="button" class="btn btn-member" data-toggle="modal" data-target="#<%= c.id %>">View Details</button>
+            <div class="modal fade bs-example-modal-lg" id="<%= c.id %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times fa-2x"></i></span></button>
+                  <div class="container">
+                    <div class="row top">
+                      <div class="col-sm-12">
+                        <h1 style="margin-bottom: 0px;"><%= c.company %></h1>
+                        <p style="margin-top: 0px;"><%= c.position %></p>
+                      </div>
+                    </div>
+                    <div class="row show-more">
+                      <div class="col-sm-6">
+                        <p><%= c.short_description %></p>
+                        <p><%= raw c.description %></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <p>Please contact us at:</p>
+                        <p>
+                          <strong><%= c.email %></strong><br>
+                          <strong><%= c.website %></strong><br>
+                          <strong><%= c.phone %></strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         <% end %>
       </div>
     </div><!-- end row -->
   </div><!-- end container -->
 </section>
-
-<script>
-(function() {
-  var docElem = window.document.documentElement, didScroll, scrollPosition;
-
-  // trick to prevent scrolling when opening/closing button
-  function noScrollFn() {
-    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
-  }
-
-  function noScroll() {
-    window.removeEventListener( 'scroll', scrollHandler );
-    window.addEventListener( 'scroll', noScrollFn );
-  }
-
-  function scrollFn() {
-    window.addEventListener( 'scroll', scrollHandler );
-  }
-
-  function canScroll() {
-    window.removeEventListener( 'scroll', noScrollFn );
-    scrollFn();
-  }
-
-  function scrollHandler() {
-    if( !didScroll ) {
-      didScroll = true;
-      setTimeout( function() { scrollPage(); }, 60 );
-    }
-  };
-
-  function scrollPage() {
-    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-    didScroll = false;
-  };
-
-  scrollFn();
-
-  var el = document.querySelector( '.morph-button' );
-
-  new UIMorphingButton(el, {
-    closeEl : '.icon-close',
-    onBeforeOpen : function() {
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterOpen : function() {
-      // can scroll again
-      canScroll();
-      // add class "noscroll" to body
-      classie.addClass( document.body, 'noscroll' );
-      // add scroll class to main el
-      classie.addClass( el, 'scroll' );
-    },
-    onBeforeClose : function() {
-      // remove class "noscroll" to body
-      classie.removeClass( document.body, 'noscroll' );
-      // remove scroll class from main el
-      classie.removeClass( el, 'scroll' );
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterClose : function() {
-      // can scroll again
-      canScroll();
-    }
-  } );
-})();
-(function() {
-  var docElem = window.document.documentElement, didScroll, scrollPosition;
-
-  // trick to prevent scrolling when opening/closing button
-  function noScrollFn() {
-    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
-  }
-
-  function noScroll() {
-    window.removeEventListener( 'scroll', scrollHandler );
-    window.addEventListener( 'scroll', noScrollFn );
-  }
-
-  function scrollFn() {
-    window.addEventListener( 'scroll', scrollHandler );
-  }
-
-  function canScroll() {
-    window.removeEventListener( 'scroll', noScrollFn );
-    scrollFn();
-  }
-
-  function scrollHandler() {
-    if( !didScroll ) {
-      didScroll = true;
-      setTimeout( function() { scrollPage(); }, 60 );
-    }
-  };
-
-  function scrollPage() {
-    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-    didScroll = false;
-  };
-
-  scrollFn();
-
-  var el = document.querySelector( '.morph-button' );
-
-  new UIMorphingButton( el, {
-    closeEl : '.icon-close',
-    onBeforeOpen : function() {
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterOpen : function() {
-      // can scroll again
-      canScroll();
-      // add class "noscroll" to body
-      classie.addClass( document.body, 'noscroll' );
-      // add scroll class to main el
-      classie.addClass( el, 'scroll' );
-    },
-    onBeforeClose : function() {
-      // remove class "noscroll" to body
-      classie.removeClass( document.body, 'noscroll' );
-      // remove scroll class from main el
-      classie.removeClass( el, 'scroll' );
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterClose : function() {
-      // can scroll again
-      canScroll();
-    }
-  } );
-})();
-(function() {
-  var docElem = window.document.documentElement, didScroll, scrollPosition;
-
-  // trick to prevent scrolling when opening/closing button
-  function noScrollFn() {
-    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
-  }
-
-  function noScroll() {
-    window.removeEventListener( 'scroll', scrollHandler );
-    window.addEventListener( 'scroll', noScrollFn );
-  }
-
-  function scrollFn() {
-    window.addEventListener( 'scroll', scrollHandler );
-  }
-
-  function canScroll() {
-    window.removeEventListener( 'scroll', noScrollFn );
-    scrollFn();
-  }
-
-  function scrollHandler() {
-    if( !didScroll ) {
-      didScroll = true;
-      setTimeout( function() { scrollPage(); }, 60 );
-    }
-  };
-
-  function scrollPage() {
-    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-    didScroll = false;
-  };
-
-  scrollFn();
-
-  var el = document.querySelector( '.morph-button' );
-
-  new UIMorphingButton( el, {
-    closeEl : '.icon-close',
-    onBeforeOpen : function() {
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterOpen : function() {
-      // can scroll again
-      canScroll();
-      // add class "noscroll" to body
-      classie.addClass( document.body, 'noscroll' );
-      // add scroll class to main el
-      classie.addClass( el, 'scroll' );
-    },
-    onBeforeClose : function() {
-      // remove class "noscroll" to body
-      classie.removeClass( document.body, 'noscroll' );
-      // remove scroll class from main el
-      classie.removeClass( el, 'scroll' );
-      // don't allow to scroll
-      noScroll();
-    },
-    onAfterClose : function() {
-      // can scroll again
-      canScroll();
-    }
-  } );
-})();
-
-</script>

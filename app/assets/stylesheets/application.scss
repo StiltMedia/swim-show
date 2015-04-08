@@ -860,7 +860,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: white;
   }
   @media (max-width: 1440px) {
-    background-position: right 0em bottom -14em;
+    background-position: center;
   }
   @media (max-width: 1280px) {
     height: 500px;
@@ -1062,7 +1062,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/current-lines.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-position: center 200%;
+  background-position: center 250%;
   // background-size: cover;
   height: 600px;
   position: relative;
@@ -1256,7 +1256,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-family: $lato;
     text-align: center;
   }
+  .btn-member {
+    margin: 0 auto;
+    display: block;
+    &:focus {
+      outline: none;
+    }
+  }
+  .top {
+    padding-top: 7em;
+    h1 {
+      font-size: 50px !important;
+    }
+  }
   .show-more {
+    padding-top: 2em;
     p {
       text-align: left;
       margin: 0;
@@ -1282,6 +1296,23 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   .classifieds {
     min-height: 300px;
+  }
+  .modal-lg {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .modal-content {
+    min-height: 100vh;
+    border: none;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 0px;
+  }
+  button.close {
+    position: absolute;
+    right: 2em;
+    top: 1em;
   }
 }
 
