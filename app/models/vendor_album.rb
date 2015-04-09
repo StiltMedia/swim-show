@@ -1,6 +1,6 @@
 class VendorAlbum < ActiveRecord::Base
   has_many :pictures, :dependent => :destroy
-  accepts_nested_attributes_for :pictures
+  accepts_nested_attributes_for :pictures, :allow_destroy => true
 
   has_attached_file :logo,
   :storage => :s3,
