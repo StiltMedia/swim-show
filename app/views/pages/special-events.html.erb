@@ -86,17 +86,26 @@ jQuery(document).ready(function($) {
     event.preventDefault();
     $.iLightBox(
       [
-
         {
-          url: "http://pdl.vimeocdn.com/51195/520/295319482.mp4?token2=1428339326_de7db6f3da656fa938210ea0cb9aec4b&aksessionid=a30eb3a0d5c159a3",
-          type: 'iframe',
+          url: "https://s3.amazonaws.com/swim-show/special-events/fashion-show/Swim+2014+Edit-ITS_720.mp4",
+          type: 'video',
+          options: {
+            width: 640,
+            height: 460,
+            flashvars: {
+              file: 'video',
+              autostart: true,
+            }
+          }
         },
-
       ],
       {skin: 'metro-black',
         overlay: {
           opacity: 0.7
-        }
+        },
+
+
+
       }
     );
   });
