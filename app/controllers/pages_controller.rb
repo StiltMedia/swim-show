@@ -82,6 +82,37 @@ class PagesController < ApplicationController
     @line_z = Line.order(name: 'ASC').where(letter: 'Z')
   end
 
+  def westcoastlines
+    @line_a = Line.order(name: 'ASC').where(letter: 'A')
+    @line_b = Line.order(name: 'ASC').where(letter: 'B')
+    @line_c = Line.order(name: 'ASC').where(letter: 'C')
+    @line_d = Line.order(name: 'ASC').where(letter: 'D')
+    @line_e = Line.order(name: 'ASC').where(letter: 'E')
+    @line_f = Line.order(name: 'ASC').where(letter: 'F')
+    @line_g = Line.order(name: 'ASC').where(letter: 'G')
+    @line_h = Line.order(name: 'ASC').where(letter: 'H')
+    @line_i = Line.order(name: 'ASC').where(letter: 'I')
+    @line_j = Line.order(name: 'ASC').where(letter: 'J')
+    @line_k = Line.order(name: 'ASC').where(letter: 'K')
+    @line_l = Line.order(name: 'ASC').where(letter: 'L')
+    @line_m = Line.order(name: 'ASC').where(letter: 'M')
+    @line_n = Line.order(name: 'ASC').where(letter: 'N')
+    @line_o = Line.order(name: 'ASC').where(letter: 'O')
+    @line_p = Line.order(name: 'ASC').where(letter: 'P')
+    @line_q = Line.order(name: 'ASC').where(letter: 'Q')
+    @line_r = Line.order(name: 'ASC').where(letter: 'R')
+    @line_s = Line.order(name: 'ASC').where(letter: 'S')
+    @line_t = Line.order(name: 'ASC').where(letter: 'T')
+    @line_u = Line.order(name: 'ASC').where(letter: 'U')
+    @line_v = Line.order(name: 'ASC').where(letter: 'V')
+    @line_w = Line.order(name: 'ASC').where(letter: 'W')
+    @line_x = Line.order(name: 'ASC').where(letter: 'X')
+    @line_y = Line.order(name: 'ASC').where(letter: 'Y')
+    @line_z = Line.order(name: 'ASC').where(letter: 'Z')
+  end
+
+
+
 
   private
 

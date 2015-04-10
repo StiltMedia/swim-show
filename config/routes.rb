@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
   get '/west-coast-regional' => 'pages#westcoastregional'
+  get '/west-coast-lines' => 'pages#westcoastlines', as: :wc_lines
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
