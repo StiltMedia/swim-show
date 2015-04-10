@@ -444,7 +444,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  background-position: right 0em top 0em;
   .bkg {
     display: none;
   }
@@ -490,23 +489,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 1280px) {
-    background-position: right -10em top 5em;
-    height: 100vh;
     .top {
       padding: 8em 0 4em;
     }
   }
   @media (max-width: 1024px) {
-    height: 100vh;
-    background-position: right -19em top 5em;
+    min-height: 100vh;
     .top {
       padding: 6em 0 3em;
     }
   }
   @media (max-width: 736px) {
-    height: 100%;
-    background-position: right 65% 50%;
-    height: 100%;
+    background-position: 65% 50%;
     padding-bottom: 100px;
     .scroll-down {
       bottom: 10px;
@@ -1062,9 +1056,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .lines-head {
   @extend .showdates-head;
-  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/current-lines.jpg) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/current-lines.jpg) no-repeat center bottom;
   background-attachment: fixed;
-  background-position: center 380%;
+  background-position: center -25%;
   // background-size: cover;
   height: 600px;
   position: relative;
@@ -1082,11 +1076,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: white;
   }
   @media (max-width: 1440px) {
-    background-position: 70% 130%;
+    background-position: center -70%;
   }
   @media (max-width: 1024px) {
     height: 400px;
-    background-position: 70% 230%;
+    background-position: center;
     background-size: contain;
     .top {
       padding-top: 12em;
@@ -1454,7 +1448,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   text-align: center;
   height: 100vh;
   position: relative;
-  background-position: 50% -30%;
+  background-position: center;
   .bkg {
     background: rgba(0,0,0,0.3);
     width: 100%;
@@ -1485,13 +1479,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   @media (max-width: 1440px) {
     background-size: cover;
-    background-position: 50% -170%;
     .top {
       padding-top: 12em;
     }
-  }
-  @media (max-width: 1280px) {
-    background-position: center;
   }
   @media (max-width: 1024px) {
     .top {
