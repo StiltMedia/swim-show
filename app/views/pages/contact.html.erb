@@ -17,14 +17,35 @@
         <h4>Email</h4>
         <p class="info">info@swimshow.com</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <%= form_for(@contact) do |f| %>
-          <%= f.text_field :first_name, placeholder: "First Name*", style: 'padding-top:0px;width:40%;margin-right: 5%;' %><%= f.text_field :last_name, placeholder: "Last Name*",style: 'padding-top:0px;width:40%;' %><br>
-          <%= f.text_field :email, placeholder: "Email*", style: 'width:40%;margin-right: 5%;' %><%= f.text_field :subject, placeholder: "Subject*",style: 'width:40%;' %><br>
-          <%= f.text_field :message, placeholder: "Message*", style: 'width:85%;' %><br>
-          <p class="info">* = Required</p>
+          <div class="row">
+            <div class="col-xs-6">
+              <%= f.text_field :first_name, placeholder: "First Name*" %>
+            </div>
+            <div class="col-xs-6">
+              <%= f.text_field :last_name, placeholder: "Last Name*" %>
+            </div>
+          </div>
           <div class="delimiter25"></div>
-          <%= f.submit 'Send Message', class: 'btn btn-member' %>
+          <div class="row">
+            <div class="col-xs-6">
+              <%= f.text_field :email, placeholder: "Email*" %>
+            </div>
+            <div class="col-xs-6">
+              <%= f.text_field :subject, placeholder: "Subject*" %>
+            </div>
+          </div>
+          <div class="delimiter25"></div>
+          <div class="row">
+            <div class="col-xs-12">
+              <%= f.text_field :message, placeholder: "Message*" %>
+              <br>
+              <p class="info">* = Required</p>
+              <div class="delimiter25"></div>
+              <%= f.submit 'Send Message', class: 'btn btn-member' %>
+            </div>
+          </div>
         <% end %>
         <div class="delimiter"></div>
       </div>
