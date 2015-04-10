@@ -2,7 +2,7 @@ class Mailer < ApplicationMailer
 
   def contact_form(contact)
     @contact = contact
-    mail :to => "info@stiltmedia.com", :from => "SwimShow@swimshow.com", :subject => "From Contact Form: #{@contact.subject}"
+    mail :to => ["mark@stiltmedia.com","judy@swimshow.com"], :from => "SwimShow@swimshow.com", :subject => "From Contact Form: #{@contact.subject}"
   end
 
   def media_registration_form(media)
