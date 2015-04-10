@@ -130,6 +130,7 @@ footer {
 
 .navbar {
   height: 79px;
+  margin-bottom: 0px;
 }
 
 .navbar-inverse {
@@ -143,7 +144,8 @@ footer {
 
 .navbar-nav {
   float: right;
-  padding: 13px 98px 0px;
+  // padding: 13px 98px 0px;
+  padding: 13px 0px 0px;
   li > a {
     color: #000000 !important;
     padding-bottom: 28px;
