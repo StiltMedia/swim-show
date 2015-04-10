@@ -43,7 +43,7 @@ ActiveAdmin.register VendorAlbum do
   form do |f|
     f.inputs "Vendor Details" do
       f.input :name
-      f.input :logo
+      f.input :logo, :hint => f.image_tag(f.object.logo.url(:admin))
       f.has_many :pictures do |a|
         a.input :title
         a.input :image, :as => :file, :label => "Image", :hint => a.template.image_tag(a.object.image.url(:admin))
