@@ -88,7 +88,10 @@
           <%= f.fields_for :products do |builder| %>
             <%= render 'product_fields', f: builder %>
           <% end %>
-          <%= link_to_add_association 'Add Product', f, :products %>
+          <div class="row">
+            <%= link_to_add_association 'Add Product', f, :products %>
+          </div>
+
         </div>
 
 

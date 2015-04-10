@@ -1,16 +1,16 @@
 <div class='nested-fields'>
-  <%= f.fields_for :products do |p| %>
+
     <div class="container-fluid inner">
       <div class="row">
         <div class="col-xs-5">
-          <%= p.select :category, nil, {prompt: 'Select Category'}, {class: 'products'} do %>
+          <%= f.select :category, nil, {prompt: 'Select Category'}, {class: 'products'} do %>
             <% [["Missy"],["Contemporary Missy"],["Contemporary"],["Designer"],["Lifestyle/Activewear"],["Junior"],["Contemporary Junior"],["Performance"],["Plus Sizes"],["Cover-Ups"],["Resortwear"],["Mastectomy"],["Separates"],["Bra Sized"],["Bra Sized Separates"],["Figure Control"],["Private Label"],["Children’s/Pre-Teens"],["Maternity"],["Accessories/Sandals"],["Men’s"],["Boy’s"],["Lingerie"]].each do |i| %>
               <%= content_tag(:option, i.first) %>
             <% end %>
           <% end %>
         </div>
         <div class="col-xs-5">
-          <%= p.select :price_point, nil, {prompt: 'Select Price Point'}, {class: 'products'} do %>
+          <%= f.select :price_point, nil, {prompt: 'Select Price Point'}, {class: 'products'} do %>
             <% [["$30 & Below"],["$31-$60"],["$61-$100"],["$101-$150"],["$151 & Over"]].each do |i| %>
               <%= content_tag(:option, i.first) %>
             <% end %>
@@ -21,5 +21,5 @@
         </div>
       </div>
     </div>
-  <% end %>
+  
 </div>

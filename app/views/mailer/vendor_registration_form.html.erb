@@ -15,18 +15,22 @@ Email: <%= @vendor.email %><br>
 Instagram: <%= @vendor.instagram %><br>
 Facebook: <%= @vendor.facebook %><br>
 Twitter: <%= @vendor.twitter %><br>
-Opt out of Email: <%= @vendor.opt_out_email %><br>
+Email Opt Out: <%= @vendor.opt_out_email %><br>
 Website: <%= @vendor.website %><br>
 Phone: <%= @vendor.phone %><br>
+Phone Opt Out: <%= @vendor.opt_out_phone %><br>
 Extension: <%= @vendor.extension %><br>
 Other Phone: <%= @vendor.phone_2 %><br>
 Fax: <%= @vendor.fax %><br>
-Opt out of Phone: <%= @vendor.opt_out_phone %><br>
+Insert your product categories and price points:<br>
+<% @vendor.products.each do |t| %>
+<%= t.category %>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= t.price_point %><br>
+<% end %>
 Type of Store: <%= @vendor.type_of_store %><br>
 Status: <%= @vendor.status %><br>
 Number of Stores: <%= @vendor.number_of_stores %><br>
-Have you Attended SwimShow: <%= @vendor.attended_swimshow %><br>
+Have you attended our SwimShow in the past?: <%= @vendor.attended_swimshow %><br>
 Other Tradeshow Name: <% @vendor.tradeshows.each do |t| %><%= t.name %> &nbsp;<% end %><%= @vendor.other_tradeshow_name %><br>
-Wants the show directory to be sent via mail: <%= @vendor.mail_show_directory %><br>
+Do you wish to have a show directory mailed to you prior to the tradeshow?: <%= @vendor.mail_show_directory %><br>
 Comments: <%= @vendor.comments %><br>
-Created at: <%= @vendor.created_at %>
+Created at: <%= @vendor.created_at %><br>
