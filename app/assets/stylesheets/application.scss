@@ -1082,6 +1082,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   h1 {
     color: white;
   }
+  @media (max-width: 1600px) {
+    background-size: 130%;
+  }
   @media (max-width: 1440px) {
     background-position: 65% top;
     background-size: 150%;
