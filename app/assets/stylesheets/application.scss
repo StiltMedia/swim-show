@@ -443,7 +443,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   background-position: right 0em top 0em;
   .bkg {
     display: none;
