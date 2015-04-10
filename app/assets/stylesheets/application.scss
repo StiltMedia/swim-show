@@ -1443,12 +1443,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/swim-overview.jpg) repeat-y center bottom;
   background-attachment: fixed;
-  background-size: initial;
+  background-size: cover;
   max-width: 100%;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background-position: center;
+  padding-bottom: 50pc;
   .bkg {
     background: rgba(0,0,0,0.3);
     width: 100%;
@@ -1478,7 +1479,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
   }
   @media (max-width: 1440px) {
-    background-size: cover;
     .top {
       padding-top: 12em;
     }
