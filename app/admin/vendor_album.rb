@@ -46,12 +46,7 @@ ActiveAdmin.register VendorAlbum do
       f.input :logo
       f.has_many :pictures do |a|
         a.input :title
-        a.input :image, :as => :file, :label => "Image", :hint =>
-        if a.template.image_tag(a.object.image.url(:admin)).blank? do '\n'
-          "Please upload image"
-        else
-          a.template.image_tag(a.object.image.url(:admin))
-        end
+        a.input :image, :as => :file, :label => "Image", :hint => a.template.image_tag(a.object.image.url(:admin))
         a.input :_destroy, :as=>:boolean, :label=>'Remove'
       end
 
