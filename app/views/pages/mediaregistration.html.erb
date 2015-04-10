@@ -19,7 +19,7 @@
           <% end %><br>
           <%= f.text_field :address1, placeholder: "Address 1*" %><br>
           <%= f.text_field :address2, placeholder: "Address 2" %><br>
-          <%= f.country_select :country, priority: %w(US CA), prompt: 'Please select a country*' %><br>
+          <%= f.select :country, options_for_select(countries_3), prompt: 'Please Select a Country*' %><br>
           <%= f.text_field :city, placeholder: "City*", style: 'width:47.5%;margin-right: 5%;' %><%= f.text_field :state, placeholder: "State", style: 'width:47.5%;' %><br>
           <%= f.text_field :postal_code, placeholder: "Postal Code*" %><br>
           <%= f.text_field :province, placeholder: "Province" %><br>

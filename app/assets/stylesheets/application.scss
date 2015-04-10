@@ -53,6 +53,10 @@ body {
   margin: 0;
 }
 
+.tooltip {
+  z-index: 100;
+}
+
 #wrapper {
   min-height: 100%;
 }
@@ -1058,8 +1062,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/current-lines.jpg) no-repeat center bottom;
   background-attachment: fixed;
-  background-position: center -25%;
-  // background-size: cover;
+  background-position: top;
+  background-size: 100%;
   height: 600px;
   position: relative;
   .bkg {
@@ -1076,19 +1080,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: white;
   }
   @media (max-width: 1440px) {
-    background-position: center -70%;
+    background-position: 65% top;
+    background-size: 150%;
   }
   @media (max-width: 1024px) {
     height: 400px;
-    background-position: center;
-    background-size: contain;
+    background-position: 65% 30px;
+    background-size: 120%;
     .top {
       padding-top: 12em;
     }
   }
   @media (max-width: 736px) {
-    background-position: center;
-    background-size: cover;
+    background-position: 60% top;
+    background-size: 370%;
     .top {
       padding-top: 12em;
     }
