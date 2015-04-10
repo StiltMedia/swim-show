@@ -14,5 +14,5 @@ require 'csv'
 # end
 
 CSV.foreach("db/2014-west-coast-lines-list.csv") do |row|
-    Line.create letter: row[0], name: row[1]
+    WestCoastLine.create letter: row[0], name: row[1]
 end
