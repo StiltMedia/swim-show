@@ -675,6 +675,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   @extend .showdates-head;
   background: url(https://s3.amazonaws.com/swim-show/Website+Images/headers/special-events.jpg) repeat-y center bottom;
   background-attachment: fixed;
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    background-attachment: scroll;
+  }
   background-position: center;
   height: 600px;
   background-size: cover;
