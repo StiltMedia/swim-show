@@ -1,6 +1,7 @@
 ActiveAdmin.register VendorRegistration do
 
-
+  menu label: "Retailer Registration"
+  index title: 'Retailer Registration'
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -13,6 +14,10 @@ ActiveAdmin.register VendorRegistration do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+
+
+
+
 
 
 end

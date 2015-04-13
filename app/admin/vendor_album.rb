@@ -1,6 +1,6 @@
 ActiveAdmin.register VendorAlbum do
 
-
+  menu label: "Galleries"
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -14,7 +14,7 @@ ActiveAdmin.register VendorAlbum do
   #   permitted
   # end
 
-  index do
+  index :title => 'Galleries' do
     selectable_column
     id_column
     column :name
