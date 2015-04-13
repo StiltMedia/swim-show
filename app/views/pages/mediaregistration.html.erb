@@ -13,7 +13,7 @@
           <%= f.text_field :other, placeholder: "If Other, Let us know your Title" %><br>
           <%= f.text_field :publication, placeholder: "Publication*" %><br>
           <%= f.select :type_of_media, nil, {prompt: 'Select Type of Media*'} do %>
-            <% [['Magazine'], ['Print/Newspaper'], ['Broadcast'], ['Internet'], ['Photo Agency'], ['Blog'], ['Freelance'], ['Blogger'], ['Stylist'], ['Newswire'], ['Newsletter'], ['TV (National/Regional)'], ['TV (Cable)']].each do |i| %>
+            <% [['Magazine'], ['Print/Newspaper'], ['Broadcast'], ['Internet'], ['Photo Agency'], ['Blog'], ['Freelance'], ['Stylist'], ['Newswire'], ['Newsletter'], ['TV (National/Regional)'], ['TV (Cable)']].each do |i| %>
               <%= content_tag(:option, i.first) %>
             <% end %>
           <% end %><br>

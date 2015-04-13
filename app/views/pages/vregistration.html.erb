@@ -54,7 +54,7 @@
         <div class="container-fluid inner">
           <div class="row">
             <div class="col-xs-8">
-              <%= f.input :phone, placeholder: "Phone*", label: false %>
+              <%= f.input :phone, placeholder: "Phone*", as: :tel, label: false %>
             </div>
             <div class="col-xs-4">
               <%= f.input :extension, placeholder: "Extension", label: false %>
@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <%= f.input :phone_2, placeholder: "Phone 2", label: false %>
+        <%= f.input :phone_2, placeholder: "Phone 2", as: :tel, label: false, area_code: true %>
         <p class="check2"><strong>Do you wish to opt-out your phone number from vendors/exhibitors?</strong></p>
         <%= f.input :opt_out_phone,
         :collection => [['Yes','Yes' ], ['No', 'No']],
@@ -145,9 +145,9 @@
       "vendor_registration[postal_code]": {required: true, digits: true, minlength: 5},
       "vendor_registration[country]": {required: true},
       "vendor_registration[email]": {required: true, email: true},
-      "vendor_registration[phone]": {required: true, digits: true, minlength: 10},
+      "vendor_registration[phone]": {required: true, minlength: 10},
       "vendor_registration[extension]": {required: false, digits: true},
-      "vendor_registration[phone_2]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[phone_2]": {required: false, minlength: 10},
       "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
       "vendor_registration[type_of_store]": {required: true},
       "vendor_registration[status]": {required: true},
@@ -161,4 +161,5 @@
       //   example5: {placement:'right',html:true}
       // },
   });
+  $('#vendor_registration_phone_2').mask('(000) 000-0000');
 </script>

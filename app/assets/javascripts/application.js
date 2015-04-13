@@ -47,6 +47,7 @@
 //= require jquery.jscroll.min
 //= require language-classie
 //= require language-select
+//= require jquery.mask
 
 // Everything custom down here
 
