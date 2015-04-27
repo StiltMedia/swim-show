@@ -1,78 +1,57 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-en:
+esp:
   layouts:
-    overview: "Overview"
-    show_dates: "Show Dates"
-    special_events: "Special Events"
-    floor_plan: "Floor Plan"
-    exhibitors: "Exhibitors"
-    retailers: "Retailers"
-    media: "Media"
-    travel: "Travel"
-    current_lines: "Current Lines"
-    gallery: "Gallery"
-    classifieds: "Classifieds"
-    about_us: "About Us"
-    west_coast_regional: "West Coast Reginal"
-    Contact: "Contact"
+    overview: "visión de conjunto"
+    show_dates: " Proóximas Fechas "
+    special_events: "Eventos Especiales"
+    floor_plan: "Plano de planta"
+    exhibitors: "Expositores"
+    retailers: "Minoristas"
+    media: "Medios de comunicación"
+    travel: "viajes"
+    current_lines: "LÍNEAS ACTUALES"
+    gallery: "GALERÍA "
+    classifieds: "CLASIFICADOS"
+    about_us: " SOBRE NOSOTROS"
+    west_coast_regional: "FERIA REGIONAL DE LA COSTA OESTE"
+    Contact: "CONTACTO"
   about:
-    story_title: "The Story"
-    story: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
-    splash_title: "Splashy Start"
-    splashy: "In 1982, a small group of sales representatives decided to organize a special event to bring together all of the central players from all aspects of the swimwear industry under one roof. They chose Miami since more than 60 percent of the industry’s business at that time was handled by sales representatives at the Miami Merchandise Mart with or without showrooms. The first show featured 15 representatives with 30 collections. Staying true to its original mission, the SwimShow isn’t one of the largest events of its kind, it is THE largest swimwear trade show in the world, featuring thousands of buyers from dozens of countries each year."
-    sizzle_title: "South Beach Sizzle"
-    sizzle_part_one: "The tradeshow is held at the Miami Beach Convention Center, in the heart of trendy South Beach. The SwimShow with the support of the Miami Beach Visitor and Convention Authority offers endless possibilities in and around South Beach with negotiated rates at local hotels, complimentary transportation and an on-site concierge. Full of activity, events and shopping and the perfect partner for the swimwear industry, South Beach is a premier resort destination ideal for swim lovers, complete with designer boutiques, world-class hotels, five-star dining, beautiful beaches, and captivating nightlife."
-    sizzle_part_two: "The Convention Center is spacious and allows all exhibitors to share their latest and greatest on one floor. The easy-to-navigate show is segmented for easy shopping and access, with a concierge always available for directions and assistance."
-    sizzle_part_three: "The SwimShow has always been planned and executed with the utmost needs of swimwear buyers and lovers in mind. We anticipate trends, debut new designers each year, expand special events and put on a fabulous eye-catching and inspiring show."
+    story_title: "La Historia"
+    story: "Con más de tres décadas de experiencia en SwimShow, la Swimwear Association of Florida (Asociación de trajes de baño de Florida) es reconocida como líder en exhibiciones de trajes de baño a nivel mundial. Por ser la exhibición más celebrada y establecida de la industria, SwimShow es el evento global más importante, en el que se reúne lo mejor de lo mejor para forjar relaciones comerciales, exhibir y adquirir las tendencias del próximo año."
+    splash_title: "Un gran salpicón inicial"
+    splashy: "En 1982, un pequeño grupo de representantes de ventas decidió organizar un evento especial para reunir a todas las partes centrales de todos los aspectos de la industria de los trajes de baño en un mismo lugar. Escogieron Miami porque más del sesenta por ciento de las empresas de la industria en ese momento estaban manejadas por representantes de ventas en el Miami Merchandise Mart, con o sin salones de ventas. La primera exposición contó con 15 representantes y 30 colecciones. Fiel a su misión original, SwimShow no es uno de los eventos más grandes de su tipo: es LA mayor exhibición de trajes de baño del mundo, con miles de compradores de docenas de países cada año."
+    sizzle_title: "Alboroto en South Beach"
+    sizzle_part_one: "La exhibición se lleva a cabo en el Miami Beach Convention Center, en el corazón de la moderna South Beach. SwimShow con el respaldo de Miami Beach Visitor and Convention Authority (Autoridad de Convenciones y Visitantes de Miami Beach) ofrece acceso a un sinfín de posibilidades en South Beach, con tarifas especiales en los hoteles locales, transporte de cortesía y servicio de conserjería en el centro. Llena de actividad, eventos y compras y pareja ideal de la industria de los trajes de baño, South Beach es un excelente destino de vacaciones, ideal para los amantes del nado, con boutiques de diseñador, hoteles de primer nivel, restaurantes de cinco estrellas, hermosas playas y una cautivante vida nocturna."
+    sizzle_part_two: "El centro de convenciones es amplio y permite que todos los expositores compartan sus últimos y mejores productos en un mismo lugar. La exhibición puede recorrerse fácilmente, ya que está dividida a fin de facilitar la compra y el acceso, con un conserje siempre disponible para brindar indicaciones y ayuda."
+    sizzle_part_three: "SwimShow siempre se ha planificado y llevado a cabo con las necesidades más importantes de los compradores y amantes de los trajes de baño en mente. Nos anticipamos a las tendencias, presentamos a nuevos diseñadores cada año, ampliamos los eventos especiales y organizamos una exhibición inspiradora que atrae todas las miradas."
   west_coast:
-    title: "West Coast Regional Tradeshow"
-    sum: "The Swimwear Association of Florida is continuing with its Regional West Coast Tradeshow to make it easier and more convenient for local Florida retailers."
+    title: "feria regional de la costa oeste"
+    sum: "La Swimwear Association of Florida continuará con su Feria Regional de la Costa Oeste para que el acceso al evento sea más fácil y cómodo para los minoristas locales de Florida"
     date: "August 11 -13, 2015"
     location: "The Bradenton Area Convention Center"
     location_two: "Palmetto, Florida"
-    breakfast: "Complimentary light Continental breakfast and lunch will be served daily."
-    hotel_info: "Hotel information is available through the SAF office."
+    breakfast: "Todos los días se servirá un desayuno continental y almuerzo liviano de cortesía"
+    hotel_info: "Hay información sobre hoteles disponible en la oficina de la SAF"
     line: "2014 Line List"
   classifieds:
-    title: "Classifieds"
+    title: "clasificados"
   current_lines:
     list: "2014 Line List"
     coming_soon: "2015 Line List Coming Soon"
   overview:
     title: "SwimShow"
-    part_one: "Welcome to SwimShow and thank you for your interest in the largest and most significant swimwear tradeshow in the world."
-    part_two: "The annual SwimShow is an essential show for the industry—a platform for building relationships, enjoying the latest trends in swimwear and connecting buyers and suppliers. Recognized as the launching pad for many of the industry’s leading lines, SwimShow is hosted in Miami Beach, the swim fashion capital of the world!"
-    part_three: "We welcome exhibitors and buyers from all around the world to join in this one-of-a-kind tradeshow that showcases more than 2,500 of the very best curated lines."
-    part_four: "The show draws more than 3,000 buyers from 60 different countries spanning the globe. It is the largest swimwear tradeshow in the world and the first opportunity for buyers to see the latest designs for the upcoming cruise season."
+    part_one: "Bienvenidos a SwimShow&LingerieShow y gracias por su interés en la exhibición de trajes de baño más grande e importante del mundo."
+    part_two: "La exhibición anual de SwimShow es un evento fundamental para la industria: una plataforma para forjar relaciones, disfrutar de las últimas tendencias de trajes de baño y lencería y conectar a los compradores con los proveedores. Reconocida como plataforma de lanzamiento para muchas de las principales líneas de la industria, SwimShow se lleva a cabo en Miami Beach, ¡la capital mundial de la moda en lo referente a trajes de baño!"
+    part_three: "Invitamos a expositores y compradores de todo el mundo a unirse a nosotros en esta exhibición única en la que se presentan más de 2.500 de las más exclusivas líneas."
+    part_four: "La exhibición reúne a más de 2.500 compradores de 60 países distintos de todo el mundo. Es la exhibición de trajes de baño más grande del mundo y la primera oportunidad que tienen los compradores de ver los últimos diseños para la próxima temporada de cruceros."
     local: "Miami Beach Convention Center"
     local_two: "1901 Convention Center Drive"
     local_three: "Miami Beach, FL 33139"
     local_rooms: "Halls A & D"
-    title_two: "About The Show"
-    dive: "Dive into the world’s biggest, boldest and best swim show!"
-    about: "Turning heads and turning out trends for more than three decades, SwimShow 2015 will be more comprehensive with a better than ever selection of the finest swimwear for women, men and children plus resortwear, beachwear, lifestyle, yoga and accessory collections from across the globe."
-    about_two: "This can’t-miss one-of-a-kind tradeshow offers exclusive access to the latest trends in swimwear, stunning sights and events, and a true celebration of the simple luxury of swimwear!"
-    about_date: "July 18-21, 2015…enjoy the SWIM!"
+    title_two: "Sobre la demostración"
+    dive: "Sumérjase en la mejor exhibición de trajes de baño: ¡la más grande y audaz del mundo!"
+    about: "Tras más de tres décadas en el centro de las miradas e imponiendo tendencias, SwimShow 2015 será más integral con una selección mejor que nunca de los trajes de baño más exclusivos para mujeres, hombres y niños, además de vestimenta para vacaciones, playa, estilo de vida, yoga y colecciones de accesorios de todo el mundo.SwimShow 2013, más grande y mejor que nunca, incluirá:La Colección: una nueva área de diseño para trajes de baño de alta gama Una sección de lencería exclusiva y más grande Más de las mejores colecciones de mujeres, hombres, niños, vacaciones y estilo de vida y accesorios de todo el mundo"
+    about_two: "Esta exhibición imperdible ofrece acceso exclusivo a las últimas tendencias en trajes de baño, los eventos más especiales, ¡y una verdadera celebración del simple lujo de los trajes de baño!"
+    about_date: "Del 18 al 21 de julio de 2015... ¡disfrute de los TRAJES DE BAÑO!"
     ready: "Get Ready for July 18 - 21"
     clock_enjoy: "...enjoy the"
     clock_swim: " SWIM!"
@@ -182,11 +161,3 @@ en:
     require_ls_five: "Web publications must provide an existing secured site with relevant content that is updated on a continuing basis (personal web logs do not qualify)"
     require_ls_six: "Freelance writers, video production companies and photographers must provide a letter from an editor or producer stating they are on assignment for an industry related publication"
     mail: "Please mail sample publication and circulation figures to:"
-
-
-
-
-
-
-
-

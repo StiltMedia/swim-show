@@ -2,17 +2,17 @@
   <div class="bkg"></div>
   <div class="container-fluid">
     <div class="col-sm-12 col-md-6 top">
-      <h1>West Coast Regional Tradeshow</h1>
+      <h1><%= t('west_coast.title')%></h1>
       <br>
-      <p>The Swimwear Association of Florida is continuing with its Regional West Coast Tradeshow<br>to make it easier and more convenient for local Florida retailers.</p>
+      <p><%= t('west_coast.sum')%></p>
       <br>
       <!-- <h4>Bradenton Area Convention Center<br>Dates To Be Announced</h4> -->
-      <h4>August 11 -13, 2015<br>The Bradenton Area Convention Center<br>Palmetto, Florida</h4>
+      <h4><%= t('west_coast.date') %><br><%= t('west_coast.location') %> <br> <%= t('west_coast.location_two') %></h4>
 
       <br>
-      <p>Complimentary light Continental breakfast and lunch will be served daily.<br>Hotel information is available through the SAF office.</p>
+      <p><%= t('west_coast.breakfast') %><br><%= t('west_coast.hotel_info')%></p>
       <br>
-      <li><%= link_to '2014 Line List', wc_lines_path, class: 'btn btn-member' %></li>
+      <li><%= link_to t('west_coast.line'), wc_lines_path, class: 'btn btn-member' %></li>
     </div>
   </div>
   <div class="delimiter">

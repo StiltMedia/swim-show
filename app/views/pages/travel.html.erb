@@ -24,19 +24,19 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <h2>Routes To The Miami Beach<br>Convention Center</h2>
+        <h2><%= t('travel.routes_title')%><br><%= t('travel.routes_title_two')%></h2>
       </div>
     </div>
     <div class="delimiter"></div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="col-xs-12 col-sm-6">
-          <p><strong>Take 836 East toward “Beaches” and follow Directions from South.</strong></p>
-          <p>Directions from South: 1-95 Northbound, exit 395 East (MacArthur Causeway) to Alton Road North, right on 17th Street, left on Convention Center Drive.</p>
+          <p><strong><%= t('travel.routes_south')%></strong></p>
+          <p><%= t('travel.routes_south_one')%></p>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <p><strong>Take 112 East toward “Beaches” and follow Directions from North.</strong></p>
-          <p>Directions from North: 1-95 Southbound, exit 195 East (Julia Tuttle Causeway) to Alton Road South, left on 17th Street, left on Convention Center Drive.</p>
+          <p><strong><%= t('travel.routes_north')%></strong></p>
+          <p><%= t('travel.routes_north_one')%></p>
         </div>
       </div>
     </div>
@@ -46,12 +46,12 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 slide-left">
-        <h2>Hotels</h2>
-        <p>Please contact the SAF office directly</p>
+        <h2><%= t('travel.hotel_title')%> </h2>
+        <p><%= t('travel.hotel_sub_title')%></p>
         <p><strong>Phone: 305.596.7889<br>Fax: 305.596.7713<br>E-mail: info@swimshow.com</strong></p>
-        <p>Please note: We DO NOT work with any hotel booking agencies.</p>
-        <p>Please do not book through any hotel booking agencies that contact you<br>directly stating they are working with this association.</p>
-        <p>We do not utilize any of these services and do not recommend any of them.</p>
+        <p><%= t('travel.hotel_note_one')%></p>
+        <p><%= t('travel.hotel_note_two')%></p>
+        <p><%= t('travel.hotel_note_three')%></p>
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
         <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/hotel.jpg', class: 'img-responsive' %>
@@ -67,8 +67,8 @@
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
         <div class="travel-box">
-        <h2>Restaurants</h2>
-        <p>Take a look at the different restaurants in Miami.</p>
+        <h2><%= t('travel.restaurant_title')%></h2>
+        <p><%= t('travel.restaurant_note')%></p>
         <br>
         <%= link_to "View Restaurants", restaurants_path, class: 'btn btn-member' %>
       </div>
@@ -78,8 +78,8 @@
     <div class="row">
       <div class="col-sm-12 col-md-6 slide-left">
         <div class="travel-box">
-          <h2>Miami Nightlife</h2>
-          <p>Get to know some of the places around Miami to have the night of your life.</p>
+          <h2><%= t('travel.nightlife')%></h2>
+          <p><%= t('travel.nightlife_note')%></p>
           <br>
           <%= link_to 'View Places', nightlife_path, class: 'btn btn-member' %>
         </div>
@@ -96,7 +96,7 @@
       </div>
       <div class="col-sm-12 col-md-6 slide-right">
         <div class="travel-box2">
-          <h2>Transportation</h2>
+          <h2><%= t('travel.transportation_title')%></h2>
           <p>TBA</p>
           <!-- <p>Shuttle Bus Service:</p>
           <a target="_blank" href="https://s3.amazonaws.com/swim-show/Website+Images/SwimShow-Bus-Schedule-2014-04.pdf" class="btn btn-member">Current Shuttle Service</a>
@@ -111,8 +111,8 @@
     <div class="row">
       <div class="col-sm-12 col-md-6 slide-left">
         <div class="travel-box2">
-          <h2>Airport Shuttle</h2>
-          <p>Promo Code to be Announced Shortly</p>
+          <h2><%= t('travel.shuttle_title')%></h2>
+          <p><%= t('travel.shuttle_note')%></p>
           <!-- <p>Use Promo Code DLLLR to receive a 20% discount on airport transportation.</p>
           <br>
           <a target="_blank" href="http://www.supershuttle.com/default.aspx?GC=DLLLR" class="btn btn-member">Super Shuttle</a> -->

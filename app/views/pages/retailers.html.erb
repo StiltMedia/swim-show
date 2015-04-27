@@ -3,8 +3,8 @@
   <div class="container-fluid">
     <div class="col-xs-12 col-sm-4 col-sm-offset-2 clearfix">
       <div class="top">
-        <h1>Retailer<br>Requirements</h1>
-        <p>SwimShow is open to the trade only!</p>
+        <h1><%= t('retailers.titleone')%><br><%= t('retailers.titletwo')%></h1>
+        <p><%= t('retailers.subtitle')%></p>
       </div>
     </div>
   <!-- <div class="row scroll-down">
@@ -24,37 +24,37 @@
           <br>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <p>Buyers can be admitted by presenting a minimum of three (3) of the following forms of business identification. Those indicated in boldface must be presented:</p>
+          <p><%= t('retailers.title_form_ls')%></p>
           <ul>
-            <strong><li>Personalized business card listing your business address & job title</li></strong>
-            <strong><li>Recent invoices showing purchases of finished swimwear products within the last year</li></strong>
-            <strong><li>Account list</li></strong>
-            <li>Current retail business license or federal resale tax certificate (international businesses are required to show VAT)</li>
-            <li>Imprinted business check</li>
-            <li>Corporate credit card or proof of merchant credit card ID</li>
-            <li>Credit reference sheet showing companies you purchase from</li>
-            <li>Current year executed sales tax return or sales tax coupon book</li>
-            <li>Lease agreement for commercial space</li>
-            <li>Document from chamber of commerce</li>
-            <li>Original letter of intent from an attorney or bank on official letterhead stating the intent to start a new business (this is acceptable for new businesses only)</li>
+            <strong><li><%= t('retailers.form_ls_one')%></li></strong>
+            <strong><li><%= t('retailers.form_ls_two')%></li></strong>
+            <strong><li><%= t('retailers.form_ls_three')%></li></strong>
+            <li><%= t('retailers.form_ls_four')%></li>
+            <li><%= t('retailers.form_ls_five')%></li>
+            <li><%= t('retailers.form_ls_six')%></li>
+            <li><%= t('retailers.form_ls_seven')%></li>
+            <li><%= t('retailers.form_ls_eight')%></li>
+            <li><%= t('retailers.form_ls_nine')%></li>
+            <li><%= t('retailers.form_ls_ten')%></li>
+            <li><%= t('retailers.form_ls_eleven')%></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <p>Plus one of the following forms of personal photo identification is required:</p>
+        <p><%= t('retailers.photo_id_title')%></p>
         <ul>
-          <li>Driver’s license or passport</li>
-          <li>Government issued photo ID</li>
-          <li>Credit card or bank card with photo</li>
+          <li><%= t('retailers.photo_id_drive')%>Driver’s license or passport</li>
+          <li><%= t('retailers.photo_id_gov')%></li>
+          <li><%= t('retailers.photo_id_credit')%></li>
         </ul>
         <br>
-        <p>For veteran attendees, there is no need to supply credentials. Just fill out the retailer Pre-Registration form on this site BUT, if you are bringing new buyers who have never attended the show, each new buyer must provide the appropriate documents. A guest of a pre-registered buyer can get their badge at the pre-registration kiosks but must be accompanied by the buyer.</p>
+        <p><%= t('retailers.photo_id_vet') %></p>
         <br>
-        <p>We reserve the right to request updated credentials at any time. This is a necessary function in order to keep our database current.</p>
+        <p><%= t('retailers.photo_we')%></p>
         <br>
-        <p><strong>Questions?<br>Call 305.596.7889<br>Email <a href="mailto:info@swimshow.com" target="_top">info@swimshow.com</a></strong></p>
+        <p><strong><%= t('retailers.photo_id_questions')%><br>Call 305.596.7889<br>Email <a href="mailto:info@swimshow.com" target="_top">info@swimshow.com</a></strong></p>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
-        <h1>Online Pre-Registration</h1>
+        <h1><%= t('retailers.photo_bottom_page')%></h1>
         <%= link_to 'Pre-Registration', retailer_registration_path, class: 'btn btn-member' %>
       </div>
     </div>
