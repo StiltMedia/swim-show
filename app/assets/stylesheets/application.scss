@@ -1148,7 +1148,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
     margin: 0 auto;
   }
-  select, textarea, input[type='text'], input[type='email'], input.string {
+  select, textarea, .numeric, input[type='text'], input[type='email'], input.string {
     font-style: italic;
     width: 100%;
     border: none;

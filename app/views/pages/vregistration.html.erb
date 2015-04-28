@@ -105,7 +105,37 @@
         <%= f.input :attended_swimshow,
         :collection => [['Yes','Yes' ], ['No', 'No']],
         :label_method => :last,
-        :value_method => :first, as: :radio_buttons, label: false, required: true %>
+        :value_method => :first, as: :radio_buttons, label: false, required: true,
+        :html => { id: "test"} %>
+
+
+        <div id="day" style="display:none;">
+          <%= f.input :years_attended_show, label: false, placeholder: 'Have many years have you Attended SwimShow?' %>
+        </div>
+
+        <script>
+          $('#vendor_registration_attended_swimshow_yes').on('change',function(){
+            var selection = $(this).val();
+            switch(selection){
+              case "Yes":
+                $("#day").show()
+                break;
+              default:
+                $("#day").hide()
+            }
+          });
+
+          $('#vendor_registration_attended_swimshow_no').on('change',function(){
+            var selection = $(this).val();
+            switch(selection){
+              case "No":
+                $("#day").hide()
+                break;
+              default:
+                $("#day").show()
+            }
+          });
+        </script>
 
         <p class="check"><strong>Other Tradeshows Attended</strong></p>
         <%= f.association :tradeshows, as: :check_boxes, label: false %>
@@ -134,25 +164,25 @@
 
 <script>
 // Vendor Registration Page
-  $("#new_vendor_registration").validate({
-    rules: {
-      "vendor_registration[first_name]": {required: true},
-      "vendor_registration[last_name]": {required: true},
-      "vendor_registration[company]": {required: true},
-      "vendor_registration[title]": {required: true},
-      "vendor_registration[address_1]": {required: true},
-      "vendor_registration[city]": {required: true},
-      "vendor_registration[postal_code]": {required: true},
-      "vendor_registration[country]": {required: true},
-      "vendor_registration[email]": {required: true, email: true},
-      "vendor_registration[phone]": {required: true, minlength: 10},
-      "vendor_registration[extension]": {required: false, digits: true},
-      "vendor_registration[phone_2]": {required: false, minlength: 10},
-      "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
-      "vendor_registration[type_of_store]": {required: true},
-      "vendor_registration[status]": {required: true},
-      "vendor_registration[number_of_stores]": {required: true}
-    }
+  // $("#new_vendor_registration").validate({
+  //   rules: {
+  //     "vendor_registration[first_name]": {required: true},
+  //     "vendor_registration[last_name]": {required: true},
+  //     "vendor_registration[company]": {required: true},
+  //     "vendor_registration[title]": {required: true},
+  //     "vendor_registration[address_1]": {required: true},
+  //     "vendor_registration[city]": {required: true},
+  //     "vendor_registration[postal_code]": {required: true},
+  //     "vendor_registration[country]": {required: true},
+  //     "vendor_registration[email]": {required: true, email: true},
+  //     "vendor_registration[phone]": {required: true, minlength: 10},
+  //     "vendor_registration[extension]": {required: false, digits: true},
+  //     "vendor_registration[phone_2]": {required: false, minlength: 10},
+  //     "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
+  //     "vendor_registration[type_of_store]": {required: true},
+  //     "vendor_registration[status]": {required: true},
+  //     "vendor_registration[number_of_stores]": {required: true}
+  //   }
       // messages: {
       //   example5: "Just check the box<h5 class='text-error'>You aren't going to read the EULA</h5>"
       // },
@@ -160,6 +190,6 @@
       //   example4: {trigger:'focus'},
       //   example5: {placement:'right',html:true}
       // },
-  });
+  // });
   $('#vendor_registration_phone_2').mask('(000) 000-0000');
 </script>
