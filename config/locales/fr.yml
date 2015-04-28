@@ -15,7 +15,7 @@ fr:
     classifieds: "Annonces Classifiées"
     about_us: "A Propos De Nous"
     west_coast_regional: "Côte Ouest Régionale:"
-    Contact: "CONTACTEZ NOUS"
+    Contact: "Contactez Nous"
   about:
     story_title: "l'Histoire"
     story: "Avec plus de trente ans d'expérience, l'association de vêtements de bain de Floride est reconnue comme le principal organisateur d'expositions de vêtements de bain dans le monde. SwimShow est le salon le plus connu où la crème de la crème se retrouve pour créer des réseaux, exposer et commander les tendances de l'année suivante."
@@ -110,7 +110,7 @@ fr:
     form_ls_eight: "Déclaration d'impôts sur les ventes effectuées durant l'année ou livre de coupons fiscaux de vente"
     form_ls_nine: "Contrat de location d'un espace commercial"
     form_ls_ten: "Document de la chambre de commerce"
-    form_ls_eleven: "Original de la lettre d'intention d'un avocat ou d'une banque sur papier à en-tête officiel déclarant l'intention d'ouvrir une nouvelle entreprise (acceptable uniquement pour les nouvelles entreprises)" 
+    form_ls_eleven: "Original de la lettre d'intention d'un avocat ou d'une banque sur papier à en-tête officiel déclarant l'intention d'ouvrir une nouvelle entreprise (acceptable uniquement pour les nouvelles entreprises)"
     photo_id_title: "En outre, vous devez présenter l'une des pièces d'identité suivantes accompagnée d'une photo:"
     photo_id_drive: "Permis de conduire ou passeport "
     photo_id_gov: "Carte d'identité avec photo délivrée par le gouvernement "
@@ -119,7 +119,7 @@ fr:
     photo_we: "acheteurs qui n'ont jamais participé au salon, chacun d'entre eux devra fournir les documents appropriés."
     photo_id_questions: "Des questions?"
     photo_bottom_page: "Online Pre-Registration"
-  travel: 
+  travel:
     routes_title: "Routes To The Miami Beach"
     routes_title_two: "Convention Center"
     routes_south: "Take 836 East toward “Beaches” and follow Directions from South."
@@ -163,5 +163,3 @@ fr:
     require_ls_five: "Les publications Web doivent fournir un site sécurisé actuel avec du contenu approprié mis à jour régulièrement (les blogs personnels ne s'appliquent pas)"
     require_ls_six: "Les écrivains indépendants, les entreprises de production vidéo et les photographes doivent fournir une lettre d'un éditeur ou d'un producteur indiquant qu'ils sont en mission pour une publication liée à l'industrie"
     mail: "Veuillez envoyer un échantillon de publication et les chiffres de distribution à :"
-
-
