@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 clearfix">
         <div class="top">
-          <h1 class="title">THE WORLD'S LARGEST<br>SWIMWEAR SHOW</h1>
+          <h1 class="title"><%= t('layouts.home_title')%><br><%= t('layouts.home_title_two')%></h1>
           <h1 class="date">JULY 18-21</h1>
           <div class="detail-button">
             <%= link_to 'Learn More', swimshow_path, class: 'btn scrolling-btn' %>
@@ -22,7 +22,7 @@
 
 <section class="section-video" id="swim-show">
   <div class="video-text-wrap col-sm-8 col-sm-offset-2">
-    <h1 class="video-title">Days of Our SwimShow Lives</h1>
+    <h1 class="video-title"><%= t('layouts.vid_title')%></h1>
     <div class="player-icon">
       <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/play-white.svg', class: 'play' %>
     </div> <!-- end player-icon -->

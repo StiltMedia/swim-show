@@ -1,45 +1,24 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-en:
+pt:
   layouts:
-    vid_title: "Days of Our SwimShow Lives"
-    home_title: "The World's largest"
-    home_title_two: "Swimwear Show"
-    overview: "Overview"
-    show_dates: "Show Dates"
-    special_events: "Special Events"
-    floor_plan: "Floor Plan"
-    exhibitors: "Exhibitors"
-    retailers: "Retailers"
-    media: "Media"
-    travel: "Travel"
-    current_lines: "Current Lines"
-    gallery: "Gallery"
-    classifieds: "Classifieds"
-    about_us: "About Us"
-    west_coast_regional: "West Coast Regional"
-    Contact: "Contact"
+    vid_title: "Os dias de nossas vidas SwimShow"
+    home_title: "A maior show de mergulho do mundo"
+    home_title_two: " "
+    overview: "Visão Global"
+    show_dates: "Próxima Datas"
+    special_events: "Eventos Especiais"
+    floor_plan: "Planta"
+    exhibitors: "Expositores"
+    retailers: "Os varejistas"
+    media: "Mídia"
+    travel: "Viagem"
+    current_lines: "O Que Està Acontecendo"
+    gallery: "Galeria"
+    classifieds: "Clasificados"
+    about_us: "Nossa História"
+    west_coast_regional: "Costa Oeste Regional"
+    Contact: "Contato"
   about:
-    story_title: "The Story"
+    story_title: "a História"
     story: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
     splash_title: "Splashy Start"
     splashy: "In 1982, a small group of sales representatives decided to organize a special event to bring together all of the central players from all aspects of the swimwear industry under one roof. They chose Miami since more than 60 percent of the industry’s business at that time was handled by sales representatives at the Miami Merchandise Mart with or without showrooms. The first show featured 15 representatives with 30 collections. Staying true to its original mission, the SwimShow isn’t one of the largest events of its kind, it is THE largest swimwear trade show in the world, featuring thousands of buyers from dozens of countries each year."
@@ -63,21 +42,21 @@ en:
     coming_soon: "2015 Line List Coming Soon"
   overview:
     title: "SwimShow"
-    part_one: "Welcome to SwimShow and thank you for your interest in the largest and most significant swimwear tradeshow in the world."
-    part_two: "The annual SwimShow is an essential show for the industry—a platform for building relationships, enjoying the latest trends in swimwear and connecting buyers and suppliers. Recognized as the launching pad for many of the industry’s leading lines, SwimShow is hosted in Miami Beach, the swim fashion capital of the world!"
-    part_three: "We welcome exhibitors and buyers from all around the world to join in this one-of-a-kind tradeshow that showcases more than 2,500 of the very best curated lines."
-    part_four: "The show draws more than 3,000 buyers from 60 different countries spanning the globe. It is the largest swimwear tradeshow in the world and the first opportunity for buyers to see the latest designs for the upcoming cruise season."
+    part_one: "Bem-vindo à feira de moda de praia e de lingerie. Obrigado por seu interesse na maior e mais importante feira comercial de trajes de banho do mundo."
+    part_two: "A feira anual SwimShow é uma feira importante para a indústria: uma plataforma para criar relações comerciais, desfrutar das últimas tendências em trajes de banho e lingeries e conectar-se a compradores e fornecedores. Reconhecida como a plataforma de lançamento para muitas das linhas líderes da indústria, a feira acontece em Miami Beach, a capital mundial da moda de praia!"
+    part_three: "Damos as boas vindas a expositores e compradores de todo o mundo para participar desta feira única, que exibe mais de 2.500 das linhas mais bem pesquisadas."
+    part_four: "A feira conta com mais de 2.500 compradores de 60 países diferentes. É a maior feira comercial de moda de praia no mundo e a primeira oportunidade para compradores presenciarem os últimos designs para a próxima estação."
     local: "Miami Beach Convention Center"
     local_two: "1901 Convention Center Drive"
     local_three: "Miami Beach, FL 33139"
     local_rooms: "Halls A & D"
     title_two: "About The Show"
-    dive: "Dive into the world’s biggest, boldest and best swim show!"
-    about: "Turning heads and turning out trends for more than three decades, SwimShow 2015 will be more comprehensive with a better than ever selection of the finest swimwear for women, men and children plus resortwear, beachwear, lifestyle, yoga and accessory collections from across the globe."
-    about_two: "This can’t-miss one-of-a-kind tradeshow offers exclusive access to the latest trends in swimwear, stunning sights and events, and a true celebration of the simple luxury of swimwear!"
-    about_date: "July 18-21, 2015…enjoy the SWIM!"
+    dive: "Mergulhe na maior, melhor e mais marcante feira de trajes de banho do mundo!"
+    about: "Chamando atenção e apresentando tendências por mais de três décadas, o SwimShow 2015 será mais abrangente com uma seleção melhor do que nunca dos trajes de banho masculinos, femininos e infantis além de acessórios, trajes de praia, estilo de vida, ioga e coleções de acessório de todo o mundo."
+    about_two: "Esta feira imperdível oferece acesso exclusivo às últimas tendências em trajes de banho, os melhores eventos especiais e uma verdadeira celebração do puro luxo dos trajes de banho!"
+    about_date: "18 a 21 de julho de 2015"
     ready: "Get Ready for July 18 - 21"
-    clock_enjoy: "...enjoy the"
+    clock_enjoy: "... desfrute da SWIM!"
     clock_swim: " SWIM!"
     floor_plan: "Check Out The Floor Plan"
     coming_soon: "Coming soon"
@@ -163,33 +142,25 @@ en:
   media:
     media_title: "Media"
     media_sub_title: "Requirements"
-    paragraph_one: "The Swimwear Association of Florida is pleased to invite qualified working journalists from consumer and trade news organizations to submit registration requests and credentials for media access into the tradeshow."
-    paragraph_two: "Media credentials are reserved for editorial media only which includes editors, producers, reporters, camera crews and/or still photographers. Any employee of a media outlet who does not work in an editorial capacity will not be eligible to receive a media badge."
-    paragraph_three: "Please complete the media registration form on-line. Media registration is not available on site at the tradeshow; it must be completed in advance in order to attain approval status."
-    requirements_note: "Please note:"
-    requirements_ls_one: "Submitting this application does not automatically qualify you for a press credential."
-    requirements_ls_two: "A history of prior attendance does not guarantee approval or waive any aforementioned requirements."
-    requirements_ls_three: "Misrepresentation of position and/or publication news organization will bar you and your organization from all future Swimwear Association of Florida events."
-    requirements_ls_four: "Swimwear Association of Florida reserves the right to modify this policy without public notice and may deny any applicant a press credential."
-    requirements_ls_five: "Press credentials are reserved for working members of the media only. Employees of media outlet who do not work in an editorial capacity are not qualified for a press credential."
-    press_denied_if: "Press credential will not be granted to:"
-    press_one: "Advertising personnel, including directors, managers, account executives, marketing managers, public relations, promotions, accounting, graphic designers, etc."
-    press_two: "Editors of in-house newsletters."
-    press_three: "Media outlets and editorial personnel whose publication, website or journal does not cover or reflect this industry."
-    press_four: "Anyone whose purpose for attending is, in our judgment, for reasons other than generating news coverage of the event or its participants."
-    require_ls_title: "Media Requirements"
-    require_ls_one: "Business card must include company name, contact name and editorial title (if your business card does not include an editorial title, an editorial credit/byline or masthead can be submitted)"
-    require_ls_two: "Recent masthead must be included"
-    require_ls_three: "Freelancers must submit a byline published within the last 6 months"
-    require_ls_four: "Print media must provide a recently published copy of the publication with attendees listed on the masthead or in byline of article"
-    require_ls_five: "Web publications must provide an existing secured site with relevant content that is updated on a continuing basis (personal web logs do not qualify)"
-    require_ls_six: "Freelance writers, video production companies and photographers must provide a letter from an editor or producer stating they are on assignment for an industry related publication"
-    mail: "Please mail sample publication and circulation figures to:"
-
-
-
-
-
-
-
-
+    paragraph_one: "A Swimwear Association da Flórida sente-se feliz em convidar jornalistas qualificados, oriundos de organizações de mídia de consumidores e comércio, a enviar solicitações de cadastro e credenciais para acesso de mídia na feira comercia"
+    paragraph_two: "Credenciais de mídia estão reservadas somente para a mídia editorial, que inclui editores, produtores, repórteres, equipes de filmagem e/ou, ainda, fotógrafos. Qualquer funcionário de um canal de mídia que não trabalhe em um local editorial não estará elegível a receber um crachá de imprensa."
+    paragraph_three: "Complete o formulário de cadastro de imprensa e envie-o até sexta-feira, 7 de junho de 2013, pela internet . O cadastro de imprensa não está disponível no local da feira comercial; ele deve ser preenchido antes a fim de obter status de aprovação."
+    requirements_note: "Observação:"
+    requirements_ls_one: "O envio deste formulário não lhe qualifica automaticamente para uma credencial de imprensa"
+    requirements_ls_two: "Um histórico de participação prévia não garante aprovação ou elimina quaisquer dos requisitos já mencionados"
+    requirements_ls_three: "A falsidade ideológica de cargo e/ou organização de publicações de imprensa barrarão você e sua organização de todos os futuros eventos da Swinwear Association da Flórida"
+    requirements_ls_four: "A Swimwear Association da Flórida reserva-se ao direito de alterar esta política sem aviso público e pode negar credenciais de imprensa a qualquer candidato"
+    requirements_ls_five: "Credenciais de imprensa estão reservadas somente para membros atuantes da mídia. Funcionários de canais de mídia que não trabalham em um local editorial não estão qualificados para uma credencial de imprensa"
+    press_denied_if: "A credencial de imprensa não será concedida a:"
+    press_one: "Funcionários de publicidade, incluindo diretores, gerentes, executivos de contas, gerentes de marketing, relações públicas, promoções, contabilidade, designers gráficos, etc."
+    press_two: "Editores de jornais internos ou portais pessoais da internet (blogs)."
+    press_three: "Canais de mídia e funcionários editoriais cuja publicação, site ou jornal não cobre ou reflete esta indústria."
+    press_four: "Qualquer pessoa cujo propósito de participação é, sob nosso julgamento, para outras razões que não a de cobertura de notícias do evento ou seus participantes."
+    require_ls_title: "Requisitos de mída:"
+    require_ls_one: "O cartão de visitas deve incluir o nome da empresa, o nome do contato e o cargo editorial (se seu cartão de visitas não incluir um cargo editorial, um crédito editorial ou cabeçalho pode ser enviado)"
+    require_ls_two: "O cabeçalho atual deve estar incluído"
+    require_ls_three: "Trabalhadores autônomos devem enviar um cabeçalho de notícia publicado nos últimos seis meses"
+    require_ls_four: "A mídia impressa deve fornecer uma cópia publicada recentemente da publicação com os participantes listados no cabeçalho ou no corpo do artigo"
+    require_ls_five: "As publicações da internet devem fornecer um site existente e protegido, com um conteúdo relevante atualizado recentemente (portais pessoais da internet não se qualificam)"
+    require_ls_six: "Escritores autônomos, empresas de produção de vídeos e fotógrafos devem fornecer uma carta de um editor ou produtor atestando que eles estão na atribuição para uma publicação relacionada à indústria"
+    mail: "Envie por correspondência uma amostra da publicação e de circulação para:"

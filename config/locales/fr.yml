@@ -1,5 +1,7 @@
 fr:
   layouts:
+    home_title: "le plus grand salon"
+    home_title_two: "du monde swimware"
     overview: "vue d'ensemble"
     show_dates: "Dates de spectacle"
     special_events: "Événements Spéciaux"
@@ -8,11 +10,11 @@ fr:
     retailers: "Les détaillants"
     media: "Médias"
     travel: "Voyage"
-    current_lines: "LIGNES ACTUELLES"
-    gallery: "GALERIES"
-    classifieds: "ANNONCES CLASSIFIÉES"
-    about_us: "A PROPOS DE NOUS"
-    west_coast_regional: "CÔTE OCCIDENTALE"
+    current_lines: "Lingnes Actuells"
+    gallery: "Galeries"
+    classifieds: "Annonces Classifiées"
+    about_us: "A Propos De Nous"
+    west_coast_regional: "Côte Ouest Régionale:"
     Contact: "CONTACTEZ NOUS"
   about:
     story_title: "l'Histoire"
@@ -82,7 +84,7 @@ fr:
     swim_time: "6:00 - 7:30pm"
     fashion: "Défilé de mode"
     fashion_local: "Location TBA add “New & Improved"
-    tech: "Tech Lounge"
+    tech: "Tecnología Salón"
     art: "Art Entertainment"
     tea: "GOÛTER DINATOIRE"
     tea_date: "Saturday - Tuesday"
@@ -137,7 +139,7 @@ fr:
     shuttle_title: "Airport Shuttle"
     shuttle_note: "Promo Code to be Announced Shortly"
   media:
-    media_title: "inscription des"
+    media_title: "Inscription des"
     media_sub_title: "Médias"
     paragraph_one: "L'association des vêtements de bain de Floride a le plaisir d'inviter les journalistes qualifiés d'entreprises d'informations aux  consommateurs et à l'industrie à soumettre leur demande d'inscription et leurs justificatifs pour obtenir un accès presse au salon."
     paragraph_two: " L'accès presse n’est réservé qu’aux médias éditoriaux, ce qui inclut les éditeurs, les producteurs, les journalistes, les équipes de caméra et/ou les photographes. Les employés travaillant pour les entreprises de presse mais n'occupant pas une position éditoriale ne pourront pas obtenir de badge presse."
