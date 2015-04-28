@@ -164,25 +164,25 @@
 
 <script>
 // Vendor Registration Page
-  // $("#new_vendor_registration").validate({
-  //   rules: {
-  //     "vendor_registration[first_name]": {required: true},
-  //     "vendor_registration[last_name]": {required: true},
-  //     "vendor_registration[company]": {required: true},
-  //     "vendor_registration[title]": {required: true},
-  //     "vendor_registration[address_1]": {required: true},
-  //     "vendor_registration[city]": {required: true},
-  //     "vendor_registration[postal_code]": {required: true},
-  //     "vendor_registration[country]": {required: true},
-  //     "vendor_registration[email]": {required: true, email: true},
-  //     "vendor_registration[phone]": {required: true, minlength: 10},
-  //     "vendor_registration[extension]": {required: false, digits: true},
-  //     "vendor_registration[phone_2]": {required: false, minlength: 10},
-  //     "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
-  //     "vendor_registration[type_of_store]": {required: true},
-  //     "vendor_registration[status]": {required: true},
-  //     "vendor_registration[number_of_stores]": {required: true}
-  //   }
+  $("#new_vendor_registration").validate({
+    rules: {
+      "vendor_registration[first_name]": {required: true},
+      "vendor_registration[last_name]": {required: true},
+      "vendor_registration[company]": {required: true},
+      "vendor_registration[title]": {required: true},
+      "vendor_registration[address_1]": {required: true},
+      "vendor_registration[city]": {required: true},
+      "vendor_registration[postal_code]": {required: true},
+      "vendor_registration[country]": {required: true},
+      "vendor_registration[email]": {required: true, email: true},
+      "vendor_registration[phone]": {required: true, minlength: 10},
+      "vendor_registration[extension]": {required: false, digits: true},
+      "vendor_registration[phone_2]": {required: false, minlength: 10},
+      "vendor_registration[fax]": {required: false, digits: true, minlength: 10},
+      "vendor_registration[type_of_store]": {required: true},
+      "vendor_registration[status]": {required: true},
+      "vendor_registration[number_of_stores]": {required: true}
+    }
       // messages: {
       //   example5: "Just check the box<h5 class='text-error'>You aren't going to read the EULA</h5>"
       // },
@@ -190,6 +190,6 @@
       //   example4: {trigger:'focus'},
       //   example5: {placement:'right',html:true}
       // },
-  // });
+  });
   $('#vendor_registration_phone_2').mask('(000) 000-0000');
 </script>
