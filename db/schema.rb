@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150429155806) do
+ActiveRecord::Schema.define(version: 20150429233118) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -196,14 +196,14 @@ ActiveRecord::Schema.define(version: 20150429155806) do
     t.string   "number_of_stores"
     t.string   "attended_swimshow"
     t.string   "mail_show_directory"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "other_tradeshow_name"
     t.string   "instagram"
     t.string   "facebook"
     t.string   "twitter"
     t.text     "comments"
-    t.integer  "years_attened_show",   default: 1
+    t.integer  "years_attended_show"
   end
 
   create_table "west_coast_lines", force: :cascade do |t|
