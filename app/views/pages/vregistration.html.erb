@@ -109,33 +109,33 @@
         :html => { id: "test"} %>
 
 
-        <!-- <div id="day" style="display:none;">
-          <%# f.input :years_attended_show, label: false, placeholder: 'Have many years have you Attended SwimShow?' %>
-        </div> -->
+        <div id="day" style="display:none;">
+          <%= f.input :years_attended_show, label: false, placeholder: 'Have many years have you Attended SwimShow?' %>
+        </div>
 
-        <%#script>
-          // $('#vendor_registration_attended_swimshow_yes').on('change',function(){
-          //   var selection = $(this).val();
-          //   switch(selection){
-          //     case "Yes":
-          //       $("#day").show()
-          //       break;
-          //     default:
-          //       $("#day").hide()
-          //   }
-          // });
-          //
-          // $('#vendor_registration_attended_swimshow_no').on('change',function(){
-          //   var selection = $(this).val();
-          //   switch(selection){
-          //     case "No":
-          //       $("#day").hide()
-          //       break;
-          //     default:
-          //       $("#day").show()
-          //   }
-          // });
-        </script %>
+        <script>
+          $('#vendor_registration_attended_swimshow_yes').on('change',function(){
+            var selection = $(this).val();
+            switch(selection){
+              case "Yes":
+                $("#day").show()
+                break;
+              default:
+                $("#day").hide()
+            }
+          });
+
+          $('#vendor_registration_attended_swimshow_no').on('change',function(){
+            var selection = $(this).val();
+            switch(selection){
+              case "No":
+                $("#day").hide()
+                break;
+              default:
+                $("#day").show()
+            }
+          });
+        </script>
 
         <p class="check"><strong>Other Tradeshows Attended</strong></p>
         <%= f.association :tradeshows, as: :check_boxes, label: false %>
