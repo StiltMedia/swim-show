@@ -38,6 +38,7 @@ en:
     about_us: "About Us"
     west_coast_regional: "West Coast Regional"
     Contact: "Contact"
+    Languages: "Languages"
   about:
     story_title: "The Story"
     story: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
@@ -132,7 +133,7 @@ en:
     form_ls_eight: "Current year executed sales tax return or sales tax coupon book"
     form_ls_nine: "Lease agreement for commercial space"
     form_ls_ten: "Document from chamber of commerce"
-    form_ls_eleven: "Original letter of intent from an attorney or bank on official letterhead stating the intent to start a new business (this is acceptable for new businesses only)" 
+    form_ls_eleven: "Original letter of intent from an attorney or bank on official letterhead stating the intent to start a new business (this is acceptable for new businesses only)"
     photo_id_title: "Plus one of the following forms of personal photo identification is required"
     photo_id_drive: "Driver’s license or passport"
     photo_id_gov: "Government issued photo ID"
@@ -141,7 +142,7 @@ en:
     photo_we: "We reserve the right to request updated credentials at any time. This is a necessary function in order to keep our database current."
     photo_id_questions: "Questions?"
     photo_bottom_page: "Online Pre-Registration"
-  travel: 
+  travel:
     routes_title: "Routes To The Miami Beach"
     routes_title_two: "Convention Center"
     routes_south: "Take 836 East toward “Beaches” and follow Directions from South."
@@ -185,11 +186,3 @@ en:
     require_ls_five: "Web publications must provide an existing secured site with relevant content that is updated on a continuing basis (personal web logs do not qualify)"
     require_ls_six: "Freelance writers, video production companies and photographers must provide a letter from an editor or producer stating they are on assignment for an industry related publication"
     mail: "Please mail sample publication and circulation figures to:"
-
-
-
-
-
-
-
-

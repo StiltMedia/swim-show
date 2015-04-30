@@ -17,6 +17,7 @@ esp:
     about_us: " Sobre Nosotros"
     west_coast_regional: "Feria Regional De La Costa Oeste"
     Contact: "Contacto"
+    Languages: "Idiomas"
   about:
     story_title: "La Historia"
     story: "Con más de tres décadas de experiencia en SwimShow, la Swimwear Association of Florida (Asociación de trajes de baño de Florida) es reconocida como líder en exhibiciones de trajes de baño a nivel mundial. Por ser la exhibición más celebrada y establecida de la industria, SwimShow es el evento global más importante, en el que se reúne lo mejor de lo mejor para forjar relaciones comerciales, exhibir y adquirir las tendencias del próximo año."
@@ -111,7 +112,7 @@ esp:
     form_ls_eight: "Declaración de impuestos a las ventas realizadas del año en curso o libro de cupones de impuestos a las ventas"
     form_ls_nine: "Contrato de alquiler de un espacio comercial"
     form_ls_ten: "Documento de la cámara de comercio"
-    form_ls_eleven: "Carta de intención original, emitida por un abogado o banco en papel con membrete oficial, que establezca la intención de comenzar un nuevo negocio (se acepta únicamente para empresas nuevas)" 
+    form_ls_eleven: "Carta de intención original, emitida por un abogado o banco en papel con membrete oficial, que establezca la intención de comenzar un nuevo negocio (se acepta únicamente para empresas nuevas)"
     photo_id_title: "Además, debe presentar uno de los siguientes tipos de identificación personal con fotografía:"
     photo_id_drive: "Licencia de conducir o pasaporte"
     photo_id_gov: "Identificación emitida por el gobierno con fotografía"
@@ -120,7 +121,7 @@ esp:
     photo_we: "Nos reservamos el derecho de solicitar las credenciales actualizadas en cualquier momento. Esta es una función necesaria para mantener nuestra base de datos actual."
     photo_id_questions: "Preguntas?"
     photo_bottom_page: "Online Pre-Registration"
-  travel: 
+  travel:
     routes_title: "Rutas a Miami Beach"
     routes_title_two: "Convention Center"
     routes_south: "Take 836 East toward “Beaches” and follow Directions from South."

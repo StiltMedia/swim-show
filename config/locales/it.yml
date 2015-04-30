@@ -17,6 +17,7 @@ it:
     about_us: "Riguardo a Noi"
     west_coast_regional: "Manifstazione Di Moda Regionale Della West Coast"
     Contact: "Contatto"
+    Languages: "Lingue"
   about:
     story_title: "La Storia"
     story: "Con più di 30 anni di esperienza, la Swimwear Association of Florida è stata riconosciuta come leader a livello mondiale nel settore delle manifestazioni di moda mare. SwimShow è il principale salone dell'abbigliamento a livello mondiale dove i migliori si riuniscono per diffondere, esporre e acquistare le tendenze dall'anno successivo."
@@ -111,7 +112,7 @@ it:
     form_ls_eight: "Libro relativo alla dichiarazione ai fini dell'imposta sulle vendite e sulle cedole dell'anno corrente"
     form_ls_nine: "Contratto di locazione per lo spazio commerciale"
     form_ls_ten: "Documento della camera di commercio"
-    form_ls_eleven: "Lettera di intenti originale di un legale o banca su carta intestata che indica la volontà di iniziare una nuova attività (valido solo per nuove attività)" 
+    form_ls_eleven: "Lettera di intenti originale di un legale o banca su carta intestata che indica la volontà di iniziare una nuova attività (valido solo per nuove attività)"
     photo_id_title: "Più una delle seguenti forme di identificazione della foto personale:"
     photo_id_drive: "Patente di guida o passaporto"
     photo_id_gov: "Carta di identità con foto emessa dal governo"
@@ -120,7 +121,7 @@ it:
     photo_we: "We reserve the right to request updated credentials at any time. This is a necessary function in order to keep our database current."
     photo_id_questions: "Domande? Chiamare il 305.596.7889"
     photo_bottom_page: "Online Pre-Registration"
-  travel: 
+  travel:
     routes_title: "Routes To The Miami Beach"
     routes_title_two: "Convention Center"
     routes_south: "Take 836 East toward “Beaches” and follow Directions from South."
@@ -164,7 +165,3 @@ it:
     require_ls_five: "Le pubblicazioni web devono presentare un sito sicuro esistente con contenuto principale aggiornato su base continua (weblog personali non sono idonei)"
     require_ls_six: "Scrittori freelance, società di produzione video e fotografi devono fornire una lettera da parte dell'editore o produttore che dichiara di essere impegnati in una pubblicazione relativa al settore."
     mail: "Inviateci esempi di pubblicazioni e tiratura a:"
-
-
-
-
