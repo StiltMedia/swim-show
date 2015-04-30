@@ -30,7 +30,7 @@ Type of Store: <%= @vendor.type_of_store %><br>
 Status: <%= @vendor.status %><br>
 Number of Stores: <%= @vendor.number_of_stores %><br>
 Have you Attended SwimShow: <%= @vendor.attended_swimshow %><br>
-<!-- Years Attended Show: <%# @vendor.years_attended_show %><br> -->
+Years Attended Show: <%= @vendor.years_attended_show %><br>
 Other Tradeshow Name: <% @vendor.tradeshows.each do |t| %><%= t.name %> &nbsp;<% end %><%= @vendor.other_tradeshow_name %><br>
 Wants the show directory to be sent via mail: <%= @vendor.mail_show_directory %><br>
 Comments: <%= @vendor.comments %><br>
