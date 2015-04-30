@@ -3,6 +3,9 @@ it:
   layouts:
     home_title: "La più grande fiera "
     home_title_two: "del mondo di nuoto"
+    swim_date: "18-21 luglio"
+    header_btn: "saperne Di Più"
+    scroll: "scorri verso il basso"
     overview: "Estivo"
     show_dates: "le date degli spettacoli"
     special_events: "Eventi Speciali"

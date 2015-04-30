@@ -21,9 +21,11 @@
 
 en:
   layouts:
-    vid_title: "Days of Our SwimShow Lives"
     home_title: "The World's largest"
     home_title_two: "Swimwear Show"
+    swim_date: "JULY 18-21"
+    header_btn: "Learn More"
+    scroll: "scroll down"
     overview: "Overview"
     show_dates: "Show Dates"
     special_events: "Special Events"

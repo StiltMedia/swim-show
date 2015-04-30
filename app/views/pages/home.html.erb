@@ -4,16 +4,16 @@
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 clearfix">
         <div class="top">
           <h1 class="title"><%= t('layouts.home_title')%><br><%= t('layouts.home_title_two')%></h1>
-          <h1 class="date">JULY 18-21</h1>
+          <h1 class="date"><%= t('layouts.swim_date') %></h1>
           <div class="detail-button">
-            <%= link_to 'Learn More', swimshow_path, class: 'btn scrolling-btn' %>
+            <%= link_to t('layouts.header_btn'), swimshow_path, class: 'btn scrolling-btn' %>
           </div>
         </div>
       </div>
     </div>
     <div class="row scroll-down">
       <div class="col-xs-12">
-        <a href="#swim-show" class="scroll-anchor"><p>scroll down</p>
+        <a href="#swim-show" class="scroll-anchor"><p><%= t('layouts.scroll') %></p>
         <p class="font-a"><i class="fa fa-angle-down fa-2x"></i></p></a>
       </div>
     </div>
@@ -22,7 +22,7 @@
 
 <section class="section-video" id="swim-show">
   <div class="video-text-wrap col-sm-8 col-sm-offset-2">
-    <h1 class="video-title"><%= t('layouts.vid_title')%></h1>
+    <h1 class="video-title">Days of Our SwimShow Lives</h1>
     <div class="player-icon">
       <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/play-white.svg', class: 'play' %>
     </div> <!-- end player-icon -->

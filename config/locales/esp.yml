@@ -1,8 +1,10 @@
 esp:
   layouts:
-    vid_title: "Los días de nuestras vidas SwimShow"
     home_title: "Espectáculo de Natación"
     home_title_two: "Más grande del mundo"
+    swim_date: "18 a 21 de julio"
+    header_btn: "Aprende Más"
+    scroll: "desplácese hacia abajo"
     overview: "visión de conjunto"
     show_dates: " Proóximas Fechas "
     special_events: "Eventos Especiales"

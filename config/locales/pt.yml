@@ -1,8 +1,10 @@
 pt:
   layouts:
-    vid_title: "Os dias de nossas vidas SwimShow"
     home_title: "A maior show de mergulho do mundo"
     home_title_two: " "
+    swim_date: "18-21 julho"
+    header_btn: "Saber Mais"
+    scroll: "rolar para baixo"
     overview: "Visão Global"
     show_dates: "Próxima Datas"
     special_events: "Eventos Especiais"
