@@ -23,7 +23,8 @@ it:
     Languages: "Lingue"
   about:
     story_title: "La Storia"
-    story: "Con più di 30 anni di esperienza, la Swimwear Association of Florida è stata riconosciuta come leader a livello mondiale nel settore delle manifestazioni di moda mare. SwimShow è il principale salone dell'abbigliamento a livello mondiale dove i migliori si riuniscono per diffondere, esporre e acquistare le tendenze dall'anno successivo."
+    story_p1: "Con più di 30 anni di esperienza, la Swimwear Association of Florida è stata riconosciuta come leader a livello mondiale nel settore delle manifestazioni di moda mare. SwimShow è il principale salone dell'abbigliamento a livello mondiale dove i migliori si riuniscono per diffondere, esporre e acquistare le tendenze dall'anno successivo."
+    story_p2: "Lo SwimShow, che si svolge ogni luglio, è la più grande al mondo nel suo genere e attira oltre 7500 marchi e buyer da 60 paesi di tutto il mondo. La manifestazione di quest'anno offre molto più abbigliamento mare donna rispetto a prima, incluso più estese collezioni di moda mare uomo e bambino, resort & lifestyle e accessori per tutte le occasioni. Le collezioni si rivolgono a boutique di moda, negozi resort, negozi specializzati, negozi da surf, reparti di negozi, negozi di massa e tanto altro."
     splash_title: "Inizio bagnato"
     splashy: "Nel 1982, un piccolo gruppo di rappresentanti commerciali ha deciso di organizzare un evento speciale per riunire sotto un unico tetto tutti i rappresentati centrali di tutti gli aspetti dell'industria della moda mare. Essi scelsero Miami in quanto oltre il 60% dell'attività del settore all'epoca era gestita da rappresentanti di vendita del Miami Merchandise Mart con o senza showroom. La prima manifestazione ha visto 15 partecipanti con 30 collezioni. Restando fedeli alla missione originale, la SwimShow non è uno degli eventi più grandi del suo genere, è LA manifestazione di moda mare più grande del mondo, che vede coinvolti migliaia di buyer da decine di paesi ogni anno."
     sizzle_title: "South Beach Sizzle"
@@ -172,3 +173,5 @@ it:
     require_ls_five: "Le pubblicazioni web devono presentare un sito sicuro esistente con contenuto principale aggiornato su base continua (weblog personali non sono idonei)"
     require_ls_six: "Scrittori freelance, società di produzione video e fotografi devono fornire una lettera da parte dell'editore o produttore che dichiara di essere impegnati in una pubblicazione relativa al settore."
     mail: "Inviateci esempi di pubblicazioni e tiratura a:"
+  coming_soon:
+    sub: "Pianta sarà presto"

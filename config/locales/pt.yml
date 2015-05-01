@@ -22,7 +22,8 @@ pt:
     Languages: "Idiomas"
   about:
     story_title: "a História"
-    story: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
+    story_p1: "A SwimShow ocorre todo mês de julho e é a maior feira deste tipo no mundo, atraindo mais de 7.500 marcas e compradores de 60 países do mundo. A feira deste ano oferece mais trajes de banho às mulheres do que nunca, incluindo mais coleções de banho para homens e crianças, novidades sobre resorts, estilo de vida e acessórios para todas as ocasiões. Uma variedade em coleções, butiques de grifes, lojas para resorts, lojas especializadas, lojas de surfe, lojas de departamento, diversos vendedores e mais."
+    story_p2: "A feira comercial ocorre no Convention Center (Centro de convenções) da praia de Miami, no coração da badalada South Beach. O SwimShow com o apoio das Autoridades de Convenções de Miami Beach e de seus Visitantes oferece acesso a infinitas possibilidades ao redor de South Beach, com tarifas especiais em hotéis locais, transporte adicional e concierge local. Repleta de diversões, eventos e compras e parceira ideal para a indústria de trajes de banho, a South Beach é o resort-destino número um e ideal para quem ama o mar, cheia de butiques de grifes, hotéis de primeira classe, jantares de cinco estrelas, lindas praias e uma vida noturna cativante."
     splash_title: "Splashy Start"
     splashy: "In 1982, a small group of sales representatives decided to organize a special event to bring together all of the central players from all aspects of the swimwear industry under one roof. They chose Miami since more than 60 percent of the industry’s business at that time was handled by sales representatives at the Miami Merchandise Mart with or without showrooms. The first show featured 15 representatives with 30 collections. Staying true to its original mission, the SwimShow isn’t one of the largest events of its kind, it is THE largest swimwear trade show in the world, featuring thousands of buyers from dozens of countries each year."
     sizzle_title: "South Beach Sizzle"
@@ -171,3 +172,5 @@ pt:
     require_ls_five: "As publicações da internet devem fornecer um site existente e protegido, com um conteúdo relevante atualizado recentemente (portais pessoais da internet não se qualificam)"
     require_ls_six: "Escritores autônomos, empresas de produção de vídeos e fotógrafos devem fornecer uma carta de um editor ou produtor atestando que eles estão na atribuição para uma publicação relacionada à indústria"
     mail: "Envie por correspondência uma amostra da publicação e de circulação para:"
+  coming_soon:
+    sub: "Piso plano será em breve"

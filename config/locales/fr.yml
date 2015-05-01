@@ -22,7 +22,8 @@ fr:
     Languages: "Langues"
   about:
     story_title: "l'Histoire"
-    story: "Avec plus de trente ans d'expérience, l'association de vêtements de bain de Floride est reconnue comme le principal organisateur d'expositions de vêtements de bain dans le monde. SwimShow est le salon le plus connu où la crème de la crème se retrouve pour créer des réseaux, exposer et commander les tendances de l'année suivante."
+    story_p1: "Avec plus de trente ans d'expérience, l'association de vêtements de bain de Floride est reconnue comme le principal organisateur d'expositions de vêtements de bain dans le monde. SwimShow est le salon le plus connu où la crème de la crème se retrouve pour créer des réseaux, exposer et commander les tendances de l'année suivante."
+    story_p2: "Organisé en juillet chaque année, SwimShow est le plus grand événement de son genre et attire plus de 7 500 marques et 2 500 acheteurs de 60 pays  du monde entier. L'exposition de cette année offre plus de maillots féminins que jamais, ainsi que des collections grandissantes de vêtements de bain pour hommes et pour enfants, des vêtements resort/style de vie et des accessoires pour toutes les occasions. Les collections servent les boutiques branchées, les magasins spécialisés de vêtements ou articles de plage, les grandes surface et plus encore."
     splash_title: "Début sensationnel"
     splashy: "En 1982, un petit groupe de vendeurs-représentants a décidé d'organiser un événement spécial pour réunir tous les acteurs centraux des différents aspects de l'industrie des vêtements de bain sous un seul toit. Ils ont choisi Miami parce qu'à ce moment-là plus de 60 pour cent des activités de l'industrie étaient gérés par des vendeurs-représentants du merchandise Mart de Miami, doté ou non de salles d'exposition. La première exposition a réuni 15 représentants et 30 collections. Fidèle à sa mission d'origine, le SwimShow n'est pas seulement l'un des plus grands événements de son genre - c'est LE salon du vêtement de bain le plus grand du monde, réunissant chaque année des milliers d'acheteurs de douzaines de pays. "
     sizzle_title: "Le bouillonnement de South Beach"
@@ -171,3 +172,5 @@ fr:
     require_ls_five: "Les publications Web doivent fournir un site sécurisé actuel avec du contenu approprié mis à jour régulièrement (les blogs personnels ne s'appliquent pas)"
     require_ls_six: "Les écrivains indépendants, les entreprises de production vidéo et les photographes doivent fournir une lettre d'un éditeur ou d'un producteur indiquant qu'ils sont en mission pour une publication liée à l'industrie"
     mail: "Veuillez envoyer un échantillon de publication et les chiffres de distribution à :"
+  coming_soon:
+    sub: "Le plan d'étage sera bientôt"

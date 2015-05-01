@@ -22,7 +22,8 @@ esp:
     Languages: "Idiomas"
   about:
     story_title: "La Historia"
-    story: "Con más de tres décadas de experiencia en SwimShow, la Swimwear Association of Florida (Asociación de trajes de baño de Florida) es reconocida como líder en exhibiciones de trajes de baño a nivel mundial. Por ser la exhibición más celebrada y establecida de la industria, SwimShow es el evento global más importante, en el que se reúne lo mejor de lo mejor para forjar relaciones comerciales, exhibir y adquirir las tendencias del próximo año."
+    story_p1: "Con más de tres décadas de experiencia en SwimShow, la Swimwear Association of Florida (Asociación de trajes de baño de Florida) es reconocida como líder en exhibiciones de trajes de baño a nivel mundial. Por ser la exhibición más celebrada y establecida de la industria, SwimShow es el evento global más importante, en el que se reúne lo mejor de lo mejor para forjar relaciones comerciales, exhibir y adquirir las tendencias del próximo año."
+    story_p2: "Llevada a cabo cada mes de julio, SwimShow es la mayor exhibición de su tipo a nivel mundial y atrae a más de 7.500 marcas y compradores de 60 países de todo el mundo. La exhibición de este año ofrece más trajes de baño para mujeres que nunca e incluirá también una ampliación de las colecciones de hombres y niños, de vacaciones y estilo de vida, y accesorios para todo tipo de ocasión. Las colecciones abastecen a las boutiques de diseñador, las tiendas de centros de vacaciones, los comercios especializados, las tiendas de surf, los grandes almacenes, los comercios mayoristas y más."
     splash_title: "Un gran salpicón inicial"
     splashy: "En 1982, un pequeño grupo de representantes de ventas decidió organizar un evento especial para reunir a todas las partes centrales de todos los aspectos de la industria de los trajes de baño en un mismo lugar. Escogieron Miami porque más del sesenta por ciento de las empresas de la industria en ese momento estaban manejadas por representantes de ventas en el Miami Merchandise Mart, con o sin salones de ventas. La primera exposición contó con 15 representantes y 30 colecciones. Fiel a su misión original, SwimShow no es uno de los eventos más grandes de su tipo: es LA mayor exhibición de trajes de baño del mundo, con miles de compradores de docenas de países cada año."
     sizzle_title: "Alboroto en South Beach"
@@ -172,3 +173,5 @@ esp:
     require_ls_five: "Las publicaciones de Internet deben proporcionar un sitio seguro existente con contenido relevante que se actualice en forma continua (los blogs personales no califican)"
     require_ls_six: "Los redactores independientes, las empresas de producción de video y los fotógrafos deben proporcionar una carta de un editor o productor en la que se indique que están trabajando en un encargo para una publicación relacionada con la industria"
     mail: "Envíe por correo una muestra de la publicación y las cifras de circulación a:"
+  coming_soon:
+    sub: "Plano de la planta será hasta pronto"

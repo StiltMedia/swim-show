@@ -43,7 +43,8 @@ en:
     Languages: "Languages"
   about:
     story_title: "The Story"
-    story: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
+    story_p1: "With more than three decades of the SwimShow expertise, The Swimwear Association of Florida is recognized as the leader in swimwear exhibitions worldwide. As the industry’s most celebrated and established exhibition, the SwimShow is the premier global tradeshow where the best of the best gather to network, exhibit and purchase next year’s trends."
+    story_p2: "Held every July, the SwimShow is the largest of its kind in the world and attracts more than 7,500 brands and buyers from 60 countries across the world. This year’s show offers more women’s swimwear than ever, including expanded men’s and children’s swimwear collections, resort & lifestyle and accessories for all occasions. Collections cater to designer boutiques, resort shops, specialty stores, surf shops, department stores, mass merchants and more."
     splash_title: "Splashy Start"
     splashy: "In 1982, a small group of sales representatives decided to organize a special event to bring together all of the central players from all aspects of the swimwear industry under one roof. They chose Miami since more than 60 percent of the industry’s business at that time was handled by sales representatives at the Miami Merchandise Mart with or without showrooms. The first show featured 15 representatives with 30 collections. Staying true to its original mission, the SwimShow isn’t one of the largest events of its kind, it is THE largest swimwear trade show in the world, featuring thousands of buyers from dozens of countries each year."
     sizzle_title: "South Beach Sizzle"
@@ -192,3 +193,5 @@ en:
     require_ls_five: "Web publications must provide an existing secured site with relevant content that is updated on a continuing basis (personal web logs do not qualify)"
     require_ls_six: "Freelance writers, video production companies and photographers must provide a letter from an editor or producer stating they are on assignment for an industry related publication"
     mail: "Please mail sample publication and circulation figures to:"
+  coming_soon:
+    sub: "Floor Plan will be up soon"
