@@ -97,6 +97,7 @@ en:
     sec_two_final_sum: "Check out the latest collections from around the globe in swimwear, resortwear, accessories, lifestyle and active… over four days of dazzling celebrations and inspirations. Be among the first to see and share the latest in designs, trends, colors and brands!"
     future_dates: "Future Dates"
     tba: "to be anounced"
+    coming_soon: "Coming soon"
   special_events:
     title: "Special Events"
     breakfast: "Breakfast Bar"
@@ -114,6 +115,9 @@ en:
     tea: "High Tea"
     tea_date: "Saturday - Tuesday"
     tea_time: "3:30pm - 4:30pm Daily"
+    btn: "View 2014 Images"
+    btn_vid: "View 2014 Video"
+    coming_soon: "Coming soon"
   exhibitors:
     title: "Exhibitors"
     info: "For immediate assistance and to request an exhibitor kit, please contact the SAF office directly"
@@ -152,7 +156,7 @@ en:
     routes_north: "Take 112 East toward “Beaches” and follow Directions from North."
     routes_north_one: "Directions from North: 1-95 Southbound, exit 195 East (Julia Tuttle Causeway) to Alton Road South, left on 17th Street, left on Convention Center Drive."
     hotel_title: "Hotels"
-    hotel_sub_title: "lease contact the SAF office directly"
+    hotel_sub_title: "Please contact the SAF office directly"
     hotel_note_one: "Please note: We DO NOT work with any hotel booking agencies."
     hotel_note_two: "Please do not book through any hotel booking agencies that contact you<br>directly stating they are working with this association."
     hotel_note_three: "We do not utilize any of these services and do not recommend any of them."
