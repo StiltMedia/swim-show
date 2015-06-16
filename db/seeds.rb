@@ -9,10 +9,10 @@
 
 require 'csv'
 
-# CSV.foreach("db/2015-current-lines.csv") do |row|
-#     Line.create letter: row[0], name: row[1]
-# end
-
-CSV.foreach("db/2014-west-coast-lines-list.csv") do |row|
-    WestCoastLine.create letter: row[0], name: row[1]
+CSV.foreach("db/2015-current-lines.csv") do |row|
+    Line.create letter: row[0], name: row[1]
 end
+
+# CSV.foreach("db/2014-west-coast-lines-list.csv") do |row|
+#     WestCoastLine.create letter: row[0], name: row[1]
+# end
