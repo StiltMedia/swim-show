@@ -1107,6 +1107,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .lines-content {
+  .col-sm-2 {min-height: 70px;}
   @extend .swim-sect-3;
   p {
     text-align: left;
