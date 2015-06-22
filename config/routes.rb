@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   get '/thanks' => 'pages#thanks'
   get '/coming-soon' => 'pages#coming-soon'
+  get '/floor-plans', to: redirect('https://s3.amazonaws.com/swim-show/FLOOR+PLAN+2015-01.pdf'), as: :floor_plans
 
   post '/retailer-registration' => 'pages#create_vendor', as: :vendor_registrations
   post '/media-registration' => 'pages#create_media', as: :media_registrations
