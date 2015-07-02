@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/nightlife' => 'pages#nightlife'
   get '/restaurants' => 'pages#restaurant'
   get '/current-lines' => 'pages#currentlines'
-  get '/retailer-registration' => 'pages#vregistration'
+  # get '/retailer-registration' => 'pages#vregistration'
   get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   get '/coming-soon' => 'pages#coming-soon'
   get '/floor-plans', to: redirect('https://s3.amazonaws.com/swim-show/FLOOR+PLAN+2015-01.pdf'), as: :floor_plans
 
-  post '/retailer-registration' => 'pages#create_vendor', as: :vendor_registrations
+  # post '/retailer-registration' => 'pages#create_vendor', as: :vendor_registrations
   post '/media-registration' => 'pages#create_media', as: :media_registrations
   post '/contact' => 'pages#create_contact', as: :contacts
   # The priority is based upon order of creation: first created -> highest priority.
