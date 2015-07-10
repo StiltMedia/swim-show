@@ -28,7 +28,8 @@ module SwimShow
     config.assets.precompile += %w(ckeditor/*)
 
     Rack::Utils.multipart_part_limit = 0
-    
+
+    config.serve_static_assets = true
     config.assets.prefix = ''
 
   end
