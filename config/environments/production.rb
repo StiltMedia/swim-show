@@ -89,4 +89,6 @@ Rails.application.configure do
   }
   ActionMailer::Base.delivery_method = :smtp
 
+  config.assets.prefix = ''
+
 end
