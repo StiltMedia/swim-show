@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get '/restaurants' => 'pages#restaurant'
   get '/current-lines' => 'pages#currentlines'
   get '/private/retailer-registration' => 'pages#vregistration'
-  get '/media-registration' => 'pages#mediaregistration'
+  # get '/media-registration' => 'pages#mediaregistration'
   get '/gallery' => 'pages#vgallery'
   get '/classifieds' => 'pages#classifieds'
   get '/west-coast-regional' => 'pages#westcoastregional'
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get '/floor-plans', to: redirect('https://s3.amazonaws.com/swim-show/FLOOR+PLAN+2015-01.pdf'), as: :floor_plans
 
   post '/private/retailer-registration' => 'pages#create_vendor', as: :vendor_registrations
-  post '/media-registration' => 'pages#create_media', as: :media_registrations
+  # post '/media-registration' => 'pages#create_media', as: :media_registrations
   post '/contact' => 'pages#create_contact', as: :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
