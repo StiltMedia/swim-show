@@ -52,46 +52,72 @@
 </section> -->
 
 <section class="section-counter">
-  <div class="ce-countdown ce-countdown--theme-1">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Get Ready for July 18 - 21</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Babes on the Beach</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="player-icon">
+        <%= link_to (image_tag'https://s3.amazonaws.com/swim-show/Website+Images/play-white.svg'), '#swimvid', class: 'play', id: 'swimvid' %>
+      </div> <!-- end player-icon -->
+    </div>
+    <!-- <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="top-headline">
+          <h3><em>...enjoy the <strong>SWIM!</strong></em></h3>
         </div>
       </div>
-      <div class="delimiter100"></div>
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <div class="col-sm-3"><span class="ce-days"></span><br><h6 class="ce-days-label sub-info"></h6></div>
-          <div class="col-sm-3"><span class="ce-hours"></span><br><h6 class="ce-hours-label sub-info"></h6></div>
-          <div class="col-sm-3"><span class="ce-minutes"></span><br><h6 class="ce-minutes-label sub-info"></h6></div>
-          <div class="col-sm-3"><span class="ce-seconds"></span><br><h6 class="ce-seconds-label sub-info"></h6></div>
+    </div> -->
+    <!-- <div class="delimiter100"></div> -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+        <div class="col-xs-6">
+          <%= link_to image_tag('https://s3.amazonaws.com/swim-show/Website+Images/mvca-logo-white.svg'), 'http://www.miamibeachvca.com/', target: '_blank', class: 'img-responsive' %>
         </div>
-      </div>
-      <div class="delimiter100"></div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <div class="top-headline">
-            <h3><em>...enjoy the <strong>SWIM!</strong></em></h3>
-          </div>
-        </div>
-      </div>
-      <div class="delimiter100"></div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-          <div class="col-xs-6">
-            <%= link_to image_tag('https://s3.amazonaws.com/swim-show/Website+Images/mvca-logo-white.svg'), 'http://www.miamibeachvca.com/', target: '_blank', class: 'img-responsive' %>
-          </div>
-          <div class="col-xs-6">
-            <%= link_to image_tag('https://s3.amazonaws.com/swim-show/Website+Images/mbvca-logo-white.svg'), 'http://miamibeach100.com/', target: '_blank', class: 'img-responsive' %>
-          </div>
+        <div class="col-xs-6">
+          <%= link_to image_tag('https://s3.amazonaws.com/swim-show/Website+Images/mbvca-logo-white.svg'), 'http://miamibeach100.com/', target: '_blank', class: 'img-responsive' %>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $('#swimvid').bind('click', function(event) {
+      // stops default click behavior
+      event.preventDefault();
+      $.iLightBox(
+        [
+          {
+            url: "https://s3.amazonaws.com/swim-show/Swim+Edit+2015.mp4",
+            type: 'video',
+            options: {
+              width: 640,
+              height: 460,
+              flashvars: {
+                file: 'video',
+                autostart: true,
+              }
+            }
+          },
+        ],
+        {skin: 'metro-black',
+          overlay: {
+            opacity: 0.7
+          },
+
+
+
+        }
+      );
+    });
+  });
+</script>
+
+<!-- <script>
   $(document).ready(function() {
     $('.ce-countdown').countEverest({
       //Set your target date here!
@@ -101,4 +127,4 @@
       pluralLabels: true
     });
   });
-</script>
+</script> -->
