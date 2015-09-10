@@ -20,38 +20,7 @@
   </div>
 </section>
 
-<section class="section-video" id="swim-show">
-  <div class="video-text-wrap col-sm-8 col-sm-offset-2">
-    <h1 class="video-title">Days of Our SwimShow Lives</h1>
-    <div class="player-icon">
-      <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/play-white.svg', class: 'play' %>
-    </div> <!-- end player-icon -->
-    <p>Take a quick peek and reminisce on your event packed days<br>at SwimShow</p>
-  </div>
-  <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=OkROKZ5N_HA',containment:'self',startAt:1,mute:false,autoPlay:false,loop:false,opacity:.8,showYTLogo:false, realfullscreen:true,optimizeDisplay:true,quality:'highres'}"></div>
-</section>
-
-<!-- <section class="home-member">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <div class="col-sm-6">
-          <h2>Are You In?</h2>
-          <h3>MIAMI BEACH INcard</h3>
-          <p>Get your Miami Beach INcard FREE TODAY at mbincard.com</p>
-          <a href="http://www.miamibeachincard.com/" target="_blank" class="btn btn-member">Get Now</a>
-          <br>
-          <br>
-        </div>
-        <div class="col-sm-6">
-          <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/member.jpg', alt: 'INcard', class: 'img-responsive' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="section-counter">
+<section class="section-counter" id="swim-show">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
@@ -116,6 +85,38 @@
     });
   });
 </script>
+
+<section class="section-video">
+  <div class="video-text-wrap col-sm-8 col-sm-offset-2">
+    <h1 class="video-title">Days of Our SwimShow Lives</h1>
+    <div class="player-icon">
+      <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/play-white.svg', class: 'play' %>
+    </div> <!-- end player-icon -->
+    <p>Take a quick peek and reminisce on your event packed days<br>at SwimShow</p>
+  </div>
+  <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=OkROKZ5N_HA',containment:'self',startAt:1,mute:false,autoPlay:false,loop:false,opacity:.8,showYTLogo:false, realfullscreen:true,optimizeDisplay:true,quality:'highres'}"></div>
+</section>
+
+<!-- <section class="home-member">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="col-sm-6">
+          <h2>Are You In?</h2>
+          <h3>MIAMI BEACH INcard</h3>
+          <p>Get your Miami Beach INcard FREE TODAY at mbincard.com</p>
+          <a href="http://www.miamibeachincard.com/" target="_blank" class="btn btn-member">Get Now</a>
+          <br>
+          <br>
+        </div>
+        <div class="col-sm-6">
+          <%= image_tag 'https://s3.amazonaws.com/swim-show/Website+Images/member.jpg', alt: 'INcard', class: 'img-responsive' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
 
 <!-- <script>
   $(document).ready(function() {
